@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "ror-sp-capacity-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-capacity-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-capacity-status&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-capacity-status</code></p><p><b>version</b>: 3.0</p><p><b>name</b>: RORSPCapacityStatus</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-06 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche pour récupérer le statut de la capacité.</p><p><b>code</b>: capacity-status</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>expression</b>: Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode</p></div>"
+  },
+  "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-capacity-status",
+  "version" : "3.0",
+  "name" : "RORSPCapacityStatus",
+  "status" : "active",
+  "date" : "2022-10-06T00:00:00+02:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche pour récupérer le statut de la capacité.",
+  "code" : "capacity-status",
+  "base" : ["Location"],
+  "type" : "token",
+  "expression" : "Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode"
+}
