@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-type> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ror-sp-capacity-type"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPCapacityType</h2><p>Parameter <code>capacity-type</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer la nature de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='capacityType').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ]; # 
+  fhir:SearchParameter.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-type"]; # 
+  fhir:SearchParameter.version [ fhir:value "3.0"]; # 
+  fhir:SearchParameter.name [ fhir:value "RORSPCapacityType"]; # 
+  fhir:SearchParameter.status [ fhir:value "active"]; # 
+  fhir:SearchParameter.date [ fhir:value "2022-08-04T00:00:00+02:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ANS" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ]; # 
+  fhir:SearchParameter.description [ fhir:value "Paramètre de recherche pour récupérer la nature de la capacité."]; # 
+  fhir:SearchParameter.code [ fhir:value "capacity-type"]; # 
+  fhir:SearchParameter.base [
+     fhir:value "Location";
+     fhir:index 0
+  ]; # 
+  fhir:SearchParameter.type [ fhir:value "token"]; # 
+  fhir:SearchParameter.expression [ fhir:value "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='capacityType').valueCode"] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

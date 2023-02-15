@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://esante.gouv.fr/ci-sis/fhir/CapabilityStatement/ror-consommateur> a fhir:CapabilityStatement;
+<http://interop.esante.gouv.fr/fhir/ig/ror30/CapabilityStatement/ror-consommateur> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ror-consommateur"]; # 
   fhir:DomainResource.text [
@@ -15,10 +15,10 @@
   fhir:CapabilityStatement.url [ fhir:value "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur"]; # 
   fhir:CapabilityStatement.version [ fhir:value "3.0"]; # 
   fhir:CapabilityStatement.name [ fhir:value "RORConsommateur"]; # 
-  fhir:CapabilityStatement.title [ fhir:value "ROR-RORConsommateur"]; # 
+  fhir:CapabilityStatement.title [ fhir:value "ROR-Consommateur"]; # 
   fhir:CapabilityStatement.status [ fhir:value "active"]; # 
   fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CapabilityStatement.date [ fhir:value "2023-01-18T16:05:38+01:00"^^xsd:dateTime]; # 
+  fhir:CapabilityStatement.date [ fhir:value "2023-01-12T14:27:51+01:00"^^xsd:dateTime]; # 
   fhir:CapabilityStatement.publisher [ fhir:value "ANS"]; # 
   fhir:CapabilityStatement.contact [
      fhir:index 0;
@@ -150,7 +150,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://esante.gouv.fr/ci-sis/fhir/CapabilityStatement/ror-consommateur.ttl> a owl:Ontology;
+<http://interop.esante.gouv.fr/fhir/ig/ror30/CapabilityStatement/ror-consommateur.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -134,7 +134,7 @@
           {
             "name": "capacity-status",
             "in": "query",
-            "description": "Paramètre de recherche pour récupérer le statut de la capacité.",
+            "description": "Statut de la capacité",
             "schema": {
               "type": "string"
             }
@@ -142,7 +142,7 @@
           {
             "name": "nb-capacity",
             "in": "query",
-            "description": "Paramètre de recherche pour récupérer le nombre de la capacité.",
+            "description": "Nombre de capacité",
             "schema": {
               "type": "number"
             }

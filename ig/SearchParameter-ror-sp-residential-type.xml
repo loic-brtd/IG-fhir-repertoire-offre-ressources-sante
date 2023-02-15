@@ -3,13 +3,14 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="ror-sp-residential-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="ror-sp-residential-type"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter &quot;ror-sp-residential-type&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-residential-type</code></p><p><b>version</b>: 3.0</p><p><b>name</b>: RORSPResidentialType</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-06</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href="https://esante.gouv.fr">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche pour récupérer le type d'habitation</p><p><b>code</b>: residential-type</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>expression</b>: Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-residential-capacity').extension(url='residentialType').valueCodeableConcept</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPResidentialType</h2><p>Parameter <code>residential-type</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le type d'habitation</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-residential-capacity').extension(url='residentialType').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-residential-type"/>
+  <url value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-type"/>
   <version value="3.0"/>
   <name value="RORSPResidentialType"/>
   <status value="active"/>
-  <date value="2022-10-06"/>
+  <date value="2023-01-12T14:27:51+01:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -22,5 +23,5 @@
   <code value="residential-type"/>
   <base value="Location"/>
   <type value="token"/>
-  <expression value="Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-residential-capacity').extension(url='residentialType').valueCodeableConcept"/>
+  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-residential-capacity').extension(url='residentialType').valueCodeableConcept"/>
 </SearchParameter>

@@ -8,10 +8,10 @@
   "url" : "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur",
   "version" : "3.0",
   "name" : "RORConsommateur",
-  "title" : "ROR-RORConsommateur",
+  "title" : "ROR-Consommateur",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-01-18T16:05:38+01:00",
+  "date" : "2023-01-12T14:27:51+01:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

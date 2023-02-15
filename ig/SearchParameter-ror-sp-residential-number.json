@@ -3,13 +3,13 @@
   "id" : "ror-sp-residential-number",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-residential-number\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-residential-number&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-residential-number</code></p><p><b>version</b>: 3.0</p><p><b>name</b>: RORSPResidentialNumber</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-06</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche pour récupérer le nombre d'habitation</p><p><b>code</b>: residential-number</p><p><b>base</b>: Location</p><p><b>type</b>: number</p><p><b>expression</b>: Location.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_ResidentialCapacity').extension(url='residentialNumber').valueInteger</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPResidentialNumber</h2><p>Parameter <code>residential-number</code>:<code>number</code></p><div><p>Paramètre de recherche pour récupérer le nombre d'habitation</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ROR_ResidentialCapacity').extension(url='residentialNumber').valueInteger</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-residential-number",
+  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-number",
   "version" : "3.0",
   "name" : "RORSPResidentialNumber",
   "status" : "active",
-  "date" : "2022-10-06",
+  "date" : "2023-01-12T14:27:51+01:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,5 +22,5 @@
   "code" : "residential-number",
   "base" : ["Location"],
   "type" : "number",
-  "expression" : "Location.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_ResidentialCapacity').extension(url='residentialNumber').valueInteger"
+  "expression" : "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ROR_ResidentialCapacity').extension(url='residentialNumber').valueInteger"
 }

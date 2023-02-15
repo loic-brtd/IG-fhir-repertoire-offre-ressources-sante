@@ -10,10 +10,10 @@
   <url value="http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur"/>
   <version value="3.0"/>
   <name value="RORConsommateur"/>
-  <title value="ROR-RORConsommateur"/>
+  <title value="ROR-Consommateur"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-01-18T16:05:38+01:00"/>
+  <date value="2023-01-12T14:27:51+01:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>

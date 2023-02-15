@@ -3,13 +3,13 @@
   "id" : "ror-sp-nb-capacity",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-nb-capacity\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-nb-capacity&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-nb-capacity</code></p><p><b>version</b>: 3.0</p><p><b>name</b>: RORSPNbCapacity</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-06 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche pour récupérer le nombre de la capacité.</p><p><b>code</b>: nb-capacity</p><p><b>base</b>: Location</p><p><b>type</b>: number</p><p><b>expression</b>: Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPNbCapacity</h2><p>Parameter <code>nb-capacity</code>:<code>number</code></p><div><p>Paramètre de recherche pour récupérer le nombre de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-nb-capacity",
+  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-nb-capacity",
   "version" : "3.0",
   "name" : "RORSPNbCapacity",
   "status" : "active",
-  "date" : "2022-10-06T00:00:00+02:00",
+  "date" : "2023-01-12T14:27:51+01:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,5 +22,5 @@
   "code" : "nb-capacity",
   "base" : ["Location"],
   "type" : "number",
-  "expression" : "Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger"
+  "expression" : "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger"
 }
