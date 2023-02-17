@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.30\ror-sp-healthcareservice-closing-type - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.30\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.14"}
-    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -141,15 +145,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ror-sp-healthcareservice-closing-type</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="SearchParameter-ror-sp-healthcareservice-age-range-low.ttl.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="SearchParameter-ror-sp-healthcareservice-closing-type.xml.html">next&gt;</a>
 
           </span>
 
@@ -163,7 +163,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
   
 
@@ -176,28 +177,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="SearchParameter-ror-sp-equipment-type.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="SearchParameter-ror-sp-healthcareservice-closing-type.xml.html">XML</a>
+      <a href="SearchParameter-ror-sp-equipment-type.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-ror-sp-healthcareservice-closing-type.json.html">JSON</a>
+      <a href="SearchParameter-ror-sp-equipment-type.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-ror-sp-healthcareservice-closing-type.ttl.html">TTL</a>
+      <a href="SearchParameter-ror-sp-equipment-type.ttl.html">TTL</a>
     </li>
   
 
@@ -205,79 +206,15 @@
 
 </ul>
 
+
   <a name="root"> </a>
-
-  <h2 id="root">SearchParameter: ror-sp-healthcareservice-closing-type
-
-  </h2>
-
-  <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-closing-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-closing-type"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-closing-type|3.0"/></span>
-      </td>
-    </tr>
-
-    <tr>
-
-
-
-
-
-
-
-      <td colspan="4">
-        
-          Active
-          
-            as of 2023-02-15
-          
-        
-      </td>
-
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">ROROrganizationClosingType</span></td>
-    </tr>
-
-
-
-
-  </table>
-
-
-<p>
-<p>Paramètre de recherche décrivant le type de fermeture de l’entité géographique, au sens des règles de gestion du SI FINESS</p>
-
-</p>
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-<!--  <p>
-  Formats: <a href="SearchParameter-ror-sp-healthcareservice-closing-type.xml.html">XML</a>, <a href="SearchParameter-ror-sp-healthcareservice-closing-type.json.html">JSON</a>, <a href="SearchParameter-ror-sp-healthcareservice-closing-type.ttl.html">Turtle</a>
-  </p>-->
-
-  
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>ROROrganizationClosingType</h2><p>Parameter <code>closing-type</code>:<code>token</code></p><div><p>Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td></tr><tr><td>Expression</td><td><code>Organization.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-period-closing-type').extension(url='closingType').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
-
-  <!-- insert notes if present -->
-  
-
-
+  <h2 id="root">: RORSPEquipmentType - Change History</h2>
+  <p>History of changes for ror-sp-equipment-type .</p>
 
   
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -285,6 +222,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -303,7 +263,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="SearchParameter-ror-sp-healthcareservice-age-range-low.ttl.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -311,7 +271,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="SearchParameter-ror-sp-healthcareservice-closing-type.xml.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -321,7 +281,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 16, 2023 13:28+0000">2023-02-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 16:29+0000">2023-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

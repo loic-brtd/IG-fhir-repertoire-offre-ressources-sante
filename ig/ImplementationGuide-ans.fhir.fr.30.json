@@ -10,7 +10,7 @@
   "name" : "ROR",
   "title" : "ROR",
   "status" : "active",
-  "date" : "2023-02-16T13:28:22+00:00",
+  "date" : "2023-02-17T16:29:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -651,7 +651,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ror-practitionerrole"
       },
-      "name" : "ROR_PractitionerRole",
+      "name" : "RORPractitionerRole",
       "description" : "Profil créé dans le cadre du ROR pour décrire les modalités d'exercice opérationnelles du profesionnel dans la réalisation de l'offre",
       "exampleBoolean" : false
     },
@@ -869,6 +869,18 @@
       },
       "name" : "RORHealthcareServiceAvailableTimeTypeOfTime",
       "description" : "Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-healthcareservice-contact"
+      },
+      "name" : "RORHealthcareServiceContact",
+      "description" : "Extension créée dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {
@@ -1249,10 +1261,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/ror-sp-equipement-type"
+        "reference" : "SearchParameter/ror-sp-equipment-feature"
       },
-      "name" : "ror-sp-equipement-type",
-      "description" : "Paramètre de recherche pour récupérer le type d'un equipement.",
+      "name" : "ror-sp-equipment-feature",
+      "description" : "Paramètre de recherche pour récupérer le type de caractéristique d'un equipement.",
       "exampleBoolean" : false
     },
     {
@@ -1261,10 +1273,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/ror-sp-equipment-feature"
+        "reference" : "SearchParameter/ror-sp-equipment-type"
       },
-      "name" : "ror-sp-equipment-feature",
-      "description" : "Paramètre de recherche pour récupérer le type de caractéristique d'un equipement.",
+      "name" : "ror-sp-equipment-type",
+      "description" : "Paramètre de recherche pour récupérer le type d'un equipement.",
       "exampleBoolean" : false
     },
     {
@@ -1309,18 +1321,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/ror-sp-healthcareservice-closing-type"
-      },
-      "name" : "ror-sp-healthcareservice-closing-type",
-      "description" : "Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/ror-sp-healthcareservice-equipment-type"
       },
       "name" : "ror-sp-healthcareservice-equipment-type",
@@ -1349,18 +1349,6 @@
       },
       "name" : "ror-sp-healthcareservice-patient-type",
       "description" : "Paramètre de recherche décrivant le public pris en charge",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/ror-sp-healthcareservice-period-end"
-      },
-      "name" : "ror-sp-healthcareservice-period-end",
-      "description" : "Paramètre de recherche décrivant la date de fermeture de l'entité géographique",
       "exampleBoolean" : false
     },
     {
@@ -1441,10 +1429,34 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/ror-sp-organization-closing-type"
+      },
+      "name" : "ror-sp-organization-closing-type",
+      "description" : "Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/ror-sp-organization-drop-zone"
       },
       "name" : "ror-sp-organization-drop-zone",
       "description" : "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-organization-period-end"
+      },
+      "name" : "ror-sp-organization-period-end",
+      "description" : "Paramètre de recherche décrivant la date de fermeture de l'entité géographique",
       "exampleBoolean" : false
     },
     {
@@ -1480,7 +1492,7 @@
         "reference" : "SearchParameter/ror-sp-temporality-capacity"
       },
       "name" : "ror-sp-temporality-capacity",
-      "description" : "Paramètre de recherche pour récupérer les affectations temporaires",
+      "description" : "Paramètre de recherche pour récupérer le moment où la capacité sera effective",
       "exampleBoolean" : false
     },
     {

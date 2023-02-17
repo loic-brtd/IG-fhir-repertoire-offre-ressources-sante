@@ -14,9 +14,23 @@
     <sch:rule context="f:HealthcareService">
       <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:HealthcareService/f:meta</sch:title>
+    <sch:rule context="f:HealthcareService/f:meta">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:versionId) &lt;= 1">versionId: maximum cardinality of 'versionId' is 1</sch:assert>
+      <sch:assert test="count(f:lastUpdated) &lt;= 1">lastUpdated: maximum cardinality of 'lastUpdated' is 1</sch:assert>
+      <sch:assert test="count(f:source) &lt;= 1">source: maximum cardinality of 'source' is 1</sch:assert>
+      <sch:assert test="count(f:tag) &lt;= 1">tag: maximum cardinality of 'tag' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

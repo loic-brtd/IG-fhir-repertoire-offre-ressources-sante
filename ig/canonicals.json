@@ -63,18 +63,18 @@
     "name" : "RORSPCrisisType"
   },
   {
-    "id" : "ror-sp-equipement-type",
-    "type" : "SearchParameter",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipement-type",
-    "version" : "3.0",
-    "name" : "RORSPEquipementType"
-  },
-  {
     "id" : "ror-sp-equipment-feature",
     "type" : "SearchParameter",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipment-feature",
     "version" : "3.0",
     "name" : "RORSPEquipmentFeature"
+  },
+  {
+    "id" : "ror-sp-equipment-type",
+    "type" : "SearchParameter",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipment-type",
+    "version" : "3.0",
+    "name" : "RORSPEquipmentType"
   },
   {
     "id" : "ror-sp-gender-capacity-available",
@@ -98,13 +98,6 @@
     "name" : "RORHealthcareServiceAgeRangeLow"
   },
   {
-    "id" : "ror-sp-healthcareservice-closing-type",
-    "type" : "SearchParameter",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-closing-type",
-    "version" : "3.0",
-    "name" : "ROROrganizationClosingType"
-  },
-  {
     "id" : "ror-sp-healthcareservice-equipment-type",
     "type" : "SearchParameter",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-equipment-type",
@@ -124,13 +117,6 @@
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-patient-type",
     "version" : "3.0",
     "name" : "RORHealthcareServiceSupportedPatientType"
-  },
-  {
-    "id" : "ror-sp-healthcareservice-period-end",
-    "type" : "SearchParameter",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-period-end",
-    "version" : "3.0",
-    "name" : "ROROrganizationPeriodEnd"
   },
   {
     "id" : "ror-sp-healthcareservice-psychiatric-sector",
@@ -175,11 +161,25 @@
     "name" : "RORSPNbCapacity"
   },
   {
+    "id" : "ror-sp-organization-closing-type",
+    "type" : "SearchParameter",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-closing-type",
+    "version" : "3.0",
+    "name" : "ROROrganizationClosingType"
+  },
+  {
     "id" : "ror-sp-organization-drop-zone",
     "type" : "SearchParameter",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-drop-zone",
     "version" : "3.0",
     "name" : "RORSPOrganizationDropZone"
+  },
+  {
+    "id" : "ror-sp-organization-period-end",
+    "type" : "SearchParameter",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-period-end",
+    "version" : "3.0",
+    "name" : "ROROrganizationPeriodEnd"
   },
   {
     "id" : "ror-sp-residential-number",
@@ -336,6 +336,13 @@
     "name" : "RORHealthcareServiceAvailableTimeTypeOfTime"
   },
   {
+    "id" : "ror-healthcareservice-contact",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceContact"
+  },
+  {
     "id" : "ror-healthcareservice-intervention-zone",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-intervention-zone",
@@ -487,7 +494,7 @@
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole",
     "version" : "3.0",
-    "name" : "ROR_PractitionerRole"
+    "name" : "RORPractitionerRole"
   },
   {
     "id" : "ror-practitionerrole-unit-exercise-mode",

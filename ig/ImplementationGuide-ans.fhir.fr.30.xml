@@ -10,7 +10,7 @@
   <name value="ROR"/>
   <title value="ROR"/>
   <status value="active"/>
-  <date value="2023-02-16T13:28:22+00:00"/>
+  <date value="2023-02-17T16:29:47+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -492,7 +492,7 @@
       <reference>
         <reference value="StructureDefinition/ror-practitionerrole"/>
       </reference>
-      <name value="ROR_PractitionerRole"/>
+      <name value="RORPractitionerRole"/>
       <description value="Profil créé dans le cadre du ROR pour décrire les modalités d'exercice opérationnelles du profesionnel dans la réalisation de l'offre"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -692,6 +692,17 @@
       </reference>
       <name value="RORHealthcareServiceAvailableTimeTypeOfTime"/>
       <description value="Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-healthcareservice-contact"/>
+      </reference>
+      <name value="RORHealthcareServiceContact"/>
+      <description value="Extension créée dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1040,10 +1051,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/ror-sp-equipement-type"/>
+        <reference value="SearchParameter/ror-sp-equipment-feature"/>
       </reference>
-      <name value="ror-sp-equipement-type"/>
-      <description value="Paramètre de recherche pour récupérer le type d'un equipement."/>
+      <name value="ror-sp-equipment-feature"/>
+      <description value="Paramètre de recherche pour récupérer le type de caractéristique d'un equipement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1051,10 +1062,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/ror-sp-equipment-feature"/>
+        <reference value="SearchParameter/ror-sp-equipment-type"/>
       </reference>
-      <name value="ror-sp-equipment-feature"/>
-      <description value="Paramètre de recherche pour récupérer le type de caractéristique d'un equipement."/>
+      <name value="ror-sp-equipment-type"/>
+      <description value="Paramètre de recherche pour récupérer le type d'un equipement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1095,17 +1106,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/ror-sp-healthcareservice-closing-type"/>
-      </reference>
-      <name value="ror-sp-healthcareservice-closing-type"/>
-      <description value="Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/ror-sp-healthcareservice-equipment-type"/>
       </reference>
       <name value="ror-sp-healthcareservice-equipment-type"/>
@@ -1132,17 +1132,6 @@
       </reference>
       <name value="ror-sp-healthcareservice-patient-type"/>
       <description value="Paramètre de recherche décrivant le public pris en charge"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/ror-sp-healthcareservice-period-end"/>
-      </reference>
-      <name value="ror-sp-healthcareservice-period-end"/>
-      <description value="Paramètre de recherche décrivant la date de fermeture de l'entité géographique"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1216,10 +1205,32 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/ror-sp-organization-closing-type"/>
+      </reference>
+      <name value="ror-sp-organization-closing-type"/>
+      <description value="Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/ror-sp-organization-drop-zone"/>
       </reference>
       <name value="ror-sp-organization-drop-zone"/>
       <description value="Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-organization-period-end"/>
+      </reference>
+      <name value="ror-sp-organization-period-end"/>
+      <description value="Paramètre de recherche décrivant la date de fermeture de l'entité géographique"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1252,7 +1263,7 @@
         <reference value="SearchParameter/ror-sp-temporality-capacity"/>
       </reference>
       <name value="ror-sp-temporality-capacity"/>
-      <description value="Paramètre de recherche pour récupérer les affectations temporaires"/>
+      <description value="Paramètre de recherche pour récupérer le moment où la capacité sera effective"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

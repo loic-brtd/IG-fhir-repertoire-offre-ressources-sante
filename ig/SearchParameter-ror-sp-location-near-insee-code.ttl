@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "ror-sp-location-near-insee-code"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>LocationNearINSEECode</h2><p>Parameter <code>near-insee-code</code>:<code>special</code></p><div><p>Paramètre de recherche similaire au paramètre spécial \\u0022near\\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>Location.address.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/structuredefinition/datatype/fr-address-insee-code').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>LocationNearINSEECode</h2><p>Parameter <code>near-insee-code</code>:<code>special</code></p><div><p>Paramètre de recherche similaire au paramètre spécial \\u0022near\\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.address.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/structuredefinition/datatype/fr-address-insee-code').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ]; # 
   fhir:SearchParameter.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-location-near-insee-code"]; # 
   fhir:SearchParameter.version [ fhir:value "3.0"]; # 
   fhir:SearchParameter.name [ fhir:value "LocationNearINSEECode"]; # 
   fhir:SearchParameter.status [ fhir:value "active"]; # 
-  fhir:SearchParameter.date [ fhir:value "2022-08-04T00:00:00+02:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.date [ fhir:value "2023-02-17T16:29:47+00:00"^^xsd:dateTime]; # 
   fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
   fhir:SearchParameter.contact [
      fhir:index 0;
@@ -30,7 +30,7 @@
   fhir:SearchParameter.description [ fhir:value "Paramètre de recherche similaire au paramètre spécial \"near\", à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique"]; # 
   fhir:SearchParameter.code [ fhir:value "near-insee-code"]; # 
   fhir:SearchParameter.base [
-     fhir:value "HealthcareService";
+     fhir:value "Location";
      fhir:index 0
   ]; # 
   fhir:SearchParameter.type [ fhir:value "special"]; # 

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ROR"]; # 
   fhir:ImplementationGuide.title [ fhir:value "ROR"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-16T13:28:22+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-17T16:29:47+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -736,7 +736,7 @@
          fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROR_PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil créé dans le cadre du ROR pour décrire les modalités d'exercice opérationnelles du profesionnel dans la réalisation de l'offre" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -999,6 +999,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-contact" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceContact" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-intervention-zone>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-intervention-zone" ]
        ];
@@ -1006,7 +1020,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. \nCela inclus notamment les divisions territoriales dans lesquelles les professionnels se déplacent." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1020,7 +1034,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui permet d'identifier les offres pour lesquelles un établissement est autorisé par le directeur général de l’ARS après avis du préfet, à prendre en charge des patients sans leur consentement." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1034,7 +1048,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour décrire un ensemble de personnes qui répondent à des critères leur permettant de  bénéficier de la prestation décrite" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1048,7 +1062,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui correspond à une aire géographique à laquelle sont rattachées des structures de relais et de soins qui prennent en charge des patients résidants sur ce secteur." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1062,7 +1076,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour signaler que toutes les informations de description d'une offre sont confidentielles car elles présentent un risque d'utilisation à des fins malveillantes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1076,7 +1090,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour décrire une hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1090,7 +1104,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d'une prestation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1104,7 +1118,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1118,7 +1132,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour préciser si l'établissement peut héberger les familles des personnes prises en charge." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1132,7 +1146,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1146,7 +1160,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour préciser l'aide financière pour laquelle l'EG dispose d'une habilitation ou conventionnement qui permet aux personnes accueillies d'en bénéficier si elles remplissent les conditions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1160,7 +1174,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour indiquer le nombre de places permanentes dédiées à l'aide sociale dans l'établissement" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1174,7 +1188,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour indiquer le nombre de places temporaires dédiées à l'aide sociale dans l'établissement" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1188,7 +1202,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1202,7 +1216,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1216,7 +1230,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour décrire les territoire(s) de santé où est située l'entité géographique" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1230,7 +1244,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR pour décrire le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1244,7 +1258,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1258,7 +1272,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1272,7 +1286,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1286,7 +1300,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1300,7 +1314,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1314,7 +1328,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1328,7 +1342,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système qui est autorisé à consommer les données du ROR." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1342,7 +1356,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 48;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1356,7 +1370,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer les types des lits disponnibles" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 49;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1370,7 +1384,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le type de la fermeture de la capacité" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1384,7 +1398,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le statut de la capacité." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 51;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1398,7 +1412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer la nature de la capacité." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1412,7 +1426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer la date à jour de la capacité" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1424,20 +1438,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-crisis-type" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le type de la crise" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 54;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipement-type>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-equipement-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-equipement-type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le type d'un equipement." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 55;
@@ -1461,6 +1461,20 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipment-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-equipment-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-equipment-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le type d'un equipement." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-gender-capacity-available>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-gender-capacity-available" ]
        ];
@@ -1468,7 +1482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le genre disponnible de la capacité." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1482,7 +1496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age maximum de la patientèle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1494,20 +1508,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-low" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age minimum de la patientèle" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 59;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-closing-type>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-closing-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-closing-type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 60;
@@ -1559,20 +1559,6 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-period-end>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-period-end" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-period-end" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant la date de fermeture de l'entité géographique" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 64;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-psychiatric-sector" ]
        ];
@@ -1580,7 +1566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivrant le secteur psychiatrique de l'offre opérationnelle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1594,7 +1580,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la compétence spécifique" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1608,7 +1594,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer la valeur limite" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1622,7 +1608,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1636,7 +1622,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche similaire au paramètre spécial \"near\", à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1648,6 +1634,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-nb-capacity" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le nombre de la capacité." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-closing-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-organization-closing-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-organization-closing-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 70;
@@ -1671,6 +1671,20 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-period-end>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-organization-period-end" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-organization-period-end" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant la date de fermeture de l'entité géographique" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-number>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-residential-number" ]
        ];
@@ -1678,7 +1692,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le nombre d'habitation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1692,7 +1706,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le type d'habitation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1703,10 +1717,10 @@
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-temporality-capacity" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-temporality-capacity" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer les affectations temporaires" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche pour récupérer le moment où la capacité sera effective" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

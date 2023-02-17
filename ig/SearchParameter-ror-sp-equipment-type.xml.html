@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.30\ror-sp-equipement-type - JSON Representation - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.30\ror-sp-equipment-type - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.9"}
-    h3,h4,h5,h6{--heading-prefix:"6.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.10"}
+    h3,h4,h5,h6{--heading-prefix:"6.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -143,15 +143,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ror-sp-equipement-type</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ror-sp-equipment-type</b></li>
 
           <span style="float:right;">
 
-            <a href="SearchParameter-ror-sp-equipement-type.xml.html">&lt;prev</a> | 
+            <a href="SearchParameter-ror-sp-equipment-type.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="SearchParameter-ror-sp-equipement-type.ttl.html">next&gt;</a>
+          | <a href="SearchParameter-ror-sp-equipment-type.json.html">next&gt;</a>
 
           </span>
 
@@ -165,7 +165,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
+<div style="counter-reset: section 7" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
 
 
@@ -179,27 +179,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="SearchParameter-ror-sp-equipement-type.html">Narrative Content</a>
+    <a href="SearchParameter-ror-sp-equipment-type.html">Narrative Content</a>
   </li>
 
 
   
-    <li>
-      <a href="SearchParameter-ror-sp-equipement-type.xml.html">XML</a>
-    </li>
-  
-
-
-  
     <li class="active">
-      <a href="#">JSON</a>
+      <a href="#">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-ror-sp-equipement-type.ttl.html">TTL</a>
+      <a href="SearchParameter-ror-sp-equipment-type.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="SearchParameter-ror-sp-equipment-type.ttl.html">TTL</a>
     </li>
   
 
@@ -211,7 +211,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ror-sp-equipement-type - JSON Representation</h2>
+<h2 id="root">: ror-sp-equipment-type - XML Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -219,7 +219,7 @@
         
           Active
           
-            as of 2023-01-12
+            as of 2023-02-17
           
         
       </td>
@@ -228,46 +228,44 @@
   </table>
 
 
-<p><a href="SearchParameter-ror-sp-equipement-type.json" no-download="true">Raw json</a> | <a href="SearchParameter-ror-sp-equipement-type.json" download>Download</a></p>
+<p><a href="SearchParameter-ror-sp-equipment-type.xml" no-download="true">Raw xml</a> | <a href="SearchParameter-ror-sp-equipment-type.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
-{
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a>" : "ror-sp-equipement-type",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;RORSPEquipementType&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;equipement-type&lt;/code&gt;:&lt;code&gt;token&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche pour récupérer le type d'un equipement.&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/location.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipement').extension(url='equipementType').valueCodeableConcept&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipement-type",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a>" : "3.0",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a>" : "RORSPEquipementType",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a>" : "2023-01-12T14:27:51+01:00",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a>" : "ANS",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "ANS",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>" : "Paramètre de recherche pour récupérer le type d'un equipement.",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a>" : "equipement-type",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a>" : [
-    "Location"
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a>" : "token",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>" : "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipement').extension(url='equipementType').valueCodeableConcept"
-}</code></pre>
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ror-sp-equipment-type&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;RORSPEquipmentType&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;equipment-type&lt;/code&gt;:&lt;code&gt;token&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche pour récupérer le type d'un equipement.&lt;/p&gt;
+&lt;/div&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/location.html&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment').extension(url='equipeentType').valueCodeableConcept&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipment-type&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RORSPEquipmentType&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-02-17T16:29:47+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://esante.gouv.fr&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Paramètre de recherche pour récupérer le type d'un equipement.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equipment-type&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Location&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment').extension(url='equipeentType').valueCodeableConcept&quot;/&gt;
+&lt;/SearchParameter&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -301,7 +299,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="SearchParameter-ror-sp-equipement-type.xml.html">&lt;prev</a>
+                <a href="SearchParameter-ror-sp-equipment-type.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -309,7 +307,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="SearchParameter-ror-sp-equipement-type.ttl.html">next&gt;</a>
+                <a href="SearchParameter-ror-sp-equipment-type.json.html">next&gt;</a>
 
               </td>
             </tr>
@@ -319,7 +317,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 16, 2023 13:28+0000">2023-02-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 16:29+0000">2023-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
