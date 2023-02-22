@@ -3,13 +3,13 @@
   "id" : "ror-sp-capacity-status",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPCapacityStatus</h2><p>Parameter <code>capacity-status</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le statut de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPCapacityStatus</h2><p>Parameter <code>capacity-status</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le statut de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-status",
+  "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-capacity-status",
   "version" : "3.0",
   "name" : "RORSPCapacityStatus",
   "status" : "active",
-  "date" : "2023-02-17T16:29:47+00:00",
+  "date" : "2022-10-06T00:00:00+02:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,5 +22,5 @@
   "code" : "capacity-status",
   "base" : ["Location"],
   "type" : "token",
-  "expression" : "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode"
+  "expression" : "Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode"
 }

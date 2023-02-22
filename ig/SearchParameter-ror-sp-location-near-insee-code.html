@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.30\ror-sp-location-near-insee-code - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ROR\ror-sp-location-near-insee-code - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.21"}
-    h3,h4,h5,h6{--heading-prefix:"6.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.13"}
+    h3,h4,h5,h6{--heading-prefix:"6.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
 
           <span style="float:right;">
 
-            <a href="SearchParameter-ror-sp-location-commune-cog.ttl.html">&lt;prev</a> | 
+            <a href="SearchParameter-ror-sp-limit-value.ttl.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -214,10 +214,10 @@
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-location-near-insee-code<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-location-near-insee-code"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-code<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-code"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-location-near-insee-code|3.0"/></span>
+      <span class="copy-text">3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-code|3.0"/></span>
       </td>
     </tr>
 
@@ -233,14 +233,14 @@
         
           Active
           
-            as of 2023-02-17
+            as of 2022-08-04
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">LocationNearINSEECode</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">RORSPLocationNearINSEECode</span></td>
     </tr>
 
 
@@ -267,8 +267,8 @@
   
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>LocationNearINSEECode</h2><p>Parameter <code>near-insee-code</code>:<code>special</code></p><div><p>Paramètre de recherche similaire au paramètre spécial \u0022near\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.address.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/structuredefinition/datatype/fr-address-insee-code').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPLocationNearINSEECode</h2><p>Parameter <code>near-insee-code</code>:<code>special</code></p><div><p>Paramètre de recherche similaire au paramètre spécial \u0022near\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -303,7 +303,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="SearchParameter-ror-sp-location-commune-cog.ttl.html">&lt;prev</a>
+                <a href="SearchParameter-ror-sp-limit-value.ttl.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -321,7 +321,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 16:29+0000">2023-02-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 22, 2023 17:17+0000">2023-02-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
