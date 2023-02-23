@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.ROR30\ror-sp-location-near-insee-code - TTL Representation - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ROR\ror-sp-location-near-insee-code - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.21"}
-    h3,h4,h5,h6{--heading-prefix:"6.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.13"}
+    h3,h4,h5,h6{--heading-prefix:"6.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,7 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ROR ME 3.0</span>
+          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
             <br/>
             <span style="display:inline-block;">3.0 - ci-build
 
@@ -219,7 +219,7 @@
         
           Active
           
-            as of 2023-02-23
+            as of 2022-08-04
           
         
       </td>
@@ -248,13 +248,13 @@
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ror-sp-location-near-insee-code&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;LocationNearINSEECode&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;near-insee-code&lt;/code&gt;:&lt;code&gt;special&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche similaire au paramètre spécial \\u0022near\\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/location.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.address.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/structuredefinition/datatype/fr-address-insee-code').valueCode&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;RORSPLocationNearINSEECode&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;near-insee-code&lt;/code&gt;:&lt;code&gt;special&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche similaire au paramètre spécial \\u0022near\\u0022, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/healthcareservice.html\&quot;&gt;HealthcareService&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ]; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:SearchParameter.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:SearchParameter.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-code&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">fhir:SearchParameter.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3.0&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">fhir:SearchParameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;LocationNearINSEECode&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">fhir:SearchParameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;RORSPLocationNearINSEECode&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">fhir:SearchParameter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:SearchParameter.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2023-02-23T11:20:10+00:00&quot;^^xsd:dateTime]; # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:SearchParameter.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-08-04T00:00:00+02:00&quot;^^xsd:dateTime]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">fhir:SearchParameter.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ANS&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">fhir:SearchParameter.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -267,11 +267,11 @@
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">fhir:SearchParameter.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Paramètre de recherche similaire au paramètre spécial \&quot;near\&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">fhir:SearchParameter.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;near-insee-code&quot;]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">fhir:SearchParameter.base</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Location&quot;;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;HealthcareService&quot;;
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
   ]; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">fhir:SearchParameter.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;special&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">fhir:SearchParameter.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Location.address.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/structuredefinition/datatype/fr-address-insee-code').valueCode&quot;]. # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">fhir:SearchParameter.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode&quot;]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -331,7 +331,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror30#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 23, 2023 11:20+0000">2023-02-23</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 23, 2023 15:09+0000">2023-02-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
