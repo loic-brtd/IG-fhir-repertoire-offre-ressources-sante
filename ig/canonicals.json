@@ -315,13 +315,6 @@
     "name" : "RORDropZone"
   },
   {
-    "id" : "ror-equipement-limit",
-    "type" : "StructureDefinition",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit",
-    "version" : "3.0",
-    "name" : "ROREquipementLimit"
-  },
-  {
     "id" : "ror-healthcareservice",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice",
@@ -385,11 +378,25 @@
     "name" : "RORLocation"
   },
   {
-    "id" : "ror-location-equipement",
+    "id" : "ror-location-commune-cog",
     "type" : "StructureDefinition",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipement",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-commune-cog",
     "version" : "3.0",
-    "name" : "RORLocationEquipement"
+    "name" : "RORLocationCommuneCog"
+  },
+  {
+    "id" : "ror-location-equipment",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment",
+    "version" : "3.0",
+    "name" : "RORLocationEquipment"
+  },
+  {
+    "id" : "ror-location-equipment-limit",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment-limit",
+    "version" : "3.0",
+    "name" : "RORLocationEquipmentLimit"
   },
   {
     "id" : "ror-location-geolocation",
@@ -399,11 +406,25 @@
     "name" : "RORGeolocationLocation"
   },
   {
+    "id" : "ror-location-residential-capacity",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-residential-capacity",
+    "version" : "3.0",
+    "name" : "RORLocationResidentialCapacity"
+  },
+  {
     "id" : "ror-location-status",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-status",
     "version" : "3.0",
     "name" : "RORLocationStatus"
+  },
+  {
+    "id" : "ror-location-supported-capacity",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-supported-capacity",
+    "version" : "3.0",
+    "name" : "RORLocationSupportedCapacity"
   },
   {
     "id" : "ror-organization",
@@ -497,25 +518,11 @@
     "name" : "RORPractitionerRoleUnitExerciseMode"
   },
   {
-    "id" : "ror-residential-capacity",
-    "type" : "StructureDefinition",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-residential-capacity",
-    "version" : "3.0",
-    "name" : "RORResidentialCapacity"
-  },
-  {
     "id" : "ror-specific-competence",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-specific-competence",
     "version" : "3.0",
     "name" : "RORSpecificCompetence"
-  },
-  {
-    "id" : "ror-supported-capacity",
-    "type" : "StructureDefinition",
-    "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity",
-    "version" : "3.0",
-    "name" : "RORSupportedCapacity"
   },
   {
     "id" : "ror-telecom-communication-channel",

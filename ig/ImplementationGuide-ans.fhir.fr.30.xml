@@ -10,7 +10,7 @@
   <name value="ROR"/>
   <title value="ROR"/>
   <status value="active"/>
-  <date value="2023-02-22T17:20:54+00:00"/>
+  <date value="2023-02-23T08:32:00+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -666,17 +666,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-equipement-limit"/>
-      </reference>
-      <name value="ROREquipementLimit"/>
-      <description value="Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmis les équipements spécifiques de même type dans cette organisation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-location-geolocation"/>
       </reference>
       <name value="Geolocation"/>
@@ -765,10 +754,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-location-equipement"/>
+        <reference value="StructureDefinition/ror-location-commune-cog"/>
       </reference>
-      <name value="RORLocationEquipement"/>
+      <name value="RORLocationCommuneCog"/>
+      <description value="Extension créée dans le cadre du ROR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-location-equipment"/>
+      </reference>
+      <name value="RORLocationEquipment"/>
       <description value="Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d'une prestation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-location-equipment-limit"/>
+      </reference>
+      <name value="RORLocationEquipmentLimit"/>
+      <description value="Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmis les équipements spécifiques de même type dans cette organisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-location-residential-capacity"/>
+      </reference>
+      <name value="RORLocationResidentialCapacity"/>
+      <description value="Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -780,6 +802,17 @@
       </reference>
       <name value="RORLocationStatus"/>
       <description value="Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-location-supported-capacity"/>
+      </reference>
+      <name value="RORLocationSupportedCapacity"/>
+      <description value="Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -897,32 +930,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-residential-capacity"/>
-      </reference>
-      <name value="RORResidentialCapacity"/>
-      <description value="Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-specific-competence"/>
       </reference>
       <name value="RORSpecificCompetence"/>
       <description value="Extension créée dans le cadre du ROR qui correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-supported-capacity"/>
-      </reference>
-      <name value="RORSupportedCapacity"/>
-      <description value="Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
