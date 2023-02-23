@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror30/CapabilityStatement/ror-serveur> a fhir:CapabilityStatement;
+<https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-serveur> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ror-serveur"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des lieux de réalisation de l'offre</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Location</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location\">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice\">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization\">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner\">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole\">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des lieux de réalisation de l'offre</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Location</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location\">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice\">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization\">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner\">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole\">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   ]; # 
-  fhir:CapabilityStatement.url [ fhir:value "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur"]; # 
+  fhir:CapabilityStatement.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-serveur"]; # 
   fhir:CapabilityStatement.version [ fhir:value "3.0"]; # 
   fhir:CapabilityStatement.name [ fhir:value "RORServeur"]; # 
   fhir:CapabilityStatement.title [ fhir:value "ROR-RORServeur"]; # 
@@ -56,8 +56,8 @@
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location";
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -70,8 +70,8 @@
          fhir:index 0;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "temporary-assignement" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-temporary-assignement";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-temporary-assignement>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Affectations temporaires" ]
@@ -97,8 +97,8 @@
          fhir:index 3;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "capacity-status" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-status";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-status>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-status";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-status>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Statut de la capacité" ]
@@ -106,8 +106,8 @@
          fhir:index 4;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "nb-capacity" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-nb-capacity";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-nb-capacity>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-nb-capacity";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-nb-capacity>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "number" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nombre de capacité" ]
@@ -116,8 +116,8 @@
        fhir:index 1;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "HealthcareService" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice";
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -220,8 +220,8 @@
          fhir:index 10;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "age-range-high" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "quantity" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Age maximum de la patientèle" ]
@@ -229,8 +229,8 @@
          fhir:index 11;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "age-range-low" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "quantity" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Age minimum de la patientèle" ]
@@ -238,8 +238,8 @@
          fhir:index 12;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "intervention-zone" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Zone d'intervention" ]
@@ -247,8 +247,8 @@
          fhir:index 13;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "supported-patient-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-patient-type";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-patient-type>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Public pris en charge" ]
@@ -256,8 +256,8 @@
          fhir:index 14;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "psychiatric-sector" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Secteur psychiatrique de l'offre opérationnelle" ]
@@ -265,8 +265,8 @@
          fhir:index 15;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specific-competence" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Compétence spécifique" ]
@@ -275,8 +275,8 @@
        fhir:index 2;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization";
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -334,8 +334,8 @@
          fhir:index 5;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "closing-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-closing-type";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-closing-type>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-closing-type";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-closing-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS" ]
@@ -343,8 +343,8 @@
          fhir:index 6;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "drop-zone" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-drop-zone";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-drop-zone>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-drop-zone";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-drop-zone>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Indique s'il y a une zone poser sur le site concerné" ]
@@ -352,8 +352,8 @@
          fhir:index 7;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "period-end" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-period-end";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-period-end>
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-period-end";
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-period-end>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Date de fermeture de l'entité géographique" ]
@@ -362,8 +362,8 @@
        fhir:index 3;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner";
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -395,8 +395,8 @@
        fhir:index 4;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole";
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -429,7 +429,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror30/CapabilityStatement/ror-serveur.ttl> a owl:Ontology;
+<https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-serveur.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

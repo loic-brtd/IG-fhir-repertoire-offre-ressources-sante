@@ -38,6 +38,11 @@ This element can be used to indicate where the current master source of a resour
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV"
 "Location.meta.tag","Location.meta.tag","","","",0,1,"","","Y","Coding {[]} {[]}
+","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"example","Codes that represent various types of tags, commonly workflow-related; e.g. ""Needs review by Dr. Jones"".","http://hl7.org/fhir/ValueSet/common-tags","","value:url}
+","Slicing pour gérer le code région définissant la région source des données",,"open","Meta.tag",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","CV"
+"Location.meta.tag:codeRegion","Location.meta.tag","codeRegion","","",0,1,"","","Y","Coding {[]} {[]}
 ","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR","",,,,"Meta.tag",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV"
@@ -62,27 +67,27 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-status","Location.extension","ror-location-status","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-status]]} {[]}
+"Location.extension:ror-location-status","Location.extension","ror-location-status","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-equipment","Location.extension","ror-location-equipment","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment]]} {[]}
+"Location.extension:ror-location-equipment","Location.extension","ror-location-equipment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d'une prestation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-residential-capacity","Location.extension","ror-location-residential-capacity","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-residential-capacity]]} {[]}
+"Location.extension:ror-location-residential-capacity","Location.extension","ror-location-residential-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-supported-capacity","Location.extension","ror-location-supported-capacity","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-supported-capacity]]} {[]}
+"Location.extension:ror-location-supported-capacity","Location.extension","ror-location-supported-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-equipment-limit","Location.extension","ror-location-equipment-limit","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment-limit]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmis les équipements spécifiques de même type dans cette organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Location.extension:ror-location-equipment-limit","Location.extension","ror-location-equipment-limit","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit]]} {[]}
+","Extension","Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-commune-cog","Location.extension","ror-location-commune-cog","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-commune-cog]]} {[]}
+"Location.extension:ror-location-commune-cog","Location.extension","ror-location-commune-cog","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-commune-cog]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -226,15 +231,15 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.telecom.extension:ror-telecom-usage","Location.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"Location.telecom.extension:ror-telecom-usage","Location.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.telecom.extension:ror-telecom-confidentiality-level","Location.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"Location.telecom.extension:ror-telecom-confidentiality-level","Location.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.telecom.extension:ror-telecom-communication-channel","Location.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"Location.telecom.extension:ror-telecom-communication-channel","Location.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -426,8 +431,8 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.position.extension:ror-location-geolocation","Location.position.extension","ror-location-geolocation","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-geolocation]]} {[]}
-","Geolocation","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"Location.position.extension:ror-location-geolocation","Location.position.extension","ror-location-geolocation","","",1,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.position.modifierExtension","Location.position.modifierExtension","","extensions

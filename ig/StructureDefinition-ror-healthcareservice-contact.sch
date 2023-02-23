@@ -13,11 +13,11 @@
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
       <sch:assert test="count(f:extension[@url = 'name']) &lt;= 1">extension with URL = 'name': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-contact-function-contact']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-contact-function-contact': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'purposeContact']) &lt;= 1">extension with URL = 'purposeContact': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'description']) &lt;= 1">extension with URL = 'description': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-confidentiality-level']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-confidentiality-level': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-confidentiality-level']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-confidentiality-level': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

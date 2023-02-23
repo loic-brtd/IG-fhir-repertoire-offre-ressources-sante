@@ -38,6 +38,11 @@ This element can be used to indicate where the current master source of a resour
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.meta.tag","Organization.meta.tag","","","",0,1,"","","Y","Coding {[]} {[]}
+","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"example","Codes that represent various types of tags, commonly workflow-related; e.g. ""Needs review by Dr. Jones"".","http://hl7.org/fhir/ValueSet/common-tags","","value:url}
+","Slicing pour gérer le code région définissant la région source des données",,"open","Meta.tag",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Organization.meta.tag:codeRegion","Organization.meta.tag","codeRegion","","",0,1,"","","Y","Coding {[]} {[]}
 ","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR","",,,,"Meta.tag",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -78,51 +83,48 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/Str
 ","Optional Extensions Element","The date range that this organization should be considered available.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-period-closing-type","Organization.extension","ror-period-closing-type","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-period-closing-type]]} {[]}
+"Organization.extension:ror-period-closing-type","Organization.extension","ror-period-closing-type","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-period-closing-type]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour décrire le type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-price]]} {[]}
+"Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:mailboxMSS","Organization.extension","mailboxMSS","","",0,*,"","","","Extension {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS]]} {[]}
-","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Organization.extension:ror-territorial-division","Organization.extension","ror-territorial-division","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division]]} {[]}
+","Extension","Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. 
+Cela inclut notamment les divisions territoriales dans lesquelles les professionnels se déplacent.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-territorial","Organization.extension","ror-organization-territorial","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-territorial]]} {[]}
-","Extension","Extension créée dans le cadre du ROR pour décrire les territoire(s) de santé où est située l'entité géographique","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-financial-help-type","Organization.extension","ror-organization-financial-help-type","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-financial-help-type]]} {[]}
+"Organization.extension:ror-organization-financial-help-type","Organization.extension","ror-organization-financial-help-type","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour préciser l'aide financière pour laquelle l'EG dispose d'une habilitation ou conventionnement qui permet aux personnes accueillies d'en bénéficier si elles remplissent les conditions.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-accomodation-family","Organization.extension","ror-organization-accomodation-family","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-accomodation-family]]} {[]}
+"Organization.extension:ror-organization-accomodation-family","Organization.extension","ror-organization-accomodation-family","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour préciser si l'établissement peut héberger les familles des personnes prises en charge.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-nb-permanent-social-help-place","Organization.extension","ror-organization-nb-permanent-social-help-place","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place]]} {[]}
+"Organization.extension:ror-organization-nb-permanent-social-help-place","Organization.extension","ror-organization-nb-permanent-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour indiquer le nombre de places permanentes dédiées à l'aide sociale dans l'établissement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-nb-temporary-social-help-place","Organization.extension","ror-organization-nb-temporary-social-help-place","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place]]} {[]}
+"Organization.extension:ror-organization-nb-temporary-social-help-place","Organization.extension","ror-organization-nb-temporary-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour indiquer le nombre de places temporaires dédiées à l'aide sociale dans l'établissement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-accessibility-location","Organization.extension","ror-accessibility-location","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-accessibility-location]]} {[]}
+"Organization.extension:ror-organization-accessibility-location","Organization.extension","ror-organization-accessibility-location","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. ","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-level-recours-orsan","Organization.extension","ror-level-recours-orsan","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-level-recours-orsan]]} {[]}
+"Organization.extension:ror-organization-level-recourse-orsan","Organization.extension","ror-organization-level-recourse-orsan","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour décrire une hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-period","Organization.extension","ror-organization-period","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-period]]} {[]}
-","Period","Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Organization.extension:ror-organization-period","Organization.extension","ror-organization-period","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period]]} {[]}
+","Extension","Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-drop-zone","Organization.extension","ror-drop-zone","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-drop-zone]]} {[]}
+"Organization.extension:ror-organization-drop-zone","Organization.extension","ror-organization-drop-zone","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -276,11 +278,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numSIREN.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR/""/>
-  </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numSIREN.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -318,11 +316,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numRPPS.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR/""/>
-  </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numRPPS.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -360,11 +354,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numSIRET.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR/""/>
-  </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numSIRET.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -402,11 +392,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:identifierOI.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR/""/>
-  </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:identifierOI.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -476,7 +462,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 This element is labeled as a modifier because it may be used to mark that the resource was created in error.","Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Organization.active",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Organization.type","Organization.type","","","",2,*,"","","Y","CodeableConcept {[]} {[]}
+"Organization.type","Organization.type","","","",3,*,"","","Y","CodeableConcept {[]} {[]}
 ","Kind of organization","The kind(s) of organization that this is.","Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
@@ -673,6 +659,14 @@ When considering if multiple types are appropriate, you should evaluate if child
 We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J200-SousEnsembleAgregatStatutJuridique-ROR/FHIR/JDV-J200-SousEnsembleAgregatStatutJuridique-ROR","",,,,"Organization.type",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"Organization.type:OIType","Organization.type","OIType","","",1,1,"","","Y","CodeableConcept {[]} {[]}
+","Kind of organization","The kind(s) of organization that this is.","Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
+
+When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
+
+We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J203-TypeOrganisationInterne-ROR/FHIR/JDV-J203-TypeOrganisationInterne-ROR","",,,,"Organization.type",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "Organization.name","Organization.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -716,19 +710,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","JDV_J102-1-CommuneOM-ROR","https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Organization.address.extension:ror-address-name","Organization.address.extension","ror-address-name","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-address-name]]} {[]}
+"Organization.address.extension:ror-address-name","Organization.address.extension","ror-address-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.address.extension:ror-address-description","Organization.address.extension","ror-address-description","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-address-description]]} {[]}
+"Organization.address.extension:ror-address-description","Organization.address.extension","ror-address-description","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.address.extension:ror-address-status","Organization.address.extension","ror-address-status","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-address-status]]} {[]}
+"Organization.address.extension:ror-address-status","Organization.address.extension","ror-address-status","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.address.extension:ror-calculated-distance","Organization.address.extension","ror-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-calculated-distance]]} {[]}
+"Organization.address.extension:ror-calculated-distance","Organization.address.extension","ror-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -779,7 +773,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","JDV_J219-TypeVoie-ROR","https://mos.esante.gouv.fr/NOS/JDV_J219-TypeVoie-ROR/FHIR/JDV-J219-TypeVoie-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Organization.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality","Organization.address.line.extension","ror-organization-address-line-iso-21090-adxp-locality","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality]]} {[]}
+"Organization.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality","Organization.address.line.extension","ror-organization-address-line-iso-21090-adxp-locality","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -818,7 +812,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.hasValue().not() or end.hasValue().not() or (start <= end)}"
-"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrOrganization], CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization]]}
+"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrOrganization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization]]}
 ","The organization of which this organization forms a part","The organization of which this organization forms a part.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
@@ -866,15 +860,15 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-description","Organization.contact.extension","ror-contact-description","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-contact-description]]} {[]}
+"Organization.contact.extension:ror-contact-description","Organization.contact.extension","ror-contact-description","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui indique la description du Contact.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-function-contact","Organization.contact.extension","ror-contact-function-contact","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-contact-function-contact]]} {[]}
+"Organization.contact.extension:ror-contact-function-contact","Organization.contact.extension","ror-contact-function-contact","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui indique un titre, une position ou une fonction de la personne assurant le contact au sein de l'organisation (directeur, secrétaire, etc.).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-confidentiality-level","Organization.contact.extension","ror-contact-confidentiality-level","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-contact-confidentiality-level]]} {[]}
+"Organization.contact.extension:ror-contact-confidentiality-level","Organization.contact.extension","ror-contact-confidentiality-level","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Contact","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -909,15 +903,15 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://interopsante.org
 ","Type of email | type de messagerie électronique","Optional Extension Element - found in all resources.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-confidentiality-level","Organization.contact.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-confidentiality-level","Organization.contact.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-usage","Organization.contact.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-usage","Organization.contact.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-communication-channel","Organization.contact.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-communication-channel","Organization.contact.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

@@ -5,9 +5,9 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORConsommateur</h2><div><p>Système qui est autorisé à consommer les données du ROR.</p>
 </div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des lieux de réalisation de l'offre</p>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole">http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
   </text>
-  <url value="http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-consommateur"/>
   <version value="3.0"/>
   <name value="RORConsommateur"/>
   <title value="ROR-Consommateur"/>
@@ -37,7 +37,7 @@
     </security>
     <resource>
       <type value="Location"/>
-      <profile value="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -46,7 +46,7 @@
       </interaction>
       <searchParam>
         <name value="temporary-assignement"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-temporary-assignement"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement"/>
         <type value="token"/>
         <documentation value="Affectations temporaires"/>
       </searchParam>
@@ -64,20 +64,20 @@
       </searchParam>
       <searchParam>
         <name value="capacity-status"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-capacity-status"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-status"/>
         <type value="token"/>
         <documentation value="Statut de la capacité"/>
       </searchParam>
       <searchParam>
         <name value="nb-capacity"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-nb-capacity"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-nb-capacity"/>
         <type value="number"/>
         <documentation value="Nombre de capacité"/>
       </searchParam>
     </resource>
     <resource>
       <type value="HealthcareService"/>
-      <profile value="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -146,44 +146,44 @@
       </searchParam>
       <searchParam>
         <name value="age-range-high"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high"/>
         <type value="quantity"/>
         <documentation value="Age maximum de la patientèle"/>
       </searchParam>
       <searchParam>
         <name value="age-range-low"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low"/>
         <type value="quantity"/>
         <documentation value="Age minimum de la patientèle"/>
       </searchParam>
       <searchParam>
         <name value="intervention-zone"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone"/>
         <type value="token"/>
         <documentation value="Zone d'intervention"/>
       </searchParam>
       <searchParam>
         <name value="supported-patient-type"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-patient-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type"/>
         <type value="token"/>
         <documentation value="Public pris en charge"/>
       </searchParam>
       <searchParam>
         <name value="psychiatric-sector"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
         <type value="string"/>
         <documentation value="Secteur psychiatrique de l'offre opérationnelle"/>
       </searchParam>
       <searchParam>
         <name value="specific-competence"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence"/>
         <type value="token"/>
         <documentation value="Compétence spécifique"/>
       </searchParam>
     </resource>
     <resource>
       <type value="Organization"/>
-      <profile value="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-organization"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -222,26 +222,26 @@
       </searchParam>
       <searchParam>
         <name value="closing-type"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-closing-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-closing-type"/>
         <type value="token"/>
         <documentation value="Type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS"/>
       </searchParam>
       <searchParam>
         <name value="drop-zone"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-drop-zone"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-drop-zone"/>
         <type value="token"/>
         <documentation value="Indique s'il y a une zone poser sur le site concerné"/>
       </searchParam>
       <searchParam>
         <name value="period-end"/>
-        <definition value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-organization-period-end"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-period-end"/>
         <type value="date"/>
         <documentation value="Date de fermeture de l'entité géographique"/>
       </searchParam>
     </resource>
     <resource>
       <type value="Practitioner"/>
-      <profile value="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitioner"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -263,7 +263,7 @@
     </resource>
     <resource>
       <type value="PractitionerRole"/>
-      <profile value="http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-practitionerrole"/>
+      <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole"/>
       <interaction>
         <code value="search-type"/>
       </interaction>

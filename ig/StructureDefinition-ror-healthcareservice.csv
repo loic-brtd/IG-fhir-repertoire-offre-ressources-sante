@@ -38,6 +38,11 @@ This element can be used to indicate where the current master source of a resour
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV"
 "HealthcareService.meta.tag","HealthcareService.meta.tag","","","",0,1,"","","Y","Coding {[]} {[]}
+","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"example","Codes that represent various types of tags, commonly workflow-related; e.g. ""Needs review by Dr. Jones"".","http://hl7.org/fhir/ValueSet/common-tags","","value:url}
+","Slicing pour gérer le code région définissant la région source des données",,"open","Meta.tag",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","CV"
+"HealthcareService.meta.tag:codeRegion","HealthcareService.meta.tag","codeRegion","","",0,1,"","","Y","Coding {[]} {[]}
 ","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR","",,,,"Meta.tag",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV"
@@ -62,32 +67,32 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-psychiatric-sector","HealthcareService.extension","ror-healthcareservice-psychiatric-sector","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-psychiatric-sector","HealthcareService.extension","ror-healthcareservice-psychiatric-sector","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui correspond à une aire géographique à laquelle sont rattachées des structures de relais et de soins qui prennent en charge des patients résidants sur ce secteur.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-no-consent-habilitation","HealthcareService.extension","ror-healthcareservice-no-consent-habilitation","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-no-consent-habilitation","HealthcareService.extension","ror-healthcareservice-no-consent-habilitation","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui permet d'identifier les offres pour lesquelles un établissement est autorisé par le directeur général de l’ARS après avis du préfet, à prendre en charge des patients sans leur consentement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-patient-type","HealthcareService.extension","ror-healthcareservice-patient-type","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-patient-type]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-patient-type","HealthcareService.extension","ror-healthcareservice-patient-type","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour décrire un ensemble de personnes qui répondent à des critères leur permettant de  bénéficier de la prestation décrite","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-sensitive-unit","HealthcareService.extension","ror-healthcareservice-sensitive-unit","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-sensitive-unit","HealthcareService.extension","ror-healthcareservice-sensitive-unit","","",1,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour signaler que toutes les informations de description d'une offre sont confidentielles car elles présentent un risque d'utilisation à des fins malveillantes.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-intervention-zone","HealthcareService.extension","ror-healthcareservice-intervention-zone","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-intervention-zone]]} {[]}
+"HealthcareService.extension:ror-territorial-division","HealthcareService.extension","ror-territorial-division","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. 
-Cela inclus notamment les divisions territoriales dans lesquelles les professionnels se déplacent.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+Cela inclut notamment les divisions territoriales dans lesquelles les professionnels se déplacent.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-contact","HealthcareService.extension","ror-healthcareservice-contact","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-contact]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-contact","HealthcareService.extension","ror-healthcareservice-contact","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-contact]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:RORCalculatedDistance","HealthcareService.extension","RORCalculatedDistance","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-calculated-distance]]} {[]}
+"HealthcareService.extension:RORCalculatedDistance","HealthcareService.extension","RORCalculatedDistance","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -165,15 +170,15 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.telecom.extension:ror-telecom-usage","HealthcareService.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"HealthcareService.telecom.extension:ror-telecom-usage","HealthcareService.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.telecom.extension:ror-telecom-confidentiality-level","HealthcareService.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"HealthcareService.telecom.extension:ror-telecom-confidentiality-level","HealthcareService.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.telecom.extension:ror-telecom-communication-channel","HealthcareService.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"HealthcareService.telecom.extension:ror-telecom-communication-channel","HealthcareService.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -444,7 +449,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./originalText[mediaType/code=""text/plain""]/data"
 "HealthcareService.characteristic:temporalityStopService","HealthcareService.characteristic","temporalityStopService","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Collection of characteristics (attributes)","Collection of characteristics (attributes).","These could be such things as is wheelchair accessible.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J201-TypeFermeture-ROR/FHIR/JDV-J201-TypeFermeture-ROR","",,,,"HealthcareService.characteristic",0,*,"ele-1
+","Collection of characteristics (attributes)","Collection of characteristics (attributes).","These could be such things as is wheelchair accessible.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J185-TypeFermeture-ROR/FHIR/JDV-J185-TypeFermeture-ROR","",,,,"HealthcareService.characteristic",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".actrelationship[typeCode=PERT].observation"
 "HealthcareService.characteristic:temporalityStopService.id","HealthcareService.characteristic.id","","","",1,1,"","","","string {[]} {[]}
@@ -507,15 +512,15 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"HealthcareService.availableTime.extension:ror-available-time-effective-opening-closing-date","HealthcareService.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-effective-opening-closing-date","HealthcareService.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-available-time-type-of-time","HealthcareService.availableTime.extension","ror-available-time-type-of-time","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-available-time-type-of-time]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-type-of-time","HealthcareService.availableTime.extension","ror-available-time-type-of-time","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-available-time-number-days-of-week","HealthcareService.availableTime.extension","ror-available-time-number-days-of-week","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-number-days-of-week","HealthcareService.availableTime.extension","ror-available-time-number-days-of-week","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour indiquer le numéro du jour dans la semaine.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

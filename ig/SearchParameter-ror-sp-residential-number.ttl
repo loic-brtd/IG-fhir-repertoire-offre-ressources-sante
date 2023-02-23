@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-number> a fhir:SearchParameter;
+<https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ror-sp-residential-number"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPResidentialNumber</h2><p>Parameter <code>residential-number</code>:<code>number</code></p><div><p>Paramètre de recherche pour récupérer le nombre d'habitation</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ROR_ResidentialCapacity').extension(url='residentialNumber').valueInteger</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ]; # 
-  fhir:SearchParameter.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-number"]; # 
+  fhir:SearchParameter.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number"]; # 
   fhir:SearchParameter.version [ fhir:value "3.0"]; # 
   fhir:SearchParameter.name [ fhir:value "RORSPResidentialNumber"]; # 
   fhir:SearchParameter.status [ fhir:value "active"]; # 
-  fhir:SearchParameter.date [ fhir:value "2023-01-12T14:27:51+01:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.date [ fhir:value "2023-02-23T11:20:10+00:00"^^xsd:dateTime]; # 
   fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
   fhir:SearchParameter.contact [
      fhir:index 0;
@@ -38,7 +38,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-residential-number.ttl> a owl:Ontology;
+<https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

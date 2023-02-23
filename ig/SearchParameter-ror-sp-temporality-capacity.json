@@ -5,11 +5,11 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPTemporalityCapacity</h2><p>Parameter <code>temporality-capacity</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le moment où la capacité sera effective</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='temporalityCapacity').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   },
-  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-temporality-capacity",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity",
   "version" : "3.0",
   "name" : "RORSPTemporalityCapacity",
   "status" : "active",
-  "date" : "2023-01-12T14:27:51+01:00",
+  "date" : "2023-02-23T11:20:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -4,13 +4,13 @@
   <id value="ror-sp-equipment-feature"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPEquipmentFeature</h2><p>Parameter <code>equipment-feature</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le type de caractéristique d'un equipement.</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='equipementFeature').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment-limit').extension(url='equipmentFeature').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://interop.esante.gouv.fr/fhir/ig/ror30/SearchParameter/ror-sp-equipment-feature"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature"/>
   <version value="3.0"/>
   <name value="RORSPEquipmentFeature"/>
   <status value="active"/>
-  <date value="2023-02-23T08:32:00+00:00"/>
+  <date value="2023-02-23T11:20:10+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -23,5 +23,5 @@
   <code value="equipment-feature"/>
   <base value="Location"/>
   <type value="token"/>
-  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='equipementFeature').valueCodeableConcept"/>
+  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-location-equipment-limit').extension(url='equipmentFeature').valueCodeableConcept"/>
 </SearchParameter>

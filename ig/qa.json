@@ -1,11 +1,11 @@
 {
-  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror30/ImplementationGuide/ans.fhir.fr.30",
-  "name" : "ROR",
-  "package-id" : "ans.fhir.fr.30",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/ImplementationGuide/ans.fhir.fr.ror30",
+  "name" : "RORME30",
+  "package-id" : "ans.fhir.fr.ror30",
   "ig-ver" : "3.0",
-  "date" : "Thu, 23 Feb, 2023 08:32:00 +0000",
-  "errs" : 16,
-  "warnings" : 270,
+  "date" : "Thu, 23 Feb, 2023 11:20:10 +0000",
+  "errs" : 12,
+  "warnings" : 264,
   "hints" : 34,
   "version" : "4.0.1",
   "tool" : "5.0.0-snapshot2 (3)"
