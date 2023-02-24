@@ -1,126 +1,114 @@
 {
-  "package": "ans.fhir.fr.ROR",
+  "package": "ans.fhir.fr.ror30",
   "version": "3.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-accessibility-location",
-      "title": "RORAccessibilityLocation",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-calculated-distance",
-      "title": "RORAddressCalculatedDistance",
-      "types": [
-        "Quantity"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-description",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
       "title": "RORAddressDescription",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-name",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name",
       "title": "RORAddressName",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-status",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status",
       "title": "RORAddressStatus",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-effective-opening-closing-date",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date",
       "title": "RORAvailableTimeEffectiveOpeningClosingDate",
       "types": [
         "Period"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-number-days-of-week",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week",
       "title": "RORAvailableTimeNumberDaysofWeek",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-care-without-patient-approval",
-      "title": "RORCareWithoutPatientApproval",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel",
-      "title": "RORCommunicationChannel",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time",
+      "title": "RORAvailableTimeTypeOfTime",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance",
+      "title": "RORCalculatedDistance",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog",
+      "title": "RORCommuneCog",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level",
       "title": "RORConfidentialityLevel",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-confidentiality-level",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level",
       "title": "RORContactConfidentialityLevel",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-description",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description",
       "title": "RORContactDescription",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-fonction-contact",
-      "title": "RORContactFonctionContact",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact",
+      "title": "RORContactFunctionContact",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-telecom-confidentiality-level",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-confidentiality-level",
       "title": "RORContactTelecomConfidentialityLevel",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-telecom-usage",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-usage",
       "title": "RORContactTelecomUsage",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-drop-zone",
-      "title": "RORDropZone",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-contact",
+      "title": "RORHealthcareServiceContact",
       "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-equipement-limit",
-      "title": "ROREquipementLimit",
-      "types": [
+        "string",
         "CodeableConcept",
-        "Quantity",
+        "string",
+        "ContactPoint",
         "base64Binary",
         "boolean",
         "canonical",
@@ -174,79 +162,14 @@
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-available-time-type-of-time",
-      "title": "RORHealthcareServiceAvailableTimeTypeOfTime",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-intervention-zone",
-      "title": "RORHealthcareServiceInterventionZone",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-no-consent-habilitation",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation",
       "title": "RORHealthcareServiceNoConsentHabilitation",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-patient-type",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type",
       "title": "RORHealthcareServicePatientType",
       "types": [
         "CodeableConcept",
@@ -308,87 +231,22 @@
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-psychiatric-sector",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector",
       "title": "RORHealthcareServicePsychiatricSector",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-sensitive-unit",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit",
       "title": "RORHealthcareServiceSensitiveUnit",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-territorial",
-      "title": "RORHealthcareServiceTerritorial",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-level-recours-orsan",
-      "title": "RORLevelRecourseORSAN",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-equipement",
-      "title": "RORLocationEquipement",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment",
+      "title": "RORLocationEquipment",
       "types": [
         "CodeableConcept",
         "integer",
@@ -445,9 +303,69 @@
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-geolocation",
-      "title": "Geolocation",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit",
+      "title": "RORLocationEquipmentLimit",
       "types": [
+        "CodeableConcept",
+        "Quantity",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation",
+      "title": "RORGeolocationLocation",
+      "types": [
+        "decimal",
+        "decimal",
         "string",
         "boolean",
         "base64Binary",
@@ -503,52 +421,197 @@
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-status",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity",
+      "title": "RORLocationResidentialCapacity",
+      "types": [
+        "CodeableConcept",
+        "integer",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status",
       "title": "RORLocationStatus",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-accomodation-family",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity",
+      "title": "RORLocationSupportedCapacity",
+      "types": [
+        "code",
+        "code",
+        "code",
+        "integer",
+        "code",
+        "code",
+        "dateTime",
+        "code",
+        "code",
+        "code",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location",
+      "title": "ROROrganizationAccessibilityLocation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family",
       "title": "ROROrganizationAccomodationFamily",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality",
       "title": "ROROrganizationAddressLineISO21090AdxpLocality",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-financial-help-type",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone",
+      "title": "ROROrganizationDropZone",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type",
       "title": "ROROrganizationFinancialHelpType",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-nb-permanent-social-help-place",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan",
+      "title": "ROROrganizationLevelRecourseORSAN",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place",
       "title": "ROROrganizationNbPermanentSocialHelpPlace",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-nb-temporary-social-help-place",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place",
       "title": "ROROrganizationNbTemporarySocialHelpPlace",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-period",
-      "title": "Period",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period",
+      "title": "ROROrganizationPeriod",
       "types": [
-        "Period",
         "CodeableConcept",
         "date",
         "CodeableConcept",
@@ -605,7 +668,7 @@
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-price",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price",
       "title": "ROROrganizationPrice",
       "types": [
         "CodeableConcept",
@@ -673,159 +736,49 @@
         "TriggerDefinition",
         "UsageContext",
         "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
         "Meta"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-period-closing-type",
-      "title": "RORPeriodClosingType",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-practitionerrole-home-visit",
-      "title": "RORPractitionerRoleHomeVisit",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-practitionerrole-unit-exercise-mode",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode",
       "title": "RORPractitionerRoleUnitExerciseMode",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-residential-capacity",
-      "title": "RORResidentialCapacity",
-      "types": [
-        "CodeableConcept",
-        "integer",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-specific-competence",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-specific-competence",
       "title": "RORSpecificCompetence",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-supported-capacity",
-      "title": "RORSupportedCapacity",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel",
+      "title": "RORTelecomCommunicationChannel",
       "types": [
-        "code",
-        "code",
-        "code",
-        "integer",
-        "code",
-        "code",
-        "dateTime",
-        "code",
-        "code",
-        "code",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level",
+      "title": "RORTelecomConfidentialityLevel",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage",
+      "title": "RORTelecomUsage",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division",
+      "title": "RORTerritorialDivision",
+      "types": [
+        "CodeableConcept",
         "CodeableConcept",
         "base64Binary",
         "boolean",
@@ -878,195 +831,41 @@
         "Dosage",
         "Meta"
       ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-confidentiality-level",
-      "title": "RORTelecomConfidentialityLevel",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage",
-      "title": "RORTelecomUsage",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-unit-exercise-mode",
-      "title": "RORUnitExerciseMode",
-      "types": [
-        "CodeableConcept"
-      ]
     }
   ],
   "profiles": {
-    "Bundle": [
-      {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-bundle-resultat-recherche-offre-de-soins",
-        "title": "RORBundleResultatRechercheOffreDeSoins"
-      }
-    ],
     "HealthcareService": [
       {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice",
         "title": "RORHealthcareService"
       }
     ],
     "Location": [
       {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location",
         "title": "RORLocation"
       }
     ],
     "Organization": [
       {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization",
         "title": "ROROrganization"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-practitioner",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner",
         "title": "RORPractitioner"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-practitionerrole",
-        "title": "ROR_PractitionerRole"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole",
+        "title": "RORPractitionerRole"
       }
     ]
   },
   "usage": {
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-accessibility-location": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-calculated-distance": [
-      "Organization.address"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-description": [
-      "Organization.address"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-name": [
-      "Organization.address"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-status": [
-      "Organization.address"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-effective-opening-closing-date": [
-      "HealthcareService.availableTime",
-      "PractitionerRole.availableTime"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-number-days-of-week": [
-      "HealthcareService.availableTime"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-care-without-patient-approval": [
-      "HealthcareService",
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel": [
-      "PractitionerRole.telecom"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level": [
-      "Location.telecom",
-      "Practitioner.telecom",
-      "PractitionerRole.telecom"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-confidentiality-level": [
-      "Organization.contact"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-description": [
-      "Organization.contact"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-fonction-contact": [
-      "Organization.contact"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-contact-telecom-usage": [
-      "Organization.contact.telecom"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-drop-zone": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-equipement-limit": [
-      "Location"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-available-time-type-of-time": [
-      "HealthcareService.availableTime",
-      "PractitionerRole.availableTime"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-intervention-zone": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-no-consent-habilitation": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-patient-type": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-psychiatric-sector": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-sensitive-unit": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-territorial": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-level-recours-orsan": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-equipement": [
-      "Location"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-geolocation": [
-      "Location.position"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-location-status": [
-      "Location"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-accomodation-family": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality": [
-      "Organization.address.line"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-financial-help-type": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-nb-permanent-social-help-place": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-nb-temporary-social-help-place": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-period": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-price": [
-      "Organization"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-residential-capacity": [
-      "Location"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-specific-competence": [
-      "HealthcareService"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-supported-capacity": [
-      "Location"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-confidentiality-level": [
-      "Organization.contact.telecom"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage": [
-      "Location.telecom",
-      "Practitioner.telecom",
-      "PractitionerRole.telecom"
-    ],
-    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-unit-exercise-mode": [
-      "PractitionerRole"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -1086,22 +885,28 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase": [
-      "Location.address.line"
+      "Location.address.line",
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType": [
       "Location.address.line",
@@ -1150,26 +955,14 @@
       "Organization.address"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrContactPointEmailType": [
-      "Organization.contact.telecom"
+      "Organization.contact.telecom",
+      "Organization.telecom"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
       "Organization"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
       "Organization"
-    ],
-    "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code": [
-      "Location.address"
-    ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code": [
-      "Location.address"
-    ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department": [
-      "Location.address"
-    ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS": [
-      "Organization",
-      "Practitioner"
     ],
     "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted": [
       "PractitionerRole"
@@ -1182,6 +975,144 @@
     ],
     "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted": [
       "PractitionerRole"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description": [
+      "Organization.address"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name": [
+      "Organization.address"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status": [
+      "Organization.address"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date": [
+      "HealthcareService.availableTime",
+      "PractitionerRole.availableTime"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week": [
+      "HealthcareService.availableTime",
+      "PractitionerRole.availableTime"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time": [
+      "HealthcareService.availableTime",
+      "PractitionerRole.availableTime"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance": [
+      "HealthcareService",
+      "Organization.address"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog": [
+      "Location",
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level": [
+      "Extension"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level": [
+      "Organization.contact"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description": [
+      "Organization.contact"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact": [
+      "Extension",
+      "Organization.contact"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-contact": [
+      "HealthcareService"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation": [
+      "HealthcareService"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type": [
+      "HealthcareService"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector": [
+      "HealthcareService"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit": [
+      "HealthcareService"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment": [
+      "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit": [
+      "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation": [
+      "Location.position",
+      "Organization.address"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity": [
+      "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status": [
+      "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity": [
+      "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality": [
+      "Location.address.line",
+      "Organization.address.line"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode": [
+      "PractitionerRole"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel": [
+      "HealthcareService.telecom",
+      "Location.telecom",
+      "Organization.contact.telecom",
+      "Organization.telecom",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level": [
+      "HealthcareService.telecom",
+      "Location.telecom",
+      "Organization.contact.telecom",
+      "Organization.telecom",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage": [
+      "HealthcareService.telecom",
+      "Location.telecom",
+      "Organization.contact.telecom",
+      "Organization.telecom",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division": [
+      "HealthcareService",
+      "Organization"
     ]
   }
 }
