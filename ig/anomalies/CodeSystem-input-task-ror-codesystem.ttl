@@ -8,13 +8,6 @@
 <http://esante.gouv.fr/ci-sis/fhir/CodeSystem/input-task-ror-codesystem> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "input-task-ror-codesystem"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
-     ]
-  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/input-task-ror-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ruleErrorId<a name=\"input-task-ror-codesystem-ruleErrorId\"> </a></td><td>Identifiant de la règle à l'origine de l'anomalie</td></tr><tr><td style=\"white-space:nowrap\">errorValue<a name=\"input-task-ror-codesystem-errorValue\"> </a></td><td>donnée erronée</td></tr><tr><td style=\"white-space:nowrap\">proposedValue<a name=\"input-task-ror-codesystem-proposedValue\"> </a></td><td>nouvelle valeur proposée</td></tr><tr><td style=\"white-space:nowrap\">pathElementError<a name=\"input-task-ror-codesystem-pathElementError\"> </a></td><td>élément en erreur dans la ressource</td></tr><tr><td style=\"white-space:nowrap\">systemRequester<a name=\"input-task-ror-codesystem-systemRequester\"> </a></td><td>système déclarant l'anomalie</td></tr><tr><td style=\"white-space:nowrap\">identifierRequester<a name=\"input-task-ror-codesystem-identifierRequester\"> </a></td><td>Identifiant du déclarant de l'anomalie</td></tr></table></div>"
@@ -23,7 +16,7 @@
   fhir:CodeSystem.version [ fhir:value "3.0"]; # 
   fhir:CodeSystem.name [ fhir:value "InputTaskRORCodeSystem"]; # 
   fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-03-02T14:30:09+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-03-02T14:36:04+00:00"^^xsd:dateTime]; # 
   fhir:CodeSystem.publisher [ fhir:value "ANS"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
