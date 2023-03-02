@@ -1,14 +1,14 @@
 ﻿ROR : Validation Results
 =========================================
 
-err = 165, warn = 271, info = 35
+err = 164, warn = 271, info = 35
 IG Publisher Version: 1.2.38
-Generated Thu Mar 02 14:37:24 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ROR#3.0 (canonical = http://esante.gouv.fr/ci-sis/fhir)
+Generated Thu Mar 02 14:39:23 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ROR#3.0 (canonical = http://esante.gouv.fr/ci-sis/fhir)
  Build Errors : 1003 / 5 / 0
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 2 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 2 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CodeSystem-input-task-ror-codesystem : 2 / 3 / 2
- /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CodeSystem-output-task-ror-codesystem : 3 / 3 / 2
+ /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CodeSystem-output-task-ror-codesystem : 2 / 3 / 2
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ROR : 2 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-CapacityType : 3 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-additional-bed-type : 3 / 0 / 1
@@ -1102,7 +1102,6 @@ WARNING: CodeSystem/input-task-ror-codesystem: CodeSystem: The ShareableCodeSyst
 ERROR: /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CodeSystem-input-task-ror-codesystem: URL Mismatch http://esante.gouv.fr/ci-sis/fhir/CodeSystem/input-task-ror-codesystem vs http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/input-task-ror-codesystem
 == fsh-generated/resources/CodeSystem-output-task-ror-codesystem.json ==
 ERROR: CodeSystem.where(url = 'http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/output-task-ror-codesystem'): Conformance resource /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CodeSystem-output-task-ror-codesystem.json - the canonical URL (http://esante.gouv.fr/ci-sis/fhir/CodeSystem/output-task-ror-codesystem) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/output-task-ror-codesystem)
-ERROR: CodeSystem/output-task-ror-codesystem: CodeSystem: CodeSystem.experimental: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1)
 INFORMATION: CodeSystem/output-task-ror-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
