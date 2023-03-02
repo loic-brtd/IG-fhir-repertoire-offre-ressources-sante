@@ -10,7 +10,7 @@
   <name value="ROR"/>
   <title value="ROR"/>
   <status value="active"/>
-  <date value="2023-03-02T10:43:20+00:00"/>
+  <date value="2023-03-02T11:22:10+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -494,6 +494,17 @@
       </reference>
       <name value="RORPractitioner"/>
       <description value="Extension créée dans le cadre du ROR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-task"/>
+      </reference>
+      <name value="RORTask"/>
+      <description value="Anomalie concerant une donnée dans une ressource du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -988,6 +999,28 @@
       </reference>
       <name value="RORUnitExerciseMode"/>
       <description value="Extension créée dans le cadre du ROR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-task-ror-codesystem"/>
+      </reference>
+      <name value="InputTaskRORCodeSystem"/>
+      <description value="Code System pour la définition des éléments spécifiques de input dans ressource RORTask"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/output-task-ror-codesystem"/>
+      </reference>
+      <name value="OutputTaskRORCodeSystem"/>
+      <description value="Code System pour la définition des éléments spécifiques de output dans ressource RORTask"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

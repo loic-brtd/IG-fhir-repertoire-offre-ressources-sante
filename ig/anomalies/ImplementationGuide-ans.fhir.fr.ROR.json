@@ -10,7 +10,7 @@
   "name" : "ROR",
   "title" : "ROR",
   "status" : "active",
-  "date" : "2023-03-02T10:43:20+00:00",
+  "date" : "2023-03-02T11:22:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -661,6 +661,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ror-task"
+      },
+      "name" : "RORTask",
+      "description" : "Anomalie concerant une donnée dans une ressource du ROR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ror-practitionerrole"
       },
       "name" : "ROR_PractitionerRole",
@@ -1192,6 +1204,30 @@
       },
       "name" : "RORUnitExerciseMode",
       "description" : "Extension créée dans le cadre du ROR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-task-ror-codesystem"
+      },
+      "name" : "InputTaskRORCodeSystem",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource RORTask",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/output-task-ror-codesystem"
+      },
+      "name" : "OutputTaskRORCodeSystem",
+      "description" : "Code System pour la définition des éléments spécifiques de output dans ressource RORTask",
       "exampleBoolean" : false
     },
     {

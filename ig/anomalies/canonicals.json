@@ -1,5 +1,19 @@
 [
   {
+    "id" : "input-task-ror-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/input-task-ror-codesystem",
+    "version" : "3.0",
+    "name" : "InputTaskRORCodeSystem"
+  },
+  {
+    "id" : "output-task-ror-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/CodeSystem/output-task-ror-codesystem",
+    "version" : "3.0",
+    "name" : "OutputTaskRORCodeSystem"
+  },
+  {
     "id" : "ans.fhir.fr.ROR",
     "type" : "ImplementationGuide",
     "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR",
@@ -334,6 +348,13 @@
     "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-supported-capacity",
     "version" : "3.0",
     "name" : "RORSupportedCapacity"
+  },
+  {
+    "id" : "ror-task",
+    "type" : "StructureDefinition",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-task",
+    "version" : "3.0",
+    "name" : "RORTask"
   },
   {
     "id" : "ror-telecom-confidentiality-level",
