@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-crisis-type> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ror-sp-crisis-type"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPCrisisType</h2><p>Parameter <code>crisis-type</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le type de la crise</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extensionwhere(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='crisisType').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ]; # 
+  fhir:SearchParameter.url [ fhir:value "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-crisis-type"]; # 
+  fhir:SearchParameter.version [ fhir:value "3.0"]; # 
+  fhir:SearchParameter.name [ fhir:value "RORSPCrisisType"]; # 
+  fhir:SearchParameter.status [ fhir:value "active"]; # 
+  fhir:SearchParameter.date [ fhir:value "2022-10-06"^^xsd:date]; # 
+  fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ANS" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ]; # 
+  fhir:SearchParameter.description [ fhir:value "Paramètre de recherche pour récupérer le type de la crise"]; # 
+  fhir:SearchParameter.code [ fhir:value "crisis-type"]; # 
+  fhir:SearchParameter.base [
+     fhir:value "Location";
+     fhir:index 0
+  ]; # 
+  fhir:SearchParameter.type [ fhir:value "token"]; # 
+  fhir:SearchParameter.expression [ fhir:value "Location.extensionwhere(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='crisisType').valueCode"] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-crisis-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
