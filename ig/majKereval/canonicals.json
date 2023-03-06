@@ -1,0 +1,527 @@
+[
+  {
+    "id" : "ror-consommateur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-consommateur",
+    "version" : "3.0",
+    "name" : "RORConsommateur"
+  },
+  {
+    "id" : "ror-serveur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/CapabilityStatement/ror-serveur",
+    "version" : "3.0",
+    "name" : "RORServeur"
+  },
+  {
+    "id" : "ans.fhir.fr.ror30",
+    "type" : "ImplementationGuide",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/ImplementationGuide/ans.fhir.fr.ror30",
+    "version" : "3.0",
+    "name" : "RORME30"
+  },
+  {
+    "id" : "ror-sp-additional-bed-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type",
+    "version" : "3.0",
+    "name" : "RORSPAdditionalBedType"
+  },
+  {
+    "id" : "ror-sp-capacity-closing-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-closing-type",
+    "version" : "3.0",
+    "name" : "RORSPCapacityClosingType"
+  },
+  {
+    "id" : "ror-sp-capacity-status",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-status",
+    "version" : "3.0",
+    "name" : "RORSPCapacityStatus"
+  },
+  {
+    "id" : "ror-sp-capacity-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-type",
+    "version" : "3.0",
+    "name" : "RORSPCapacityType"
+  },
+  {
+    "id" : "ror-sp-capacity-update-date",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-update-date",
+    "version" : "3.0",
+    "name" : "RORSPCapacityUpdateDate"
+  },
+  {
+    "id" : "ror-sp-crisis-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-crisis-type",
+    "version" : "3.0",
+    "name" : "RORSPCrisisType"
+  },
+  {
+    "id" : "ror-sp-equipment-feature",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature",
+    "version" : "3.0",
+    "name" : "RORSPEquipmentFeature"
+  },
+  {
+    "id" : "ror-sp-equipment-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-type",
+    "version" : "3.0",
+    "name" : "RORSPEquipmentType"
+  },
+  {
+    "id" : "ror-sp-gender-capacity-available",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-gender-capacity-available",
+    "version" : "3.0",
+    "name" : "RORSPGenderCapacityAvailable"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-age-range-high",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-high",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceAgeRangeHigh"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-age-range-low",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-age-range-low",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceAgeRangeLow"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-intervention-zone",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-intervention-zone",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceInterventionZone"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-patient-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceSupportedPatientType"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-psychiatric-sector",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector",
+    "version" : "3.0",
+    "name" : "RORHealthcareServicePsychiatricSector"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-specific-competence",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceSpecificCompetence"
+  },
+  {
+    "id" : "ror-sp-limit-value",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value",
+    "version" : "3.0",
+    "name" : "RORSPLimitValue"
+  },
+  {
+    "id" : "ror-sp-location-commune-cog",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog",
+    "version" : "3.0",
+    "name" : "RORSPLocationCommuneCOG"
+  },
+  {
+    "id" : "ror-sp-location-near-insee-code",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code",
+    "version" : "3.0",
+    "name" : "LocationNearINSEECode"
+  },
+  {
+    "id" : "ror-sp-nb-capacity",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-nb-capacity",
+    "version" : "3.0",
+    "name" : "RORSPNbCapacity"
+  },
+  {
+    "id" : "ror-sp-organization-closing-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-closing-type",
+    "version" : "3.0",
+    "name" : "ROROrganizationClosingType"
+  },
+  {
+    "id" : "ror-sp-organization-drop-zone",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-drop-zone",
+    "version" : "3.0",
+    "name" : "RORSPOrganizationDropZone"
+  },
+  {
+    "id" : "ror-sp-organization-period-end",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-period-end",
+    "version" : "3.0",
+    "name" : "ROROrganizationPeriodEnd"
+  },
+  {
+    "id" : "ror-sp-residential-number",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number",
+    "version" : "3.0",
+    "name" : "RORSPResidentialNumber"
+  },
+  {
+    "id" : "ror-sp-residential-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-type",
+    "version" : "3.0",
+    "name" : "RORSPResidentialType"
+  },
+  {
+    "id" : "ror-sp-temporality-capacity",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity",
+    "version" : "3.0",
+    "name" : "RORSPTemporalityCapacity"
+  },
+  {
+    "id" : "ror-sp-temporary-assignement",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement",
+    "version" : "3.0",
+    "name" : "RORSPTemporaryAssignement"
+  },
+  {
+    "id" : "ror-address-description",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
+    "version" : "3.0",
+    "name" : "RORAddressDescription"
+  },
+  {
+    "id" : "ror-address-name",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name",
+    "version" : "3.0",
+    "name" : "RORAddressName"
+  },
+  {
+    "id" : "ror-address-status",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status",
+    "version" : "3.0",
+    "name" : "RORAddressStatus"
+  },
+  {
+    "id" : "ror-available-time-effective-opening-closing-date",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date",
+    "version" : "3.0",
+    "name" : "RORAvailableTimeEffectiveOpeningClosingDate"
+  },
+  {
+    "id" : "ror-available-time-number-days-of-week",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week",
+    "version" : "3.0",
+    "name" : "RORAvailableTimeNumberDaysofWeek"
+  },
+  {
+    "id" : "ror-available-time-type-of-time",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time",
+    "version" : "3.0",
+    "name" : "RORAvailableTimeTypeOfTime"
+  },
+  {
+    "id" : "ror-calculated-distance",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance",
+    "version" : "3.0",
+    "name" : "RORCalculatedDistance"
+  },
+  {
+    "id" : "ror-commune-cog",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog",
+    "version" : "3.0",
+    "name" : "RORCommuneCog"
+  },
+  {
+    "id" : "ror-confidentiality-level",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level",
+    "version" : "3.0",
+    "name" : "RORConfidentialityLevel"
+  },
+  {
+    "id" : "ror-contact-confidentiality-level",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level",
+    "version" : "3.0",
+    "name" : "RORContactConfidentialityLevel"
+  },
+  {
+    "id" : "ror-contact-description",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description",
+    "version" : "3.0",
+    "name" : "RORContactDescription"
+  },
+  {
+    "id" : "ror-contact-function-contact",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact",
+    "version" : "3.0",
+    "name" : "RORContactFunctionContact"
+  },
+  {
+    "id" : "ror-contact-telecom-confidentiality-level",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-confidentiality-level",
+    "version" : "3.0",
+    "name" : "RORContactTelecomConfidentialityLevel"
+  },
+  {
+    "id" : "ror-contact-telecom-usage",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-usage",
+    "version" : "3.0",
+    "name" : "RORContactTelecomUsage"
+  },
+  {
+    "id" : "ror-healthcareservice",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice",
+    "version" : "3.0",
+    "name" : "RORHealthcareService"
+  },
+  {
+    "id" : "ror-healthcareservice-contact",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-contact",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceContact"
+  },
+  {
+    "id" : "ror-healthcareservice-no-consent-habilitation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceNoConsentHabilitation"
+  },
+  {
+    "id" : "ror-healthcareservice-patient-type",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type",
+    "version" : "3.0",
+    "name" : "RORHealthcareServicePatientType"
+  },
+  {
+    "id" : "ror-healthcareservice-psychiatric-sector",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector",
+    "version" : "3.0",
+    "name" : "RORHealthcareServicePsychiatricSector"
+  },
+  {
+    "id" : "ror-healthcareservice-sensitive-unit",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceSensitiveUnit"
+  },
+  {
+    "id" : "ror-location",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location",
+    "version" : "3.0",
+    "name" : "RORLocation"
+  },
+  {
+    "id" : "ror-location-equipment",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment",
+    "version" : "3.0",
+    "name" : "RORLocationEquipment"
+  },
+  {
+    "id" : "ror-location-equipment-limit",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit",
+    "version" : "3.0",
+    "name" : "RORLocationEquipmentLimit"
+  },
+  {
+    "id" : "ror-location-geolocation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation",
+    "version" : "3.0",
+    "name" : "RORGeolocationLocation"
+  },
+  {
+    "id" : "ror-location-residential-capacity",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity",
+    "version" : "3.0",
+    "name" : "RORLocationResidentialCapacity"
+  },
+  {
+    "id" : "ror-location-status",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status",
+    "version" : "3.0",
+    "name" : "RORLocationStatus"
+  },
+  {
+    "id" : "ror-location-supported-capacity",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity",
+    "version" : "3.0",
+    "name" : "RORLocationSupportedCapacity"
+  },
+  {
+    "id" : "ror-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization",
+    "version" : "3.0",
+    "name" : "ROROrganization"
+  },
+  {
+    "id" : "ror-organization-accessibility-location",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location",
+    "version" : "3.0",
+    "name" : "ROROrganizationAccessibilityLocation"
+  },
+  {
+    "id" : "ror-organization-accomodation-family",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family",
+    "version" : "3.0",
+    "name" : "ROROrganizationAccomodationFamily"
+  },
+  {
+    "id" : "ror-organization-address-line-iso-21090-adxp-locality",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality",
+    "version" : "3.0",
+    "name" : "ROROrganizationAddressLineISO21090AdxpLocality"
+  },
+  {
+    "id" : "ror-organization-drop-zone",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone",
+    "version" : "3.0",
+    "name" : "ROROrganizationDropZone"
+  },
+  {
+    "id" : "ror-organization-financial-help-type",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type",
+    "version" : "3.0",
+    "name" : "ROROrganizationFinancialHelpType"
+  },
+  {
+    "id" : "ror-organization-level-recours-orsan",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan",
+    "version" : "3.0",
+    "name" : "ROROrganizationLevelRecourseORSAN"
+  },
+  {
+    "id" : "ror-organization-nb-permanent-social-help-place",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place",
+    "version" : "3.0",
+    "name" : "ROROrganizationNbPermanentSocialHelpPlace"
+  },
+  {
+    "id" : "ror-organization-nb-temporary-social-help-place",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place",
+    "version" : "3.0",
+    "name" : "ROROrganizationNbTemporarySocialHelpPlace"
+  },
+  {
+    "id" : "ror-organization-period",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period",
+    "version" : "3.0",
+    "name" : "ROROrganizationPeriod"
+  },
+  {
+    "id" : "ror-organization-price",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price",
+    "version" : "3.0",
+    "name" : "ROROrganizationPrice"
+  },
+  {
+    "id" : "ror-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner",
+    "version" : "3.0",
+    "name" : "RORPractitioner"
+  },
+  {
+    "id" : "ror-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole",
+    "version" : "3.0",
+    "name" : "RORPractitionerRole"
+  },
+  {
+    "id" : "ror-practitionerrole-unit-exercise-mode",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode",
+    "version" : "3.0",
+    "name" : "RORPractitionerRoleUnitExerciseMode"
+  },
+  {
+    "id" : "ror-specific-competence",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-specific-competence",
+    "version" : "3.0",
+    "name" : "RORSpecificCompetence"
+  },
+  {
+    "id" : "ror-telecom-communication-channel",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel",
+    "version" : "3.0",
+    "name" : "RORTelecomCommunicationChannel"
+  },
+  {
+    "id" : "ror-telecom-confidentiality-level",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level",
+    "version" : "3.0",
+    "name" : "RORTelecomConfidentialityLevel"
+  },
+  {
+    "id" : "ror-telecom-usage",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage",
+    "version" : "3.0",
+    "name" : "RORTelecomUsage"
+  },
+  {
+    "id" : "ror-territorial-division",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division",
+    "version" : "3.0",
+    "name" : "RORTerritorialDivision"
+  }
+]
