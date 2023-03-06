@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Location</sch:title>
     <sch:rule context="f:Location">
-      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog': maximum cardinality of 'extension' is 1</sch:assert>

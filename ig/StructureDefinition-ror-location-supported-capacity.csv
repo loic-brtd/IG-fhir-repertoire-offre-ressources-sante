@@ -22,7 +22,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:capacityType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""capacityType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:capacityType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:capacityType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:capacityType.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J187-NatureCapacite-ROR/FHIR/JDV-J187-NatureCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -39,7 +44,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:capacityStatus.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""capacityStatus""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:capacityStatus.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:capacityStatus.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:capacityStatus.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J188-TypeStatutCapacite-ROR/FHIR/JDV-J188-TypeStatutCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -56,7 +66,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:temporalityCapacity.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""temporalityCapacity""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:temporalityCapacity.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:temporalityCapacity.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:temporalityCapacity.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J189-TemporaliteCapacite-ROR/FHIR/JDV-J189-TemporaliteCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -90,7 +105,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:capacitySourceType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""capacitySourceType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:capacitySourceType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:capacitySourceType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:capacitySourceType.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J193-TypeSourceCapacite-ROR/FHIR/JDV-J193-TypeSourceCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -107,7 +127,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:genderCapacityAvailable.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""genderCapacityAvailable""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:genderCapacityAvailable.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:genderCapacityAvailable.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:genderCapacityAvailable.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J190-GenreCapacite-ROR/FHIR/JDV-J190-GenreCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -141,7 +166,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:capacityClosingType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""capacityClosingType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:capacityClosingType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:capacityClosingType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:capacityClosingType.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J191-TypeFermetureCapacite-ROR/FHIR/JDV-J191-TypeFermetureCapacite-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -158,7 +188,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:additionalBedType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""additionalBedType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:additionalBedType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:additionalBedType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:additionalBedType.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J192-TypeLitSupplementaire-ROR/FHIR/JDV-J192-TypeLitSupplementaire-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -175,7 +210,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:crisisType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""crisisType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.extension:crisisType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+"Extension.extension:crisisType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:crisisType.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J194-TypeCrise-ROR/FHIR/JDV-J194-TypeCrise-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
@@ -193,6 +233,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Extension.extension:temporaryAssignement.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""temporaryAssignement""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Extension.extension:temporaryAssignement.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","N/A"
+"Extension.extension:temporaryAssignement.value[x]:valueCodeableConcept","Extension.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J195-AffectationTemporaire-ROR/FHIR/JDV-J195-AffectationTemporaire-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"

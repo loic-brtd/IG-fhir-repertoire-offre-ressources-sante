@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-02-27T15:55:53+00:00",
+  "date" : "2023-03-06T10:04:42+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -617,7 +617,7 @@
         "reference" : "StructureDefinition/ror-location"
       },
       "name" : "RORLocation",
-      "description" : "Profil créé dans le cadre du ROR pour décrire les moyens qui peuvent être mis en œuvre pour réaliser la prestation",
+      "description" : "Profil créé dans le cadre du ROR pour décrire l'espace disposant d'un ensemble de ressources pour réaliser une offre.",
       "exampleBoolean" : false
     },
     {
@@ -665,7 +665,7 @@
         "reference" : "StructureDefinition/ror-address-description"
       },
       "name" : "RORAddressDescription",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour transmettre une description textuelle du lieu, indiquant comment l'atteindre.",
       "exampleBoolean" : false
     },
     {
@@ -677,7 +677,7 @@
         "reference" : "StructureDefinition/ror-address-name"
       },
       "name" : "RORAddressName",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour décrire le nom du lieu sous la forme de texte",
       "exampleBoolean" : false
     },
     {
@@ -689,7 +689,7 @@
         "reference" : "StructureDefinition/ror-address-status"
       },
       "name" : "RORAddressStatus",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement.",
       "exampleBoolean" : false
     },
     {
@@ -749,7 +749,7 @@
         "reference" : "StructureDefinition/ror-commune-cog"
       },
       "name" : "RORCommuneCog",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.",
       "exampleBoolean" : false
     },
     {
@@ -761,7 +761,7 @@
         "reference" : "StructureDefinition/ror-confidentiality-level"
       },
       "name" : "RORConfidentialityLevel",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour définir le niveau de restriction de l'accès aux attributs de la classe Contact.",
       "exampleBoolean" : false
     },
     {
@@ -1264,7 +1264,7 @@
         "reference" : "SearchParameter/ror-sp-equipment-type"
       },
       "name" : "ror-sp-equipment-type",
-      "description" : "Paramètre de recherche pour récupérer le type d'un equipement.",
+      "description" : "Paramètre de recherche pour récupérer le type d'un équipement.",
       "exampleBoolean" : false
     },
     {
@@ -1360,7 +1360,7 @@
         "reference" : "SearchParameter/ror-sp-limit-value"
       },
       "name" : "ror-sp-limit-value",
-      "description" : "Paramètre de recherche pour récupérer la valeur limite",
+      "description" : "Paramètre de recherche pour récupérer la valeur limite (poids, taille, etc..) de l'équipement",
       "exampleBoolean" : false
     },
     {

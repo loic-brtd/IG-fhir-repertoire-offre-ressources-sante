@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-02-27T15:55:53+00:00"/>
+  <date value="2023-03-06T10:04:42+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -462,7 +462,7 @@
         <reference value="StructureDefinition/ror-location"/>
       </reference>
       <name value="RORLocation"/>
-      <description value="Profil créé dans le cadre du ROR pour décrire les moyens qui peuvent être mis en œuvre pour réaliser la prestation"/>
+      <description value="Profil créé dans le cadre du ROR pour décrire l'espace disposant d'un ensemble de ressources pour réaliser une offre."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -506,7 +506,7 @@
         <reference value="StructureDefinition/ror-address-description"/>
       </reference>
       <name value="RORAddressDescription"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour transmettre une description textuelle du lieu, indiquant comment l'atteindre."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -517,7 +517,7 @@
         <reference value="StructureDefinition/ror-address-name"/>
       </reference>
       <name value="RORAddressName"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour décrire le nom du lieu sous la forme de texte"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -528,7 +528,7 @@
         <reference value="StructureDefinition/ror-address-status"/>
       </reference>
       <name value="RORAddressStatus"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -583,7 +583,7 @@
         <reference value="StructureDefinition/ror-commune-cog"/>
       </reference>
       <name value="RORCommuneCog"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -594,7 +594,7 @@
         <reference value="StructureDefinition/ror-confidentiality-level"/>
       </reference>
       <name value="RORConfidentialityLevel"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour définir le niveau de restriction de l'accès aux attributs de la classe Contact."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1055,7 +1055,7 @@
         <reference value="SearchParameter/ror-sp-equipment-type"/>
       </reference>
       <name value="ror-sp-equipment-type"/>
-      <description value="Paramètre de recherche pour récupérer le type d'un equipement."/>
+      <description value="Paramètre de recherche pour récupérer le type d'un équipement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1143,7 +1143,7 @@
         <reference value="SearchParameter/ror-sp-limit-value"/>
       </reference>
       <name value="ror-sp-limit-value"/>
-      <description value="Paramètre de recherche pour récupérer la valeur limite"/>
+      <description value="Paramètre de recherche pour récupérer la valeur limite (poids, taille, etc..) de l'équipement"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

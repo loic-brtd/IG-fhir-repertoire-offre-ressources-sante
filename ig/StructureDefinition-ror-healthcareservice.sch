@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:HealthcareService</sch:title>
     <sch:rule context="f:HealthcareService">
-      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type']) &gt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type': maximum cardinality of 'extension' is 1</sch:assert>
@@ -26,7 +25,6 @@
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:telecom) &lt;= 1">telecom: maximum cardinality of 'telecom' is 1</sch:assert>
-      <sch:assert test="count(f:availableTime) &lt;= 1">availableTime: maximum cardinality of 'availableTime' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

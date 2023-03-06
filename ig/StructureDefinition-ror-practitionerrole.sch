@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:PractitionerRole</sch:title>
     <sch:rule context="f:PractitionerRole">
-      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name']) &lt;= 1">extension with URL = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted']) &lt;= 1">extension with URL = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted']) &lt;= 1">extension with URL = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted': maximum cardinality of 'extension' is 1</sch:assert>
@@ -47,7 +46,6 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
       <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
-      <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
