@@ -1,0 +1,12 @@
+{
+  "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR",
+  "name" : "ROR",
+  "package-id" : "ans.fhir.fr.ROR",
+  "ig-ver" : "3.0",
+  "date" : "Mon, 06 Mar, 2023 11:00:28 +0000",
+  "errs" : 164,
+  "warnings" : 271,
+  "hints" : 35,
+  "version" : "4.0.1",
+  "tool" : "5.0.0-draft-final (3)"
+}
