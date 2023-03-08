@@ -9,7 +9,7 @@
   "version" : "3.0",
   "name" : "RORPractitionerRole",
   "status" : "active",
-  "date" : "2023-03-08T07:25:49+00:00",
+  "date" : "2023-03-08T07:58:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -851,7 +851,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -1548,7 +1547,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -2315,7 +2313,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -2359,7 +2356,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -2402,8 +2398,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.modifierExtension",
@@ -3756,8 +3751,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.extension:ror-telecom-confidentiality-level",
@@ -3792,8 +3786,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.extension:ror-telecom-communication-channel",
@@ -3828,8 +3821,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.system",
@@ -4261,8 +4253,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.availableTime.extension:ror-available-time-type-of-time",
@@ -4297,8 +4288,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week",
@@ -4333,8 +4323,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.availableTime.modifierExtension",
@@ -4986,8 +4975,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.extension:name.extension",
@@ -5014,8 +5002,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.extension:contracted.extension",
@@ -5063,8 +5050,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.extension:optionCAS",
@@ -5075,8 +5061,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.extension:ror-practitionerrole-unit-exercise-mode",
@@ -5087,8 +5072,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.identifier",
@@ -5257,8 +5241,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.extension:ror-telecom-confidentiality-level",
@@ -5269,8 +5252,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.extension:ror-telecom-communication-channel",
@@ -5281,8 +5263,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.telecom.value",
@@ -5303,8 +5284,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.availableTime.extension:ror-available-time-type-of-time",
@@ -5315,8 +5295,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week",
@@ -5327,8 +5306,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week"]
-      }],
-      "isModifier" : false
+      }]
     }]
   }
 }

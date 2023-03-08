@@ -111,7 +111,7 @@
   <version value="3.0"/>
   <name value="ROROrganization"/>
   <status value="active"/>
-  <date value="2023-03-08T07:25:49+00:00"/>
+  <date value="2023-03-08T07:58:39+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1046,7 +1046,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-territorial-division">
       <path value="Organization.extension"/>
@@ -1081,7 +1080,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-financial-help-type">
       <path value="Organization.extension"/>
@@ -1116,7 +1114,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-accomodation-family">
       <path value="Organization.extension"/>
@@ -1151,7 +1148,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-nb-permanent-social-help-place">
       <path value="Organization.extension"/>
@@ -1186,7 +1182,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-nb-temporary-social-help-place">
       <path value="Organization.extension"/>
@@ -1221,7 +1216,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-accessibility-location">
       <path value="Organization.extension"/>
@@ -1256,7 +1250,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-level-recourse-orsan">
       <path value="Organization.extension"/>
@@ -1291,7 +1284,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-period">
       <path value="Organization.extension"/>
@@ -1326,7 +1318,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:openingClosingDate">
       <path value="Organization.extension"/>
@@ -1361,7 +1352,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
@@ -1404,7 +1394,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-drop-zone">
       <path value="Organization.extension"/>
@@ -1439,7 +1428,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.modifierExtension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -8498,7 +8486,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.telecom.extension:ror-telecom-confidentiality-level">
       <path value="Organization.telecom.extension"/>
@@ -8533,7 +8520,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.telecom.extension:ror-telecom-communication-channel">
       <path value="Organization.telecom.extension"/>
@@ -8568,7 +8554,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.telecom.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -9233,7 +9218,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-address-description">
       <path value="Organization.address.extension"/>
@@ -9268,7 +9252,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-address-status">
       <path value="Organization.address.extension"/>
@@ -9303,7 +9286,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-calculated-distance">
       <path value="Organization.address.extension"/>
@@ -9338,7 +9320,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-geolocation">
       <path value="Organization.address.extension"/>
@@ -9373,7 +9354,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.use">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -9721,7 +9701,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.line.extension:careOf">
       <path value="Organization.address.line.extension"/>
@@ -11065,7 +11044,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.extension:ror-contact-function-contact">
       <path value="Organization.contact.extension"/>
@@ -11100,7 +11078,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.extension:ror-contact-confidentiality-level">
       <path value="Organization.contact.extension"/>
@@ -11135,7 +11112,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.modifierExtension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -11508,7 +11484,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.telecom.extension:ror-telecom-usage">
       <path value="Organization.contact.telecom.extension"/>
@@ -11543,7 +11518,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.telecom.extension:ror-telecom-communication-channel">
       <path value="Organization.contact.telecom.extension"/>
@@ -11578,7 +11552,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.telecom.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -11995,7 +11968,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-territorial-division">
       <path value="Organization.extension"/>
@@ -12006,7 +11978,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-financial-help-type">
       <path value="Organization.extension"/>
@@ -12017,7 +11988,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-accomodation-family">
       <path value="Organization.extension"/>
@@ -12028,7 +11998,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-nb-permanent-social-help-place">
       <path value="Organization.extension"/>
@@ -12039,7 +12008,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-nb-temporary-social-help-place">
       <path value="Organization.extension"/>
@@ -12050,7 +12018,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-accessibility-location">
       <path value="Organization.extension"/>
@@ -12061,7 +12028,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-level-recourse-orsan">
       <path value="Organization.extension"/>
@@ -12072,7 +12038,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-period">
       <path value="Organization.extension"/>
@@ -12083,7 +12048,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:openingClosingDate">
       <path value="Organization.extension"/>
@@ -12094,7 +12058,6 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/organization-period"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-commune-cog">
       <path value="Organization.extension"/>
@@ -12105,7 +12068,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.extension:ror-organization-drop-zone">
       <path value="Organization.extension"/>
@@ -12116,7 +12078,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
@@ -12366,7 +12327,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.telecom.extension:ror-telecom-confidentiality-level">
       <path value="Organization.telecom.extension"/>
@@ -12377,7 +12337,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.telecom.extension:ror-telecom-communication-channel">
       <path value="Organization.telecom.extension"/>
@@ -12388,7 +12347,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:inseeCode">
       <path value="Organization.address.extension"/>
@@ -12416,7 +12374,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-address-description">
       <path value="Organization.address.extension"/>
@@ -12427,7 +12384,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-address-status">
       <path value="Organization.address.extension"/>
@@ -12438,7 +12394,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-calculated-distance">
       <path value="Organization.address.extension"/>
@@ -12449,7 +12404,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.extension:ror-geolocation">
       <path value="Organization.address.extension"/>
@@ -12460,7 +12414,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality">
       <path value="Organization.address.line.extension"/>
@@ -12471,7 +12424,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.address.line.extension:careOf">
       <path value="Organization.address.line.extension"/>
@@ -12572,7 +12524,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.extension:ror-contact-function-contact">
       <path value="Organization.contact.extension"/>
@@ -12583,7 +12534,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.extension:ror-contact-confidentiality-level">
       <path value="Organization.contact.extension"/>
@@ -12594,7 +12544,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.purpose">
       <path value="Organization.contact.purpose"/>
@@ -12616,7 +12565,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.telecom.extension:ror-telecom-usage">
       <path value="Organization.contact.telecom.extension"/>
@@ -12627,7 +12575,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"/>
       </type>
-      <isModifier value="false"/>
     </element>
     <element id="Organization.contact.telecom.extension:ror-telecom-communication-channel">
       <path value="Organization.contact.telecom.extension"/>
@@ -12638,7 +12585,6 @@
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
       </type>
-      <isModifier value="false"/>
     </element>
   </differential>
 </StructureDefinition>

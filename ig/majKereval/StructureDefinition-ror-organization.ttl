@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "ROROrganization"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-08T07:25:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-08T07:58:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1050,8 +1050,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-territorial-division" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1093,8 +1092,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-financial-help-type" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1136,8 +1134,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-accomodation-family" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1179,8 +1176,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-nb-permanent-social-help-place" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1222,8 +1218,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-nb-temporary-social-help-place" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1265,8 +1260,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-accessibility-location" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1308,8 +1302,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-level-recourse-orsan" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1351,8 +1344,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-period" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1394,8 +1386,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:openingClosingDate" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1438,7 +1429,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -1487,8 +1477,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-drop-zone" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -1530,8 +1519,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.modifierExtension" ] ;
        fhir:extension ( [
@@ -8803,8 +8791,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.telecom.extension:ror-telecom-confidentiality-level" ] ;
        fhir:path [ fhir:v "Organization.telecom.extension" ] ;
@@ -8846,8 +8833,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "Organization.telecom.extension" ] ;
@@ -8889,8 +8875,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.telecom.system" ] ;
        fhir:extension ( [
@@ -9607,8 +9592,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-address-description" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -9650,8 +9634,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-address-status" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -9693,8 +9676,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-calculated-distance" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -9736,8 +9718,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-geolocation" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -9779,8 +9760,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.use" ] ;
        fhir:extension ( [
@@ -10151,8 +10131,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.line.extension:careOf" ] ;
        fhir:path [ fhir:v "Organization.address.line.extension" ] ;
@@ -11593,8 +11572,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.extension:ror-contact-function-contact" ] ;
        fhir:path [ fhir:v "Organization.contact.extension" ] ;
@@ -11636,8 +11614,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.extension:ror-contact-confidentiality-level" ] ;
        fhir:path [ fhir:v "Organization.contact.extension" ] ;
@@ -11679,8 +11656,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.modifierExtension" ] ;
        fhir:extension ( [
@@ -12081,8 +12057,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.telecom.extension:ror-telecom-usage" ] ;
        fhir:path [ fhir:v "Organization.contact.telecom.extension" ] ;
@@ -12124,8 +12099,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "Organization.contact.telecom.extension" ] ;
@@ -12167,8 +12141,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.telecom.system" ] ;
        fhir:extension ( [
@@ -12615,8 +12588,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-territorial-division" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12629,8 +12601,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-financial-help-type" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12643,8 +12614,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-accomodation-family" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12657,8 +12627,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-nb-permanent-social-help-place" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12671,8 +12640,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-nb-temporary-social-help-place" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12685,8 +12653,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-accessibility-location" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12699,8 +12666,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-level-recourse-orsan" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12713,8 +12679,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-period" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12727,8 +12692,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:openingClosingDate" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12741,8 +12705,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/organization-period"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/organization-period>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-commune-cog" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12755,8 +12718,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.extension:ror-organization-drop-zone" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
@@ -12769,8 +12731,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.identifier" ] ;
        fhir:path [ fhir:v "Organization.identifier" ] ;
@@ -13072,8 +13033,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.telecom.extension:ror-telecom-confidentiality-level" ] ;
        fhir:path [ fhir:v "Organization.telecom.extension" ] ;
@@ -13086,8 +13046,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "Organization.telecom.extension" ] ;
@@ -13100,8 +13059,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:inseeCode" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -13134,8 +13092,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-address-description" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -13148,8 +13105,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-address-status" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -13162,8 +13118,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-calculated-distance" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -13176,8 +13131,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.extension:ror-geolocation" ] ;
        fhir:path [ fhir:v "Organization.address.extension" ] ;
@@ -13190,8 +13144,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality" ] ;
        fhir:path [ fhir:v "Organization.address.line.extension" ] ;
@@ -13204,8 +13157,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.address.line.extension:careOf" ] ;
        fhir:path [ fhir:v "Organization.address.line.extension" ] ;
@@ -13338,8 +13290,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.extension:ror-contact-function-contact" ] ;
        fhir:path [ fhir:v "Organization.contact.extension" ] ;
@@ -13352,8 +13303,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.extension:ror-contact-confidentiality-level" ] ;
        fhir:path [ fhir:v "Organization.contact.extension" ] ;
@@ -13366,8 +13316,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.purpose" ] ;
        fhir:path [ fhir:v "Organization.contact.purpose" ] ;
@@ -13394,8 +13343,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.telecom.extension:ror-telecom-usage" ] ;
        fhir:path [ fhir:v "Organization.contact.telecom.extension" ] ;
@@ -13408,8 +13356,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Organization.contact.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "Organization.contact.telecom.extension" ] ;
@@ -13422,8 +13369,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] )
   ] . # 
 

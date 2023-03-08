@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "RORPractitionerRole"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-08T07:25:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-08T07:58:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -884,7 +884,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -1580,7 +1579,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -2345,7 +2343,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -2395,7 +2392,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -2444,8 +2440,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.modifierExtension" ] ;
        fhir:extension ( [
@@ -3802,8 +3797,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.extension:ror-telecom-confidentiality-level" ] ;
        fhir:path [ fhir:v "PractitionerRole.telecom.extension" ] ;
@@ -3845,8 +3839,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "PractitionerRole.telecom.extension" ] ;
@@ -3888,8 +3881,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.system" ] ;
        fhir:extension ( [
@@ -4327,8 +4319,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.availableTime.extension:ror-available-time-type-of-time" ] ;
        fhir:path [ fhir:v "PractitionerRole.availableTime.extension" ] ;
@@ -4370,8 +4361,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week" ] ;
        fhir:path [ fhir:v "PractitionerRole.availableTime.extension" ] ;
@@ -4413,8 +4403,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.availableTime.modifierExtension" ] ;
        fhir:extension ( [
@@ -5077,8 +5066,7 @@
            fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name"^^xsd:anyURI ;
            fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.extension:name.extension" ] ;
        fhir:path [ fhir:v "PractitionerRole.extension.extension" ] ;
@@ -5104,8 +5092,7 @@
            fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted"^^xsd:anyURI ;
            fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.extension:contracted.extension" ] ;
        fhir:path [ fhir:v "PractitionerRole.extension.extension" ] ;
@@ -5157,8 +5144,7 @@
            fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted"^^xsd:anyURI ;
            fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.extension:optionCAS" ] ;
        fhir:path [ fhir:v "PractitionerRole.extension" ] ;
@@ -5171,8 +5157,7 @@
            fhir:v "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS"^^xsd:anyURI ;
            fhir:link <https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.extension:ror-practitionerrole-unit-exercise-mode" ] ;
        fhir:path [ fhir:v "PractitionerRole.extension" ] ;
@@ -5185,8 +5170,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.identifier" ] ;
        fhir:path [ fhir:v "PractitionerRole.identifier" ] ;
@@ -5373,8 +5357,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.extension:ror-telecom-confidentiality-level" ] ;
        fhir:path [ fhir:v "PractitionerRole.telecom.extension" ] ;
@@ -5387,8 +5370,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.extension:ror-telecom-communication-channel" ] ;
        fhir:path [ fhir:v "PractitionerRole.telecom.extension" ] ;
@@ -5401,8 +5383,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.telecom.value" ] ;
        fhir:path [ fhir:v "PractitionerRole.telecom.value" ] ;
@@ -5423,8 +5404,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.availableTime.extension:ror-available-time-type-of-time" ] ;
        fhir:path [ fhir:v "PractitionerRole.availableTime.extension" ] ;
@@ -5437,8 +5417,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week" ] ;
        fhir:path [ fhir:v "PractitionerRole.availableTime.extension" ] ;
@@ -5451,8 +5430,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] )
   ] . # 
 

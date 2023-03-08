@@ -9,7 +9,7 @@
   "version" : "3.0",
   "name" : "ROROrganization",
   "status" : "active",
-  "date" : "2023-03-08T07:25:49+00:00",
+  "date" : "2023-03-08T07:58:39+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1000,8 +1000,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-territorial-division",
@@ -1036,8 +1035,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-financial-help-type",
@@ -1072,8 +1070,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-accomodation-family",
@@ -1108,8 +1105,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-nb-permanent-social-help-place",
@@ -1144,8 +1140,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-nb-temporary-social-help-place",
@@ -1180,8 +1175,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-accessibility-location",
@@ -1216,8 +1210,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-level-recourse-orsan",
@@ -1252,8 +1245,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-period",
@@ -1288,8 +1280,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:openingClosingDate",
@@ -1325,7 +1316,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -1368,8 +1358,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-drop-zone",
@@ -1404,8 +1393,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.modifierExtension",
@@ -8811,8 +8799,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.telecom.extension:ror-telecom-confidentiality-level",
@@ -8847,8 +8834,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.telecom.extension:ror-telecom-communication-channel",
@@ -8883,8 +8869,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.telecom.system",
@@ -9582,8 +9567,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-address-description",
@@ -9618,8 +9602,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-address-status",
@@ -9654,8 +9637,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-calculated-distance",
@@ -9690,8 +9672,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-geolocation",
@@ -9726,8 +9707,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.use",
@@ -10094,8 +10074,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.line.extension:careOf",
@@ -11504,8 +11483,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.extension:ror-contact-function-contact",
@@ -11540,8 +11518,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.extension:ror-contact-confidentiality-level",
@@ -11576,8 +11553,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.modifierExtension",
@@ -11966,8 +11942,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.telecom.extension:ror-telecom-usage",
@@ -12002,8 +11977,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.telecom.extension:ror-telecom-communication-channel",
@@ -12038,8 +12012,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.telecom.system",
@@ -12483,8 +12456,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-territorial-division",
@@ -12495,8 +12467,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-financial-help-type",
@@ -12507,8 +12478,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-accomodation-family",
@@ -12519,8 +12489,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-nb-permanent-social-help-place",
@@ -12531,8 +12500,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-nb-temporary-social-help-place",
@@ -12543,8 +12511,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-accessibility-location",
@@ -12555,8 +12522,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-level-recourse-orsan",
@@ -12567,8 +12533,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-period",
@@ -12579,8 +12544,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:openingClosingDate",
@@ -12591,8 +12555,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/StructureDefinition/organization-period"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-commune-cog",
@@ -12603,8 +12566,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.extension:ror-organization-drop-zone",
@@ -12615,8 +12577,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.identifier",
@@ -12893,8 +12854,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.telecom.extension:ror-telecom-confidentiality-level",
@@ -12905,8 +12865,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.telecom.extension:ror-telecom-communication-channel",
@@ -12917,8 +12876,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:inseeCode",
@@ -12949,8 +12907,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-address-description",
@@ -12961,8 +12918,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-address-status",
@@ -12973,8 +12929,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-calculated-distance",
@@ -12985,8 +12940,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.extension:ror-geolocation",
@@ -12997,8 +12951,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality",
@@ -13009,8 +12962,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.address.line.extension:careOf",
@@ -13121,8 +13073,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.extension:ror-contact-function-contact",
@@ -13133,8 +13084,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.extension:ror-contact-confidentiality-level",
@@ -13145,8 +13095,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.purpose",
@@ -13170,8 +13119,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.telecom.extension:ror-telecom-usage",
@@ -13182,8 +13130,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Organization.contact.telecom.extension:ror-telecom-communication-channel",
@@ -13194,8 +13141,7 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"]
-      }],
-      "isModifier" : false
+      }]
     }]
   }
 }
