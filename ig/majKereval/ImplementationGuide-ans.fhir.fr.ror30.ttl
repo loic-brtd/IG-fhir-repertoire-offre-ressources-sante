@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "RORME30"] ; # 
   fhir:title [ fhir:v "ROR ME 3.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-07T14:51:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-08T07:25:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1061,6 +1061,17 @@
        ] ;
        fhir:name [ fhir:v "RORTerritorialDivision" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. \nCela inclut notamment les divisions territoriales dans lesquelles les professionnels se déplacent." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/ValueSet/code-region-territorial-division> ;
+         fhir:reference [ fhir:v "ValueSet/code-region-territorial-division" ]
+       ] ;
+       fhir:name [ fhir:v "Fusion du valueset J223-TypeDivisionTerritoriale-ROR et JDV_J237-RegionOM-ROR" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

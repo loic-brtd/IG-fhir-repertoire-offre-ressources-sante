@@ -821,6 +821,7 @@
         "CodeableConcept",
         "CodeableConcept",
         "CodeableConcept",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "canonical",

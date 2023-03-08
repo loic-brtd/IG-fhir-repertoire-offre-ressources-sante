@@ -9,7 +9,7 @@
   "version" : "3.0",
   "name" : "RORContactFunctionContact",
   "status" : "active",
-  "date" : "2023-03-07T14:51:30+00:00",
+  "date" : "2023-03-08T07:25:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -29,7 +29,7 @@
   "abstract" : false,
   "context" : [{
     "type" : "extension",
-    "expression" : "BackboneElement"
+    "expression" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

@@ -523,5 +523,12 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division",
     "version" : "3.0",
     "name" : "RORTerritorialDivision"
+  },
+  {
+    "id" : "code-region-territorial-division",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/ValueSet/code-region-territorial-division",
+    "version" : "3.0",
+    "name" : "CodeRegionTerritorialDivision"
   }
 ]

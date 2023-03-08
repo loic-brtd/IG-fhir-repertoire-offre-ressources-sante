@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "RORContactFunctionContact"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-07T14:51:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-08T07:25:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -36,7 +36,7 @@
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "extension" ] ;
-     fhir:expression [ fhir:v "BackboneElement" ]
+     fhir:expression [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
