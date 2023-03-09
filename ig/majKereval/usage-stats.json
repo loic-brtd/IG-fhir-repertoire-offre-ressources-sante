@@ -4,6 +4,66 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName",
+      "title": "RORPractitionerRoleName",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
       "title": "RORAddressDescription",
       "types": [
@@ -590,13 +650,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality",
-      "title": "ROROrganizationAddressLineISO21090AdxpLocality",
-      "types": [
-        "string"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone",
       "title": "ROROrganizationDropZone",
       "types": [
@@ -640,8 +693,6 @@
         "CodeableConcept",
         "CodeableConcept",
         "date",
-        "CodeableConcept",
-        "CodeableConcept",
         "base64Binary",
         "boolean",
         "canonical",
@@ -1006,10 +1057,10 @@
     "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS": [
       "PractitionerRole"
     ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name": [
+    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted": [
       "PractitionerRole"
     ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted": [
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName": [
       "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description": [
@@ -1093,10 +1144,6 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family": [
       "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality": [
-      "Location.address.line",
-      "Organization.address.line"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone": [
       "Organization"

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "RORME30"] ; # 
   fhir:title [ fhir:v "ROR ME 3.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-09T12:07:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-09T16:26:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -900,18 +900,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality" ]
-       ] ;
-       fhir:name [ fhir:v "ROROrganizationAddressLineISO21090AdxpLocality" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone> ;
          fhir:reference [ fhir:v "StructureDefinition/ror-organization-drop-zone" ]
        ] ;
@@ -989,6 +977,18 @@
        ] ;
        fhir:name [ fhir:v "ROROrganizationPrice" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName> ;
+         fhir:reference [ fhir:v "StructureDefinition/RORPractitionerRoleName" ]
+       ] ;
+       fhir:name [ fhir:v "RORPractitionerRoleName" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir l'identité d’exercice d’un professionnel" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

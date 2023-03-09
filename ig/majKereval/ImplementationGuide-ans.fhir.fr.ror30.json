@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-03-09T12:07:06+00:00",
+  "date" : "2023-03-09T16:26:30+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -985,18 +985,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality"
-      },
-      "name" : "ROROrganizationAddressLineISO21090AdxpLocality",
-      "description" : "Extension créée dans le cadre du ROR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ror-organization-drop-zone"
       },
       "name" : "ROROrganizationDropZone",
@@ -1073,6 +1061,18 @@
       },
       "name" : "ROROrganizationPrice",
       "description" : "Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RORPractitionerRoleName"
+      },
+      "name" : "RORPractitionerRoleName",
+      "description" : "Extension créée dans le cadre du ROR pour définir l'identité d’exercice d’un professionnel",
       "exampleBoolean" : false
     },
     {

@@ -203,6 +203,13 @@
     "name" : "RORSPTemporaryAssignement"
   },
   {
+    "id" : "RORPractitionerRoleName",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName",
+    "version" : "3.0",
+    "name" : "RORPractitionerRoleName"
+  },
+  {
     "id" : "ror-address-description",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
@@ -411,13 +418,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family",
     "version" : "3.0",
     "name" : "ROROrganizationAccomodationFamily"
-  },
-  {
-    "id" : "ror-organization-address-line-iso-21090-adxp-locality",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality",
-    "version" : "3.0",
-    "name" : "ROROrganizationAddressLineISO21090AdxpLocality"
   },
   {
     "id" : "ror-organization-drop-zone",

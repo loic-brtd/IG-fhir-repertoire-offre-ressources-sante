@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Location.identifier:idExterneSynchro","Location.identifier","idExterneSynchro","","",0,1,"","","Y","Identifier {[]} {[]}
-","idExterneSynchro (Location) : Identifiant défini par le porteur d’offre pour la zone d’hébergement des lits","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
+","idExterneSynchro (LieuRealisationOffre) : Identifiant défini par le porteur d’offre pour la zone d’hébergement des lits","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Location.identifier:idExterneSynchro.id","Location.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -220,7 +220,7 @@ For searching knowing previous names that the location was known by can be very 
 ","fonctionLieu (LieuRealisationOffre) : La fonction correspond à la destination d'usage du lieu","Indicates the type of function performed at the location.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR","",,,,"Location.type",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".code","FiveWs.class"
-"Location.telecom","Location.telecom","","","",0,1,"","","","ContactPoint {[]} {[]}
+"Location.telecom","Location.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","telecommunication (LieuRealisationOffre) : Adresse(s) de télécommunication du lieu","The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.","","","","","","","","","",,,,,"",,,,"Location.telecom",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","n/a","TEL",".telecom"
@@ -352,10 +352,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","mentionDistribution (Adresse) : Mentions particulières de distribution","A numbered box located in a post station.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=POB]"
-"Location.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality","Location.address.line.extension","ror-organization-address-line-iso-21090-adxp-locality","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality]]} {[]}
-","(Adresse)","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.address.line.value","Location.address.line.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","Primitive value for string","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "Location.address.city","Location.address.city","","Municpality
