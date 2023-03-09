@@ -68,27 +68,27 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.extension:ror-location-status","Location.extension","ror-location-status","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status]]} {[]}
-","Extension","Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-equipment","Location.extension","ror-location-equipment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment]]} {[]}
-","Extension","Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d'une prestation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-residential-capacity","Location.extension","ror-location-residential-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-supported-capacity","Location.extension","ror-location-supported-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:ror-location-equipment-limit","Location.extension","ror-location-equipment-limit","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","statut (LieuRealisationOffre) : Indique si le lieu est opérationnel, fermé temporairement ou fermé définitivement","Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.extension:ror-commune-cog","Location.extension","ror-commune-cog","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog]]} {[]}
-","Extension","Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","communeCog (LieuRealisationOffre) : Code officiel géographique (COG) de la commune dans laquelle le lieu est situé","Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Location.extension:ror-location-equipment","Location.extension","ror-location-equipment","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment]]} {[]}
+","EquipementSpecifique : Ressource matérielle discriminante pour la réalisation d'une prestation","Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d'une prestation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Location.extension:ror-location-equipment-limit","Location.extension","ror-location-equipment-limit","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit]]} {[]}
+","LimiteCaracteristiqueEquipement : limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation","Extension créée dans le cadre du ROR qui précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Location.extension:ror-location-residential-capacity","Location.extension","ror-location-residential-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity]]} {[]}
+","CapaciteHabitation : type d'habitation adapté à la réalisation d'une offre","Extension créée dans le cadre du ROR qui décrit un type d'habitation adapté à la réalisation d'une offre.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Location.extension:ror-location-supported-capacity","Location.extension","ror-location-supported-capacity","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity]]} {[]}
+","CapacitePriseCharge :  + CapaciteAccueilOperationnelle","Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.modifierExtension","Location.modifierExtension","","extensions
@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Location.identifier:idExterneSynchro","Location.identifier","idExterneSynchro","","",0,1,"","","Y","Identifier {[]} {[]}
-","Unique code or number identifying the location to its users","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
+","idExterneSynchro (Location) : Identifiant défini par le porteur d’offre pour la zone d’hébergement des lits","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Location.identifier:idExterneSynchro.id","Location.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -121,12 +121,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","Role.code or implied by context"
 "Location.identifier:idExterneSynchro.type","Location.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/TRE_XXX-TypeIdentifiantRessourceOperationnelle/FHIR/TRE_XXX-TypeIdentifiantRessourceOperationnelle""/>
     <code value=""26""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","Role.code or implied by context"
 "Location.identifier:idExterneSynchro.system","Location.identifier.system","","","",0,1,"","","Y","uri {[]} {[]}
@@ -148,7 +148,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "Location.identifier:idLocation","Location.identifier","idLocation","","",0,1,"","","Y","Identifier {[]} {[]}
-","Unique code or number identifying the location to its users","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
+","identifiant (LieuRealisationOffre) : Identifiant fonctionnel du lieu","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Location.identifier:idLocation.id","Location.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -164,12 +164,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","Role.code or implied by context"
 "Location.identifier:idLocation.type","Location.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/TRE_XXX-TypeIdentifiantRessourceOperationnelle/FHIR/TRE_XXX-TypeIdentifiantRessourceOperationnelle""/>
     <code value=""25""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","Role.code or implied by context"
 "Location.identifier:idLocation.system","Location.identifier.system","","","",0,1,"","","Y","uri {[]} {[]}
@@ -199,7 +199,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV","FiveWs.status"
 "Location.name","Location.name","","","",0,1,"","","Y","string {[]} {[]}
-","Name of the location as used by humans","Name of the location as used by humans. Does not need to be unique.","If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"Location.name",0,1,"ele-1
+","nom (LieuRealisationOffre) : Nom, exprimé sous la forme de texte, du lieu","Name of the location as used by humans. Does not need to be unique.","If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"Location.name",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".name"
 "Location.alias","Location.alias","","","",0,*,"","","","string {[]} {[]}
@@ -209,7 +209,7 @@ For searching knowing previous names that the location was known by can be very 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".name"
 "Location.description","Location.description","","","",0,1,"","","Y","string {[]} {[]}
-","Additional details about the location that could be displayed as further information to identify the location beyond its name","Description of the Location, which helps in finding or referencing the place.","Note that FHIR strings SHALL NOT exceed 1MB in size","Humans need additional information to verify a correct location has been identified.","","","","","","","",,,,,"",,,,"Location.description",0,1,"ele-1
+","description (LieuRealisationOffre) : Description textuelle du lieu, indiquant comment l'atteindre","Description of the Location, which helps in finding or referencing the place.","Note that FHIR strings SHALL NOT exceed 1MB in size","Humans need additional information to verify a correct location has been identified.","","","","","","","",,,,,"",,,,"Location.description",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".playingEntity[classCode=PLC determinerCode=INSTANCE].desc"
 "Location.mode","Location.mode","","","",0,1,"","","Y","code {[]} {[]}
@@ -217,11 +217,11 @@ For searching knowing previous names that the location was known by can be very 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".playingEntity[classCode=PLC].determinerCode","FiveWs.class"
 "Location.type","Location.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Type of function performed","Indicates the type of function performed at the location.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR","",,,,"Location.type",0,*,"ele-1
+","fonctionLieu (LieuRealisationOffre) : La fonction correspond à la destination d'usage du lieu","Indicates the type of function performed at the location.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR","",,,,"Location.type",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".code","FiveWs.class"
 "Location.telecom","Location.telecom","","","",0,1,"","","","ContactPoint {[]} {[]}
-","Contact details of the location","The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.","","","","","","","","","",,,,,"",,,,"Location.telecom",0,*,"ele-1
+","telecommunication (LieuRealisationOffre) : Adresse(s) de télécommunication du lieu","The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.","","","","","","","","","",,,,,"",,,,"Location.telecom",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","n/a","TEL",".telecom"
 "Location.telecom.id","Location.telecom.id","","","",0,1,"","","","string {[]} {[]}
@@ -231,16 +231,16 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Location.telecom.extension:ror-telecom-communication-channel","Location.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+","canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication ","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.telecom.extension:ror-telecom-usage","Location.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","utilisation (Telecommunication) : Utilisation du canal de communication ","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.telecom.extension:ror-telecom-confidentiality-level","Location.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.telecom.extension:ror-telecom-communication-channel","Location.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
-","Extension","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","niveauConfidentialite (Telecommunication) : Niveau de restriction de l'accès aux attributs de la classe Télécommunication","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.telecom.system","Location.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
@@ -248,7 +248,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 cpt-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./scheme"
 "Location.telecom.value","Location.telecom.value","","","",1,1,"","","Y","string {[]} {[]}
-","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"ele-1
+","adresseTelecom (Telecommunication) : Valeur de l'adresse de télécommunication dans le format induit par le canal de communica","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./url"
 "Location.telecom.use","Location.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
@@ -266,7 +266,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.hasValue().not() or end.hasValue().not() or (start <= end)}","n/a","IVL<TS>[lowClosed=""true"" and highClosed=""true""] or URG<TS>[lowClosed=""true"" and highClosed=""true""]","./usablePeriod[type=""IVL<TS>""]"
 "Location.address","Location.address","","","",0,1,"","","","Address {[]} {[]}
-","Physical location","Physical location.","Additional addresses should be recorded using another instance of the Location resource, or via the Organization.","If locations can be visited, we need to keep track of their address.","","","","","","","",,,,,"",,,,"Location.address",0,1,"ele-1
+","adresse (LieuRealisationOffre) : Adresse géopostale du lieu","Physical location.","Additional addresses should be recorded using another instance of the Location resource, or via the Organization.","If locations can be visited, we need to keep track of their address.","","","","","","","",,,,,"",,,,"Location.address",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","AD",".addr"
 "Location.address.id","Location.address.id","","","",0,1,"","","","string {[]} {[]}
@@ -301,28 +301,24 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Location.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality","Location.address.line.extension","ror-organization-address-line-iso-21090-adxp-locality","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality]]} {[]}
-","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.address.line.extension:careOf","Location.address.line.extension","careOf","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf]]} {[]}
-","careOf","The name of the party who will take receipt at the specified address, and will take on responsibility for ensuring delivery to the target recipient.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","pointRemise (Adresse) : Lieu où le destinataire prend possession de son courrier","The name of the party who will take receipt at the specified address, and will take on responsibility for ensuring delivery to the target recipient.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=CAR]"
 "Location.address.line.extension:additionalLocator","Location.address.line.extension","additionalLocator","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator]]} {[]}
-","additionalLocator","This can be a unit designator, such as apartment number, suite number, or floor. There may be several unit designators in an address (e.g., ""3rd floor, Appt. 342""). This can also be a designator pointing away from the location, rather than specifying a smaller location within some larger one (e.g., Dutch ""t.o."" means ""opposite to"" for house boats located across the street facing houses).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","complementPointGeographique (Adresse) : Un complément de l'adresse au point géographique","This can be a unit designator, such as apartment number, suite number, or floor. There may be several unit designators in an address (e.g., ""3rd floor, Appt. 342""). This can also be a designator pointing away from the location, rather than specifying a smaller location within some larger one (e.g., Dutch ""t.o."" means ""opposite to"" for house boats located across the street facing houses).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=ADL]"
 "Location.address.line.extension:houseNumber","Location.address.line.extension","houseNumber","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber]]} {[]}
-","houseNumber","The number of a building, house or lot alongside the street. Also known as ""primary street number"". This does not number the street but rather the building.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","numeroVoie (Adresse) : Un numéro dans la voie","The number of a building, house or lot alongside the street. Also known as ""primary street number"". This does not number the street but rather the building.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=BNR]"
 "Location.address.line.extension:buildingNumberSuffix","Location.address.line.extension","buildingNumberSuffix","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix]]} {[]}
-","buildingNumberSuffix","Any alphabetic character, fraction or other text that may appear after the numeric portion of a building number.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","extension (Adresse) : Extension ou indice de répétition","Any alphabetic character, fraction or other text that may appear after the numeric portion of a building number.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=BNS]"
 "Location.address.line.extension:streetNameType","Location.address.line.extension","streetNameType","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType]]} {[]}
-","streetNameType","The designation given to the street. (e.g. Street, Avenue, Crescent, etc.).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","typeVoie (Adresse) : Type de voie","The designation given to the street. (e.g. Street, Avenue, Crescent, etc.).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=STTYP]"
 "Location.address.line.extension:streetNameType.id","Location.address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -345,18 +341,26 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
 "Location.address.line.extension:streetNameBase","Location.address.line.extension","streetNameBase","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase]]} {[]}
-","streetNameBase","The base name of a roadway or artery recognized by a municipality (excluding street type and direction).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","libelleVoie (Adresse) : Appellation qui est donnée à la voie par les municipalités","The base name of a roadway or artery recognized by a municipality (excluding street type and direction).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=STB]"
+"Location.address.line.extension:streetNameHamlet","Location.address.line.extension","streetNameHamlet","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase]]} {[]}
+","lieuDit (Adresse) : Lieu qui porte un nom rappelant une particularité topographique ou historique","The base name of a roadway or artery recognized by a municipality (excluding street type and direction).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=STB]"
 "Location.address.line.extension:postalBox","Location.address.line.extension","postalBox","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox]]} {[]}
-","postBox","A numbered box located in a post station.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","mentionDistribution (Adresse) : Mentions particulières de distribution","A numbered box located in a post station.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","ADXP[partType=POB]"
+"Location.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality","Location.address.line.extension","ror-organization-address-line-iso-21090-adxp-locality","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality]]} {[]}
+","(Adresse)","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.address.line.value","Location.address.line.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","Primitive value for string","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "Location.address.city","Location.address.city","","Municpality
 ","",0,1,"","","Y","string {[]} {[]}
-","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"ele-1
+","localité (Adresse) : Localité ou Libellé du bureau distributeur CEDEX","The name of the city, town, suburb, village or other community or delivery center.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","AD.part[parttype = CTY]"
 "Location.address.district","Location.address.district","","County
@@ -371,7 +375,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 ","n/a","AD.part[parttype = STA]"
 "Location.address.postalCode","Location.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
-","Postal code for area","A postal code designating a region defined by the postal service.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"ele-1
+","codePostal (Adresse) : Code Postal ou code postal spécifique CEDEX","A postal code designating a region defined by the postal service.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","AD.part[parttype = ZIP]"
 "Location.address.country","Location.address.country","","","",0,1,"","","Y","string {[]} {[]}
@@ -392,7 +396,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".playingEntity [classCode=PLC].code","FiveWs.class"
 "Location.position","Location.position","","","",0,1,"","","","BackboneElement {[]} {[]}
-","The absolute geographic location","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","","For mobile applications and automated route-finding knowing the exact location of the Location is required.","","","","","","","",,,,,"",,,,"Location.position",0,1,"ele-1
+","coordonneeGeographique (LieuRealisationOffre) : Coordonnées géographiques du lieu","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","","For mobile applications and automated route-finding knowing the exact location of the Location is required.","","","","","","","",,,,,"",,,,"Location.position",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".playingEntity [classCode=PLC determinerCode=INSTANCE].positionText"
 "Location.position.id","Location.position.id","","","",0,1,"","","","string {[]} {[]}
@@ -404,9 +408,9 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Location.position.extension:ror-location-geolocation","Location.position.extension","ror-location-geolocation","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation]]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","systemeGeodesique : Une identification du système de référence fixant les règles de mesure des positions géographiques (CoordonneeGeographique)","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Location.position.modifierExtension","Location.position.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -415,11 +419,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Location.position.longitude","Location.position.longitude","","","",1,1,"","","","decimal {[]} {[]}
-","Longitude with WGS84 datum","Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).","Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)","","","","","","","","",,,,,"",,,,"Location.position.longitude",1,1,"ele-1
+","longitude(CoordonneeGeographique) : Une mesure de la distance angulaire est ou ouest depuis le méridien de Greenwich jusqu'au méridien du point spécifique","Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).","Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)","","","","","","","","",,,,,"",,,,"Location.position.longitude",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
 "Location.position.latitude","Location.position.latitude","","","",1,1,"","","","decimal {[]} {[]}
-","Latitude with WGS84 datum","Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).","Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)","","","","","","","","",,,,,"",,,,"Location.position.latitude",1,1,"ele-1
+","latitude (CoordonneeGeographique) : Une mesure de la distance angulaire nord ou sud depuis l'équateur jusqu'au parallèle du spécifique","Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).","Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)","","","","","","","","",,,,,"",,,,"Location.position.latitude",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
 "Location.position.altitude","Location.position.altitude","","","",0,1,"","","","decimal {[]} {[]}

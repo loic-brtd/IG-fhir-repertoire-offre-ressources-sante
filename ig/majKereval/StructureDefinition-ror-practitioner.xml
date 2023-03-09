@@ -7,20 +7,20 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.meta">meta</a><a name="Practitioner.meta"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.meta.tag">Slices for tag</a><a name="Practitioner.meta.tag"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="opacity: 0.5; font-style: italic">0</span><span style="opacity: 0.5; font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5; font-style: italic">Tags applied to this resource</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:url</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1024.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.meta.tag:codeRegion" title="Slice codeRegion">tag:codeRegion</a><a name="Practitioner.meta.tag"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Tags applied to this resource</span><br/><span style="font-weight:bold">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR">https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.identifier">identifier</a><a name="Practitioner.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">An identifier for the person as this agent</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom">telecom</a><a name="Practitioner.telecom"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A contact detail for the practitioner (that apply to all roles)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.identifier">identifier</a><a name="Practitioner.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">idNat_PS (Professionnel) : Identification nationale du professionnel définie par le CI-SIS</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom">telecom</a><a name="Practitioner.telecom"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">boiteLettreMSS (Professionnel) : Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension">extension</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-usage" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage">ror-telecom-usage</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-usage.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage</a></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-confidentiality-level" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level">ror-telecom-confidentiality-level</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-confidentiality-level.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level</a><br/><span style="font-weight:bold">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR">https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-communication-channel" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel">ror-telecom-communication-channel</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-communication-channel.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel</a><br/><span style="font-weight:bold">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.value">value</a><a name="Practitioner.telecom.value"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The actual contact point details</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-communication-channel" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel">ror-telecom-communication-channel</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-communication-channel.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel</a><br/><span style="font-weight:bold">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR">https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-usage" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage">ror-telecom-usage</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">utilisation (Telecommunication) : Utilisation du canal de communication <br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-usage.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.extension:ror-telecom-confidentiality-level" title="Extension URL = https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level">ror-telecom-confidentiality-level</a><a name="Practitioner.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">niveauConfidentialite (Telecommunication) : niveau de restriction de l'accès aux attributs de la classe Télécommunication<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-ror-telecom-confidentiality-level.html">https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level</a><br/><span style="font-weight:bold">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR">https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ror-practitioner-definitions.html#Practitioner.telecom.value">value</a><a name="Practitioner.telecom.value"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">adresseTelecom (Telecommunication) : Valeur de l'adresse de télécommunication dans le format induit par le canal de communication</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner"/>
   <version value="3.0"/>
   <name value="RORPractitioner"/>
   <status value="active"/>
-  <date value="2023-03-08T07:58:39+00:00"/>
+  <date value="2023-03-09T09:15:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -860,7 +860,7 @@
     </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier"/>
-      <short value="An identifier for the person as this agent"/>
+      <short value="idNat_PS (Professionnel) : Identification nationale du professionnel définie par le CI-SIS"/>
       <definition value="An identifier that applies to this person in this role."/>
       <requirements value="Often, specific identities are assigned for the agent."/>
       <min value="1"/>
@@ -1025,7 +1025,7 @@
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom"/>
-      <short value="A contact detail for the practitioner (that apply to all roles)"/>
+      <short value="boiteLettreMSS (Professionnel) : Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel"/>
       <definition value="A contact detail for the practitioner, e.g. a telephone number or an email address."/>
       <comment value="Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific."/>
       <requirements value="Need to know how to reach a practitioner independent to any roles the practitioner may have."/>
@@ -1149,10 +1149,44 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
+    <element id="Practitioner.telecom.extension:ror-telecom-communication-channel">
+      <path value="Practitioner.telecom.extension"/>
+      <sliceName value="ror-telecom-communication-channel"/>
+      <short value="canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication"/>
+      <definition value="Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication "/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
     <element id="Practitioner.telecom.extension:ror-telecom-usage">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="ror-telecom-usage"/>
-      <short value="Extension"/>
+      <short value="utilisation (Telecommunication) : Utilisation du canal de communication "/>
       <definition value="Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication "/>
       <min value="0"/>
       <max value="1"/>
@@ -1186,7 +1220,7 @@
     <element id="Practitioner.telecom.extension:ror-telecom-confidentiality-level">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="ror-telecom-confidentiality-level"/>
-      <short value="Extension"/>
+      <short value="niveauConfidentialite (Telecommunication) : niveau de restriction de l'accès aux attributs de la classe Télécommunication"/>
       <definition value="Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication."/>
       <min value="1"/>
       <max value="1"/>
@@ -1198,40 +1232,6 @@
       <type>
         <code value="Extension"/>
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-    </element>
-    <element id="Practitioner.telecom.extension:ror-telecom-communication-channel">
-      <path value="Practitioner.telecom.extension"/>
-      <sliceName value="ror-telecom-communication-channel"/>
-      <short value="Extension"/>
-      <definition value="Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication "/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1310,7 +1310,7 @@
     </element>
     <element id="Practitioner.telecom.value">
       <path value="Practitioner.telecom.value"/>
-      <short value="The actual contact point details"/>
+      <short value="adresseTelecom (Telecommunication) : Valeur de l'adresse de télécommunication dans le format induit par le canal de communication"/>
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)."/>
       <comment value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value."/>
       <requirements value="Need to support legacy numbers that are not in a tightly controlled format."/>
@@ -2252,20 +2252,34 @@
     </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier"/>
+      <short value="idNat_PS (Professionnel) : Identification nationale du professionnel définie par le CI-SIS"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom"/>
+      <short value="boiteLettreMSS (Professionnel) : Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel"/>
       <max value="1"/>
     </element>
     <element id="Practitioner.telecom.extension">
       <path value="Practitioner.telecom.extension"/>
       <min value="2"/>
     </element>
+    <element id="Practitioner.telecom.extension:ror-telecom-communication-channel">
+      <path value="Practitioner.telecom.extension"/>
+      <sliceName value="ror-telecom-communication-channel"/>
+      <short value="canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
+      </type>
+    </element>
     <element id="Practitioner.telecom.extension:ror-telecom-usage">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="ror-telecom-usage"/>
+      <short value="utilisation (Telecommunication) : Utilisation du canal de communication "/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -2276,6 +2290,7 @@
     <element id="Practitioner.telecom.extension:ror-telecom-confidentiality-level">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="ror-telecom-confidentiality-level"/>
+      <short value="niveauConfidentialite (Telecommunication) : niveau de restriction de l'accès aux attributs de la classe Télécommunication"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2283,18 +2298,9 @@
         <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level"/>
       </type>
     </element>
-    <element id="Practitioner.telecom.extension:ror-telecom-communication-channel">
-      <path value="Practitioner.telecom.extension"/>
-      <sliceName value="ror-telecom-communication-channel"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel"/>
-      </type>
-    </element>
     <element id="Practitioner.telecom.value">
       <path value="Practitioner.telecom.value"/>
+      <short value="adresseTelecom (Telecommunication) : Valeur de l'adresse de télécommunication dans le format induit par le canal de communication"/>
       <min value="1"/>
     </element>
   </differential>

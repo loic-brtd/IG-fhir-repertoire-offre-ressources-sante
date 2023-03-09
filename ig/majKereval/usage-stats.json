@@ -116,7 +116,7 @@
         "CodeableConcept",
         "CodeableConcept",
         "string",
-        "ContactPoint",
+        "string",
         "base64Binary",
         "boolean",
         "canonical",
@@ -1123,26 +1123,26 @@
       "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel": [
+      "Extension",
       "HealthcareService.telecom",
       "Location.telecom",
       "Organization.contact.telecom",
-      "Organization.telecom",
       "Practitioner.telecom",
       "PractitionerRole.telecom"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level": [
+      "Extension",
       "HealthcareService.telecom",
       "Location.telecom",
       "Organization.contact.telecom",
-      "Organization.telecom",
       "Practitioner.telecom",
       "PractitionerRole.telecom"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage": [
+      "Extension",
       "HealthcareService.telecom",
       "Location.telecom",
       "Organization.contact.telecom",
-      "Organization.telecom",
       "Practitioner.telecom",
       "PractitionerRole.telecom"
     ],

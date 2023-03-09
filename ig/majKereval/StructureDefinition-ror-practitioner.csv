@@ -77,7 +77,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Practitioner.identifier","Practitioner.identifier","","","",1,1,"","","Y","Identifier {[]} {[]}
-","An identifier for the person as this agent","An identifier that applies to this person in this role.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"ele-1
+","idNat_PS (Professionnel) : Identification nationale du professionnel définie par le CI-SIS","An identifier that applies to this person in this role.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","PRD-7 (or XCN.1)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","./id","Identifier","./Identifiers","FiveWs.identifier"
 "Practitioner.active","Practitioner.active","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -89,7 +89,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XPN","XCN Components","n/a","EN (actually, PN)","./name","ProviderName","./PreferredName (GivenNames, FamilyName, TitleCode)"
 "Practitioner.telecom","Practitioner.telecom","","","",0,1,"","","Y","ContactPoint {[]} {[]}
-","A contact detail for the practitioner (that apply to all roles)","A contact detail for the practitioner, e.g. a telephone number or an email address.","Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific.","Need to know how to reach a practitioner independent to any roles the practitioner may have.","","","","","","","",,,,,"",,,,"Practitioner.telecom",0,*,"ele-1
+","boiteLettreMSS (Professionnel) : Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel","A contact detail for the practitioner, e.g. a telephone number or an email address.","Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific.","Need to know how to reach a practitioner independent to any roles the practitioner may have.","","","","","","","",,,,,"",,,,"Practitioner.telecom",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","XTN","PRT-15, STF-10, ROL-12","n/a","TEL","./telecom","ContactPoint","./ContactPoints"
 "Practitioner.telecom.id","Practitioner.telecom.id","","","",0,1,"","","","string {[]} {[]}
@@ -99,16 +99,16 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Practitioner.telecom.extension:ror-telecom-communication-channel","Practitioner.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+","canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Practitioner.telecom.extension:ror-telecom-usage","Practitioner.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","utilisation (Telecommunication) : Utilisation du canal de communication ","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Practitioner.telecom.extension:ror-telecom-confidentiality-level","Practitioner.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
-","Extension","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Practitioner.telecom.extension:ror-telecom-communication-channel","Practitioner.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
-","Extension","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","niveauConfidentialite (Telecommunication) : niveau de restriction de l'accès aux attributs de la classe Télécommunication","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Practitioner.telecom.system","Practitioner.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
@@ -116,7 +116,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 cpt-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.3","n/a","./scheme","./ContactPointType"
 "Practitioner.telecom.value","Practitioner.telecom.value","","","",1,1,"","","Y","string {[]} {[]}
-","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"ele-1
+","adresseTelecom (Telecommunication) : Valeur de l'adresse de télécommunication dans le format induit par le canal de communication","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.1 (or XTN.12)","n/a","./url","./Value"
 "Practitioner.telecom.use","Practitioner.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
