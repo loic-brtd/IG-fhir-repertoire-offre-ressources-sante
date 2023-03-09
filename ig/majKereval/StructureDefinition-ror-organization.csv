@@ -116,7 +116,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension:ror-commune-cog","Organization.extension","ror-commune-cog","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog]]} {[]}
-","Extension","Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TODO","Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension:ror-organization-drop-zone","Organization.extension","ror-organization-drop-zone","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone]]} {[]}
@@ -124,11 +124,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension:ror-organization-period","Organization.extension","ror-organization-period","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period]]} {[]}
-","typeFermeture + datePrevisionnelleReouverture + ","Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TODO","Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension:openingClosingDate","Organization.extension","openingClosingDate","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
-","Optional Extensions Element","The date range that this organization should be considered available.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","TODO","The date range that this organization should be considered available.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.modifierExtension","Organization.modifierExtension","","extensions
@@ -308,7 +308,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "Organization.identifier:numRPPS","Organization.identifier","numRPPS","","",0,1,"","","Y","Identifier {[]} {[]}
-","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
+","TODO","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.identifier:numRPPS.id","Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -734,7 +734,7 @@ We expect that some jurisdictions will profile this optionality to be a single c
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Organization.type:fonctionLieu","Organization.type","fonctionLieu","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Kind of organization","The kind(s) of organization that this is.","Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
+","TODO","The kind(s) of organization that this is.","Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
 
