@@ -1042,8 +1042,7 @@
       "Organization.address"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrContactPointEmailType": [
-      "Organization.contact.telecom",
-      "Organization.telecom"
+      "Organization.contact.telecom"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
       "Organization"
