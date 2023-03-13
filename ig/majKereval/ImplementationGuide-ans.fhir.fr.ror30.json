@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-03-10T16:06:49+00:00",
+  "date" : "2023-03-13T07:40:36+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1085,6 +1085,18 @@
       },
       "name" : "RORPractitionerRoleUnitExerciseMode",
       "description" : "Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RORPractitionerTitle"
+      },
+      "name" : "RORPractitionerTitle",
+      "description" : "Extension créée dans le cadre du ROR pour définir la civilité de la personne physique",
       "exampleBoolean" : false
     },
     {

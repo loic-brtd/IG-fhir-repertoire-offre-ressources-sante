@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner</sch:title>
     <sch:rule context="f:Practitioner">
+      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
     </sch:rule>

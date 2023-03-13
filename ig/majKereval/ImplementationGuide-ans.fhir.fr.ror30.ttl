@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "RORME30"] ; # 
   fhir:title [ fhir:v "ROR ME 3.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-10T16:06:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-13T07:40:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1001,6 +1001,18 @@
        ] ;
        fhir:name [ fhir:v "RORPractitionerRoleUnitExerciseMode" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle> ;
+         fhir:reference [ fhir:v "StructureDefinition/RORPractitionerTitle" ]
+       ] ;
+       fhir:name [ fhir:v "RORPractitionerTitle" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir la civilité de la personne physique" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -64,6 +64,64 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle",
+      "title": "RORPractitionerTitle",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
       "title": "RORAddressDescription",
       "types": [
@@ -1061,6 +1119,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName": [
       "PractitionerRole"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle": [
+      "Practitioner"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description": [
       "Organization.address"

@@ -210,6 +210,13 @@
     "name" : "RORPractitionerRoleName"
   },
   {
+    "id" : "RORPractitionerTitle",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle",
+    "version" : "3.0",
+    "name" : "RORPractitionerTitle"
+  },
+  {
     "id" : "ror-address-description",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
