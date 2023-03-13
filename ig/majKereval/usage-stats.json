@@ -1481,8 +1481,7 @@
       "Location"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation": [
-      "Location.position",
-      "Organization.address"
+      "Location.position"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity": [
       "Location"
