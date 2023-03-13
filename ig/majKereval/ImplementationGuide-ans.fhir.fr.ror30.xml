@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-03-13T14:14:07+00:00"/>
+  <date value="2023-03-13T14:59:56+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -788,6 +788,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ror-organization-eg-name"/>
+      </reference>
+      <name value="ROROrganizationEGName"/>
+      <description value="Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ror-organization-financial-help-type"/>
       </reference>
       <name value="ROROrganizationFinancialHelpType"/>
@@ -832,10 +843,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ror-organization-oi-name"/>
+      </reference>
+      <name value="ROROrganizationOIName"/>
+      <description value="Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ror-organization-period"/>
       </reference>
       <name value="ROROrganizationPeriod"/>
-      <description value="Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne"/>
+      <description value="Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

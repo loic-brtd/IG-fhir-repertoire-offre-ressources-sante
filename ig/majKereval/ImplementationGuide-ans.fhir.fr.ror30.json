@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-03-13T14:14:07+00:00",
+  "date" : "2023-03-13T14:59:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -973,6 +973,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ror-organization-eg-name"
+      },
+      "name" : "ROROrganizationEGName",
+      "description" : "Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ror-organization-financial-help-type"
       },
       "name" : "ROROrganizationFinancialHelpType",
@@ -1021,10 +1033,22 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ror-organization-oi-name"
+      },
+      "name" : "ROROrganizationOIName",
+      "description" : "Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ror-organization-period"
       },
       "name" : "ROROrganizationPeriod",
-      "description" : "Extension créée dans le cadre du ROR pour définir les période d'ouverture et de fermeture de l'organisation interne",
+      "description" : "Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation.",
       "exampleBoolean" : false
     },
     {

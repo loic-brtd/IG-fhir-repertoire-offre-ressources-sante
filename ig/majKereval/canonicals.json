@@ -420,6 +420,13 @@
     "name" : "ROROrganizationEGLocation"
   },
   {
+    "id" : "ror-organization-eg-name",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-name",
+    "version" : "3.0",
+    "name" : "ROROrganizationEGName"
+  },
+  {
     "id" : "ror-organization-financial-help-type",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type",
@@ -446,6 +453,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place",
     "version" : "3.0",
     "name" : "ROROrganizationNbTemporarySocialHelpPlace"
+  },
+  {
+    "id" : "ror-organization-oi-name",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-oi-name",
+    "version" : "3.0",
+    "name" : "ROROrganizationOIName"
   },
   {
     "id" : "ror-organization-period",
