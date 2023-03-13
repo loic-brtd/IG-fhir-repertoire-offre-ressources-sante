@@ -217,27 +217,6 @@
     "name" : "RORPractitionerTitle"
   },
   {
-    "id" : "ror-address-description",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-description",
-    "version" : "3.0",
-    "name" : "RORAddressDescription"
-  },
-  {
-    "id" : "ror-address-name",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-name",
-    "version" : "3.0",
-    "name" : "RORAddressName"
-  },
-  {
-    "id" : "ror-address-status",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-address-status",
-    "version" : "3.0",
-    "name" : "RORAddressStatus"
-  },
-  {
     "id" : "ror-available-time-effective-opening-closing-date",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date",
@@ -432,6 +411,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone",
     "version" : "3.0",
     "name" : "ROROrganizationDropZone"
+  },
+  {
+    "id" : "ror-organization-eg-location",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-location",
+    "version" : "3.0",
+    "name" : "ROROrganizationEGLocation"
   },
   {
     "id" : "ror-organization-financial-help-type",

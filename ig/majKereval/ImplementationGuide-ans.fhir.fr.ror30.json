@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-03-13T07:40:36+00:00",
+  "date" : "2023-03-13T11:14:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -662,42 +662,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-address-description"
-      },
-      "name" : "RORAddressDescription",
-      "description" : "Extension créée dans le cadre du ROR pour transmettre une description textuelle du lieu, indiquant comment l'atteindre.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ror-address-name"
-      },
-      "name" : "RORAddressName",
-      "description" : "Extension créée dans le cadre du ROR pour décrire le nom du lieu sous la forme de texte",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ror-address-status"
-      },
-      "name" : "RORAddressStatus",
-      "description" : "Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ror-available-time-effective-opening-closing-date"
       },
       "name" : "RORAvailableTimeEffectiveOpeningClosingDate",
@@ -989,6 +953,18 @@
       },
       "name" : "ROROrganizationDropZone",
       "description" : "Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-organization-eg-location"
+      },
+      "name" : "ROROrganizationEGLocation",
+      "description" : "Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG).",
       "exampleBoolean" : false
     },
     {

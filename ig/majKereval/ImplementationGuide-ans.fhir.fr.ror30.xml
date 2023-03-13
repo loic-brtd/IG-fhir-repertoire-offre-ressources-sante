@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-03-13T07:40:36+00:00"/>
+  <date value="2023-03-13T11:14:34+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -503,39 +503,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-address-description"/>
-      </reference>
-      <name value="RORAddressDescription"/>
-      <description value="Extension créée dans le cadre du ROR pour transmettre une description textuelle du lieu, indiquant comment l'atteindre."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-address-name"/>
-      </reference>
-      <name value="RORAddressName"/>
-      <description value="Extension créée dans le cadre du ROR pour décrire le nom du lieu sous la forme de texte"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-address-status"/>
-      </reference>
-      <name value="RORAddressStatus"/>
-      <description value="Extension créée dans le cadre du ROR pour indiquer si le lieu est opérationnel, fermé temporairement ou fermé définitivement."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-available-time-effective-opening-closing-date"/>
       </reference>
       <name value="RORAvailableTimeEffectiveOpeningClosingDate"/>
@@ -803,6 +770,17 @@
       </reference>
       <name value="ROROrganizationDropZone"/>
       <description value="Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-eg-location"/>
+      </reference>
+      <name value="ROROrganizationEGLocation"/>
+      <description value="Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
