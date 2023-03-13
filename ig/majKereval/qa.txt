@@ -1,12 +1,12 @@
 ﻿RORME30 : Validation Results
 =========================================
 
-err = 13, warn = 265, info = 25
+err = 1, warn = 265, info = 25
 IG Publisher Version: 1.2.43
-Generated Mon Mar 13 15:01:59 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror30#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror30)
+Generated Mon Mar 13 15:29:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror30#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror30)
  Build Errors : 1274 / 6 / 0
- /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 6 / 0 / 1
- /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 6 / 0 / 1
+ /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 0 / 0 / 1
+ /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 0 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror30 : 0 / 4 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-additional-bed-type : 0 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-capacity-closing-type : 0 / 0 / 1
@@ -1365,19 +1365,7 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-ror-consommateur.json ==
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[0].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Location-adress-postalcode' does not resolve
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[0].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Location-adress-city' does not resolve
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[1].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-category' does not resolve
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[1].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-type' does not resolve
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[1].searchParam[9].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-speciality' does not resolve
-ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[2].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Organiztion-type' does not resolve
 == fsh-generated/resources/CapabilityStatement-ror-serveur.json ==
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[0].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Location-adress-postalcode' does not resolve
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[0].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Location-adress-city' does not resolve
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[1].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-category' does not resolve
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[1].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-type' does not resolve
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[1].searchParam[9].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/HealthcareService-speciality' does not resolve
-ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[2].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Organiztion-type' does not resolve
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror30.json ==
 WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne '
 WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '

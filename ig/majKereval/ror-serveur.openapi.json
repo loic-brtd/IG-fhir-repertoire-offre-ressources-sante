@@ -132,17 +132,17 @@
             }
           },
           {
-            "name": "adress-postalcode",
+            "name": "address-postalcode",
             "in": "query",
-            "description": "Code Postal ou code postal spécifique CEDEX",
+            "description": "A postal code specified in an address",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "adress-city",
+            "name": "address-city",
             "in": "query",
-            "description": "Localité ou Libellé du bureau distributeur CEDEX",
+            "description": "A city specified in an address",
             "schema": {
               "type": "string"
             }
@@ -334,7 +334,7 @@
           {
             "name": "service-category",
             "in": "query",
-            "description": "Type d\u0027offre",
+            "description": "Service Category of the Healthcare Service",
             "schema": {
               "type": "string"
             }
@@ -342,7 +342,7 @@
           {
             "name": "service-type",
             "in": "query",
-            "description": "Domaine dans lequel s\u0027inscrit l\u0027offre",
+            "description": "The type of service provided by this healthcare service",
             "schema": {
               "type": "string"
             }
@@ -356,9 +356,9 @@
             }
           },
           {
-            "name": "speciality",
+            "name": "specialty",
             "in": "query",
-            "description": "Ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne",
+            "description": "The specialty of the service provided by this healthcare service",
             "schema": {
               "type": "string"
             }
@@ -566,7 +566,7 @@
           {
             "name": "type",
             "in": "query",
-            "description": "Cadre réglementaire dans lequel s\u0027exerce l\u0027activité de l\u0027entité géographique",
+            "description": "A code for the type of organization",
             "schema": {
               "type": "string"
             }

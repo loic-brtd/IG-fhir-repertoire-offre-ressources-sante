@@ -49,14 +49,14 @@
         "documentation" : "Affectations temporaires"
       },
       {
-        "name" : "adress-postalcode",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Location-adress-postalcode",
+        "name" : "address-postalcode",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-address-postalcode",
         "type" : "string",
         "documentation" : "Code Postal ou code postal spécifique CEDEX"
       },
       {
-        "name" : "adress-city",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Location-adress-city",
+        "name" : "address-city",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-address-city",
         "type" : "string",
         "documentation" : "Localité ou Libellé du bureau distributeur CEDEX"
       },
@@ -120,13 +120,13 @@
       },
       {
         "name" : "service-category",
-        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category",
         "type" : "token",
         "documentation" : "Type d'offre"
       },
       {
         "name" : "service-type",
-        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
         "type" : "token",
         "documentation" : "Domaine dans lequel s'inscrit l'offre"
       },
@@ -137,8 +137,8 @@
         "documentation" : "Caractéristiques de l'offre"
       },
       {
-        "name" : "speciality",
-        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-speciality",
+        "name" : "specialty",
+        "definition" : "http://hl7.org/fhir/SearchParameter/HealthcareService-specialty",
         "type" : "token",
         "documentation" : "Ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne"
       },
@@ -214,7 +214,7 @@
       },
       {
         "name" : "type",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Organiztion-type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Organization-type",
         "type" : "token",
         "documentation" : "Cadre réglementaire dans lequel s'exerce l'activité de l'entité géographique"
       },

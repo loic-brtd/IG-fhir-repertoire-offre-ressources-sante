@@ -51,14 +51,14 @@
         <documentation value="Affectations temporaires"/>
       </searchParam>
       <searchParam>
-        <name value="adress-postalcode"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Location-adress-postalcode"/>
+        <name value="address-postalcode"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-address-postalcode"/>
         <type value="string"/>
         <documentation value="Code Postal ou code postal spécifique CEDEX"/>
       </searchParam>
       <searchParam>
-        <name value="adress-city"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Location-adress-city"/>
+        <name value="address-city"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-address-city"/>
         <type value="string"/>
         <documentation value="Localité ou Libellé du bureau distributeur CEDEX"/>
       </searchParam>
@@ -122,13 +122,13 @@
       </searchParam>
       <searchParam>
         <name value="service-category"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-category"/>
         <type value="token"/>
         <documentation value="Type d'offre"/>
       </searchParam>
       <searchParam>
         <name value="service-type"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-type"/>
         <type value="token"/>
         <documentation value="Domaine dans lequel s'inscrit l'offre"/>
       </searchParam>
@@ -139,8 +139,8 @@
         <documentation value="Caractéristiques de l'offre"/>
       </searchParam>
       <searchParam>
-        <name value="speciality"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-speciality"/>
+        <name value="specialty"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-specialty"/>
         <type value="token"/>
         <documentation value="Ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne"/>
       </searchParam>
@@ -216,7 +216,7 @@
       </searchParam>
       <searchParam>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Organiztion-type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-type"/>
         <type value="token"/>
         <documentation value="Cadre réglementaire dans lequel s'exerce l'activité de l'entité géographique"/>
       </searchParam>

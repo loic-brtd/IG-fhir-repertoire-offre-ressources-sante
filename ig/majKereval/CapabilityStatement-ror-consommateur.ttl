@@ -62,18 +62,18 @@
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Affectations temporaires" ]
        ] [
-         fhir:name [ fhir:v "adress-postalcode" ] ;
+         fhir:name [ fhir:v "address-postalcode" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/Location-adress-postalcode"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/Location-adress-postalcode>
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-address-postalcode"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-address-postalcode>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [ fhir:v "Code Postal ou code postal spécifique CEDEX" ]
        ] [
-         fhir:name [ fhir:v "adress-city" ] ;
+         fhir:name [ fhir:v "address-city" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/Location-adress-city"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/Location-adress-city>
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-address-city"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-address-city>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [ fhir:v "Localité ou Libellé du bureau distributeur CEDEX" ]
@@ -156,16 +156,16 @@
        ] [
          fhir:name [ fhir:v "service-category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-category"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-category>
+           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-service-category"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-service-category>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Type d'offre" ]
        ] [
          fhir:name [ fhir:v "service-type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-type>
+           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-service-type>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Domaine dans lequel s'inscrit l'offre" ]
@@ -178,10 +178,10 @@
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Caractéristiques de l'offre" ]
        ] [
-         fhir:name [ fhir:v "speciality" ] ;
+         fhir:name [ fhir:v "specialty" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-speciality"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-speciality>
+           fhir:v "http://hl7.org/fhir/SearchParameter/HealthcareService-specialty"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-specialty>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne" ]
@@ -280,8 +280,8 @@
        ] [
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/Organiztion-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/Organiztion-type>
+           fhir:v "http://hl7.org/fhir/SearchParameter/Organization-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Organization-type>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Cadre réglementaire dans lequel s'exerce l'activité de l'entité géographique" ]
