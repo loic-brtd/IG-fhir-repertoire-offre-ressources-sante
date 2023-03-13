@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ROR"] ; # 
   fhir:title [ fhir:v "ROR"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-13T10:21:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-13T18:07:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1486,75 +1486,66 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "specifications_techniques.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "specifications_techniques_1.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "specifications_techniques.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Specifications Techniques" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "specifications_techniques_1.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "specifications_techniques_1.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Consultation des données capacitaires" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Consultation de l'offre (synchronisation)" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "specifications_techniques_3.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "specifications_techniques_3.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Recherche d'offre sur critères principaux" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "specifications_techniques_4.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "specifications_techniques_4.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Recherche d'offre avec données capacitaires" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "search_param.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "search_param.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Critères de recherche" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "modifiers.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "modifiers.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Paramètres et modificateurs de requêtes FHIR" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "annexes.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "annexes.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Annexes" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] )
+         fhir:name [ fhir:v "specifications_techniques_1.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Consultation des données capacitaires" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Consultation de l'offre (synchronisation)" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_3.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_3.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Recherche d'offre sur critères principaux" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_4.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_4.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Recherche d'offre avec données capacitaires" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "search_param.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "search_param.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Critères de recherche" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "modifiers.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "modifiers.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Paramètres et modificateurs de requêtes FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "annexes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "annexes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Annexes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "mapping.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "mapping.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Mapping" ] ;
+         fhir:title [ fhir:v "Mapping FHIR du modèle de données du ROR" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
