@@ -26,7 +26,7 @@
       <sch:assert test="count(f:extension[@url = 'streetNameType']) &lt;= 1">extension with URL = 'streetNameType': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'streetNameBase']) &lt;= 1">extension with URL = 'streetNameBase': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'streetNameHamlet']) &lt;= 1">extension with URL = 'streetNameHamlet': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'postalBox']) &lt;= 1">extension with URL = 'postalBox': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'postBox']) &lt;= 1">extension with URL = 'postBox': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'RORGeolocation']) &lt;= 1">extension with URL = 'RORGeolocation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'latitude']) &gt;= 1">extension with URL = 'latitude': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'latitude']) &lt;= 1">extension with URL = 'latitude': maximum cardinality of 'extension' is 1</sch:assert>
