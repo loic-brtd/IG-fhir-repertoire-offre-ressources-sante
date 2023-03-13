@@ -1,0 +1,3506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ANS.FHIR.FR.ROR\Mapping - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- CSS only -->
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
+            <br/>
+            <span style="display:inline-block;">3.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications techniques
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_techniques_1.html">Consultation des données capacitaires</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_2.html">Consultation de l&apos;offre (synchronisation)</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_3.html">Recherche d&apos;offre sur critères principaux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_4.html">Recherche d&apos;offre avec données capacitaires</a>
+      </li>
+      <li>
+        <a href="modifiers.html">Paramètres et modificateurs de requêtes FHIR</a>
+      </li>
+      <li>
+        <a href="search_param.html">Critères de recherche</a>
+      </li>
+      <li>
+        <a href="annexes.html">Annexes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping FHIR du modèle de données</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Téléchargements et usage
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="about.html">A propos de ce guide</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapping</b></li>
+
+          <span style="float:right;">
+
+            <a href="annexes.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="downloads.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>Mapping</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h2 id="mapping-profil-rorhealthcareservice">Mapping profil <a href="StructureDefinition-ror-healthcareservice.html">RORHealthcareService</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR path</th>
+      <th> </th>
+      <th>FHIR type</th>
+      <th>Card</th>
+      <th>Status</th>
+      <th>Valeur fixée</th>
+      <th>ValueSet</th>
+      <th>Binding</th>
+      <th>Classe ROR</th>
+      <th>Attribut ROR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Données techniques</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td> </td>
+      <td>Id</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td> </td>
+      <td>Meta</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Metadonnee</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>tag (slice)</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>codeRegion</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J237-RegionOM-ROR</td>
+      <td>Required</td>
+      <td>Metadonnee</td>
+      <td>codeRegion</td>
+    </tr>
+    <tr>
+      <td>References</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>providedBy</td>
+      <td> </td>
+      <td>Reference(Organization)</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Données fonctionnelles</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td> </td>
+      <td>Identifier</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>identifiantOffre</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>nomOffre</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV-J238-TypeOffre-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>typeOffre</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J20-ChampActivite-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>champActivite</td>
+    </tr>
+    <tr>
+      <td>availableTime</td>
+      <td> </td>
+      <td>BackboneElement</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>horaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>availableStartTime</td>
+      <td>Time</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>heureDebut</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>availableEndTime</td>
+      <td>Time</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>heureFin</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeTypeOfTime</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J41-TypeHoraire-ROR</td>
+      <td>Required</td>
+      <td>Horaire</td>
+      <td>typePlageHoraire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeOpeningClosingDate</td>
+      <td>Period</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>effectiveOpeningClosingDate.start</td>
+      <td>DateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>debutDateEffective</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>effectiveOpeningClosingDate.end</td>
+      <td>DateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>finDateEffective</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeNumberDaysOfWeek</td>
+      <td>Integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>jourSemaine</td>
+    </tr>
+    <tr>
+      <td>telecom</td>
+      <td> </td>
+      <td>ContactPoint</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>boiteLettreMSS</td>
+    </tr>
+    <tr>
+      <td>characteristic (slice)</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>receptionType</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J30-TemporaliteAccueil-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>temporaliteAccueil</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>careMode</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J19-ModePriseEnCharge-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>modePriseEnCharge</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>receptionModality</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J226-ModaliteAccueil-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>modalitéAccueil</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>managementType</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J26-ModeGestion-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>modeGestion</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>specificAct</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J16-ActeSpecifique-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>acteSpecifique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>outsideOfficeAct</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J16-ActeSpecifique-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>acteRealiseHorsCabinet</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>takingCareSpeciality</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J35-SpecialisationDePriseEnCharge-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>specialisationPriseEnCharge</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>annualOpening</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J28-OuvertureAnnuelle-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>ouvertureAnnuelle</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ressourceProfession</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J186-ProfessionRessource-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>professionRessource</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>specificCompetence</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J33-CompetenceSpecifique-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>competenceSpecifique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>expertiseLevel</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J227-NiveauExpertise-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>niveauExpertise</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>temporalityStopService</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J201-TypeFermeture-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>typeFermeture</td>
+    </tr>
+    <tr>
+      <td>specialty (slice)</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Activite Operationnelle</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>operationalActivity</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J17-ActiviteOperationnelle-ROR</td>
+      <td>Required</td>
+      <td>Activite Operationnelle</td>
+      <td>activiteOperationnelle</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>operationalActivityFamily</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J51-FamilleActiviteOperationnelle-ROR</td>
+      <td>Required</td>
+      <td>Activite Operationnelle</td>
+      <td>familleActiviteOperationnelle</td>
+    </tr>
+    <tr>
+      <td>notAvailable (slice)</td>
+      <td> </td>
+      <td>BackboneElement</td>
+      <td> </td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>closingDate</td>
+      <td>dateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>dateFermeture</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>previsionalReopeningDate</td>
+      <td>dateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>datePrevisionnelleReouverture</td>
+    </tr>
+    <tr>
+      <td>Extensions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RORTerritorialDivision</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>zoneIntervention</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>type</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J223-TypeDivisionTerritoriale-ROR</td>
+      <td>Required</td>
+      <td>OffreOpérationnelle</td>
+      <td>zoneIntervention.type</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>code</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>zoneIntervention.code</td>
+    </tr>
+    <tr>
+      <td>RORHealthcareServiceSensitiveUnit</td>
+      <td> </td>
+      <td>boolean</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>uniteSensible</td>
+    </tr>
+    <tr>
+      <td>RORHealthcareServiceNoConsentHabilitation</td>
+      <td> </td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>habilitationAuxSoinsSansConsentement</td>
+    </tr>
+    <tr>
+      <td>RORHealthcareServicePsychiatricSector</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>secteurPsychiatrique</td>
+    </tr>
+    <tr>
+      <td>RORCalculatedDistance</td>
+      <td> </td>
+      <td>Quantity</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+      <td>eloignementCalcule</td>
+    </tr>
+    <tr>
+      <td>RORHealthcareServicePatientType</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Patientèle</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>supportedPatientInfo</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J29-PublicPrisEnCharge-ROR</td>
+      <td>Required</td>
+      <td>Patientèle</td>
+      <td>publicPrisEnCharge</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ageRange.low</td>
+      <td>Quantity</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Patientèle</td>
+      <td>ageMin</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ageRange.high</td>
+      <td>Quantity</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Patientèle</td>
+      <td>ageMax</td>
+    </tr>
+    <tr>
+      <td>RORHealthcareServiceContact</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>name</td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>purpose</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J221-NatureContact-ROR</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>natureContact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>description</td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>description</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactFunctionContact</td>
+      <td>Extension</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_220-FonctionContact</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>fonctionContact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORConfidentialityLevel</td>
+      <td>Extension</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J222-NiveauConfidentialite-ROR</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>niveauConfidentiality</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>telecom</td>
+      <td>ContactPoint</td>
+      <td>0..*</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mapping-profil-rorpractitioner">Mapping profil <a href="StructureDefinition-ror-practitioner.html">RORPractitioner</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR path</th>
+      <th> </th>
+      <th>FHIR type</th>
+      <th>Card</th>
+      <th>Status</th>
+      <th>Valeur fixée</th>
+      <th>ValueSet</th>
+      <th>Binding</th>
+      <th>Classe ROR</th>
+      <th>Attribut ROR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Données techniques</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td> </td>
+      <td>Id</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td> </td>
+      <td>Meta</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Metadonnee</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>tag (slice)</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>codeRegion</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J237-RegionOM-ROR</td>
+      <td>Required</td>
+      <td>Metadonnee</td>
+      <td>codeRegion</td>
+    </tr>
+    <tr>
+      <td>Données fonctionnelles</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td> </td>
+      <td>Identifier</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Professionnel</td>
+      <td>idNat_PS</td>
+    </tr>
+    <tr>
+      <td>telecom</td>
+      <td> </td>
+      <td>ContactPoint</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Professionnel</td>
+      <td>boiteLettreMSS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mapping-profil-rorpractitionerrole">Mapping profil <a href="StructureDefinition-ror-practitionerrole.html">RORPractitionerRole</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR path</th>
+      <th> </th>
+      <th>FHIR type</th>
+      <th>Card</th>
+      <th>Status</th>
+      <th>Valeur fixée</th>
+      <th>ValueSet</th>
+      <th>Binding</th>
+      <th>Classe ROR</th>
+      <th>Attribut ROR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Données techniques</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td> </td>
+      <td>Id</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td> </td>
+      <td>Meta</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Metadonnee</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>tag (slice)</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>codeRegion</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J237-RegionOM-ROR</td>
+      <td>Required</td>
+      <td>Metadonnee</td>
+      <td>codeRegion</td>
+    </tr>
+    <tr>
+      <td>References</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>practitioner</td>
+      <td> </td>
+      <td>Reference(Practitioner)</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>healthcareService</td>
+      <td> </td>
+      <td>Reference(HealthcareService)</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Données fonctionnelles</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td> </td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>SituationOperationnelle</td>
+      <td>identifiantSituationOperationnelle</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J229-ProfessionSante-ROR</td>
+      <td>Required</td>
+      <td>ExerciceProfessionnel</td>
+      <td>profession</td>
+    </tr>
+    <tr>
+      <td>availableTime</td>
+      <td> </td>
+      <td>BackboneElement</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>SituationOperationnelle</td>
+      <td>precisionHoraire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>availableStartTime</td>
+      <td>Time</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>heureDebut</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>availableEndTime</td>
+      <td>Time</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>heureFin</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeTypeOfTime</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J41-TypeHoraire-ROR</td>
+      <td>Required</td>
+      <td>Horaire</td>
+      <td>typePlageHoraire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeOpeningClosingDate</td>
+      <td>Period</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>effectiveOpeningClosingDate.start</td>
+      <td>DateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>debutDateEffective</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>effectiveOpeningClosingDate.end</td>
+      <td>DateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>finDateEffective</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORAvailableTimeNumberDaysOfWeek</td>
+      <td>Integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Horaire</td>
+      <td>jourSemaine</td>
+    </tr>
+    <tr>
+      <td>telecom</td>
+      <td> </td>
+      <td>ContactPoint</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>SituationOperationnelle</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>value</td>
+      <td>String</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Telecommunication</td>
+      <td>adresseTelecom</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORCommunicationChannel</td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J225-CanalCommunication-ROR</td>
+      <td>Required</td>
+      <td>Telecommunication</td>
+      <td>canal</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactUsage</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Telecommunication</td>
+      <td>utilisation</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORConfidentialityLevel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J222-NiveauConfidentialite-ROR</td>
+      <td>Required</td>
+      <td>Telecommunication</td>
+      <td>niveauConfidentialite</td>
+    </tr>
+    <tr>
+      <td>specialty (slice)</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>expertiseType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J209-TypeSavoirFaire-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>typeSavoirFaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>speciality</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J210-SpecialiteOrdinale-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>specialite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>competence</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J232-Competence-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>competence</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>exclusiveCompetence</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J211-CompetenceExclusive-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>competenceExclusive</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>specificOrientation</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J212-OrientationParticuliere-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>orientationParticuliere</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>expertiseCapacity</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J213-CapaciteSavoirFaire-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>capacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>qualificationPAC</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J214-QualificationPAC-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>qualificationPAC</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>nonQualifyingDESC</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J215-DESCnonQualifiant-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>DESCNonQualifiant</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>supplementaryExerciceRight</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J216-DroitExerciceCompl-ROR</td>
+      <td>Required</td>
+      <td>SavoirFaire</td>
+      <td>droitExerciceComplémentaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>specificCompetence</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J33-CompetenceSpecifique-ROR</td>
+      <td>Required</td>
+      <td>SituationOperationnelle</td>
+      <td>competenceSpecifique</td>
+    </tr>
+    <tr>
+      <td>Extensions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RORPractitionerRoleUnitExerciseMode</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J217-ModeExercice-ROR</td>
+      <td>Required</td>
+      <td>SituationOperationnelle</td>
+      <td>modeExerciceOffre</td>
+    </tr>
+    <tr>
+      <td>practitionerRole-name</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>name.suffix</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>JDV_J208-CiviliteExcercice-ROR</td>
+      <td> </td>
+      <td>ExerciceProfessionnel</td>
+      <td>civiliteExercice</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>name.family</td>
+      <td>String</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>ExerciceProfessionnel</td>
+      <td>nomExercice</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>name.given</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>ExerciceProfessionnel</td>
+      <td>prenomExercice</td>
+    </tr>
+    <tr>
+      <td>practitionerRole-contracted</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J218-CNAMAmeliSecteurConventionnement-ROR</td>
+      <td>Required</td>
+      <td>SituationOperationnelle</td>
+      <td>secteurConventionnement</td>
+    </tr>
+    <tr>
+      <td>practitionerRole-hasCAS</td>
+      <td> </td>
+      <td>Boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>SituationOperationnelle</td>
+      <td>optionContratAccèsAuxSoins</td>
+    </tr>
+    <tr>
+      <td>practitionerRole-vitaleAccepted</td>
+      <td> </td>
+      <td>Boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>SituationOperationnelle</td>
+      <td>carteVitaleAcceptee</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mapping-profil-rorlocation">Mapping profil <a href="StructureDefinition-ror-location.html">RORLocation</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR path</th>
+      <th> </th>
+      <th>FHIR type</th>
+      <th>Card</th>
+      <th>Status</th>
+      <th>Valeur fixée</th>
+      <th>ValueSet</th>
+      <th>Binding</th>
+      <th>Classe ROR</th>
+      <th>Attribut ROR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Données techniques</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td> </td>
+      <td>Id</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td> </td>
+      <td>Meta</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Metadonnee</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>tag (slice)</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>codeRegion</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J237-RegionOM-ROR</td>
+      <td>Required</td>
+      <td>Metadonnee</td>
+      <td>codeRegion</td>
+    </tr>
+    <tr>
+      <td>Données fonctionnelles</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifer (slice)</td>
+      <td> </td>
+      <td>Identifier</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>idExterneSynchro</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Location</td>
+      <td>idExterneSynchro</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>idLocation</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>identifiant</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>nom</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>description</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J198-FonctionLieu-ROR</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>fonctionLieu</td>
+    </tr>
+    <tr>
+      <td>telecom</td>
+      <td> </td>
+      <td>ContactPoint</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>value</td>
+      <td>String</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Telecommunication</td>
+      <td>adresseTelecom</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORCommunicationChannel</td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J225-CanalCommunication-ROR</td>
+      <td>Required</td>
+      <td>Telecommunication</td>
+      <td>canal</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactUsage</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Telecommunication</td>
+      <td>utilisation</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORConfidentialityLevel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J222-NiveauConfidentialite-ROR</td>
+      <td>Required</td>
+      <td>Telecommunication</td>
+      <td>niveauConfidentialite</td>
+    </tr>
+    <tr>
+      <td>adress</td>
+      <td> </td>
+      <td>Adress</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>postalCode</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/codePostal</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>city</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/localité</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:careof</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/pointRemise</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:additionallocator</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/complementPointGeographique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:houseNumber</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/numeroVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:buildingNumberSuffix</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameType</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J219-TypeVoie-ROR</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/typeVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameBase</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/libelleVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameBase</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/lieuDit</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:postBox</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>adresse/mentionDistribution</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ROROrganizationAddressLineISO21090AdxpLocality</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J230-CommuneOM-ROR</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td> </td>
+      <td>BackboneElement</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>coordonneeGeographique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>latitude</td>
+      <td>decimal</td>
+      <td>1…1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>coordonneeGeographique/latitude</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>longitude</td>
+      <td>decimal</td>
+      <td>1…1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>coordonneeGeographique/longitude</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORGeolocation</td>
+      <td> </td>
+      <td> </td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:geodesicSystem</td>
+      <td>String</td>
+      <td>1…1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>coordonneeGeographique/systemeGeodesique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:reliablePosition</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>coordonneeGeographique/coordonneesFiables</td>
+    </tr>
+    <tr>
+      <td>Extensions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RORLocationStatus</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J224-StatutLieu-ROR</td>
+      <td> </td>
+      <td>LieuRealisationOffre</td>
+      <td>statut</td>
+    </tr>
+    <tr>
+      <td>RORLocationCommuneCog</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J230-CommuneOM-ROR</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RORLocationEquipment</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>EquipementSpecifique</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>equipmentType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J18-EquipementSpecifique-ROR</td>
+      <td> </td>
+      <td>EquipementSpecifique</td>
+      <td>typeEquipement</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>nbInService</td>
+      <td>integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EquipementSpecifique</td>
+      <td>nbEquipementEnService</td>
+    </tr>
+    <tr>
+      <td>RORLocationEquipmentLimit</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LimiteCaracteristiqueEquipement</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>equipmentFeature</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J228-TypeCaracteristiqueEquipement-ROR</td>
+      <td> </td>
+      <td>LimiteCaracteristiqueEquipement</td>
+      <td>typeCaracteristique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>limitValue</td>
+      <td>quantity</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>LimiteCaracteristiqueEquipement</td>
+      <td>valeurLimite</td>
+    </tr>
+    <tr>
+      <td>RORLocationResidentialCapacity</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0…*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>CapaciteHabitation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>residentialType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J32-TypeHabitation-ROR</td>
+      <td> </td>
+      <td>CapaciteHabitation</td>
+      <td>typeHabitation</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>residentialNumber</td>
+      <td>integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>CapaciteHabitation</td>
+      <td>nbHabitation</td>
+    </tr>
+    <tr>
+      <td>RORLocationSupportedCapacity</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0…*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>CapacitePriseCharge</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>temporaryAssignement</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J195-AffectationTemporaire-ROR</td>
+      <td> </td>
+      <td>CapacitePriseCharge</td>
+      <td>affectationTemporaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>capacityType</td>
+      <td>Code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J187-NatureCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>natureCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>capacityStatus</td>
+      <td>Code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J188-TypeStatutCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>statutCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>temporalityCapacity</td>
+      <td>Code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J189-TemporaliteCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>temporaliteCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>nbCapacity</td>
+      <td>integer</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>nombreCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>capacitySourceType</td>
+      <td>Code</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J193-TypeSourceCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>typeSourceCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>genderCapacityAvailable</td>
+      <td>Code</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J190-GenreCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>genreCapaciteDispo</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>capacityUpdateDate</td>
+      <td>DateTime</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>dateMAJCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>capacityClosingType</td>
+      <td>Code</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J191-TypeFermetureCapacite-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>typeFermetureCapacite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>additionalBedType</td>
+      <td>Code</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J192-TypeLitSupplementaire-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>typeLitsSupplementaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>crisisType</td>
+      <td>Code</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J194-TypeCrise-ROR</td>
+      <td> </td>
+      <td>CapaciteAccueilOperationnelle</td>
+      <td>typeCrise</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mapping-profil-rororganization">Mapping profil <a href="StructureDefinition-ror-organization.html">ROROrganization</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR path</th>
+      <th> </th>
+      <th>FHIR type</th>
+      <th>Card</th>
+      <th>Status</th>
+      <th>Valeur fixée</th>
+      <th>ValueSet</th>
+      <th>Binding</th>
+      <th>Classe ROR</th>
+      <th>Attribut ROR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Données techniques</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td> </td>
+      <td>Id</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td> </td>
+      <td>Meta</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Metadonnee</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>tag (slice)</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>codeRegion</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J237-RegionOM-ROR</td>
+      <td>Required</td>
+      <td>Metadonnee</td>
+      <td>codeRegion</td>
+    </tr>
+    <tr>
+      <td>References</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>partOf</td>
+      <td> </td>
+      <td>Reference(Organization)</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>Données fonctionnelles</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifier (slice)</td>
+      <td> </td>
+      <td>Identifier</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>idNatStruct</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>40</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>idNatstruct</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>numFINESS</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>numFINESS</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>numSIREN</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>numSIREN</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>numRPPS</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>numRPPS</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>numSIRET</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>42</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>numSIRET</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>idenfitifierOI</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>identifiantOI</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>numADELI</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>numADELI</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>identifierEG</td>
+      <td>Identifier</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>41</td>
+      <td>JDV-J236-TypeIdentifiant</td>
+      <td> </td>
+      <td> </td>
+      <td>identifiantEG</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td> </td>
+      <td>string</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>raisonSociale</td>
+    </tr>
+    <tr>
+      <td>alias</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>complementRaisonSociale</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>lieuEG/description</td>
+    </tr>
+    <tr>
+      <td>type (slice)</td>
+      <td> </td>
+      <td> </td>
+      <td>1..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>statutJuridiqueINSEE</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J199-StatutJuridique-ROR</td>
+      <td>Required</td>
+      <td>EJ</td>
+      <td>statutJuridique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>sousEnsembleAgregatStatutJuridique</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J200-SousEnsembleAgregatStatutJuridique-ROR</td>
+      <td>Required</td>
+      <td>EJ</td>
+      <td>sousEnsembleAgregatStatutJuridique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>categorieEtablissement</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J55-CategorieEG-ROR</td>
+      <td>Required</td>
+      <td>EG</td>
+      <td>categorieEG</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>SPHparticipation</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>modaliteParticipationSPH</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>organizationType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J203-TypeOrganisationInterne-ROR</td>
+      <td>Required</td>
+      <td>OI</td>
+      <td>typeOI</td>
+    </tr>
+    <tr>
+      <td>contact</td>
+      <td> </td>
+      <td>BackboneElement</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ+EG</td>
+      <td>contact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>contact.name</td>
+      <td>HumanName</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>nom</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactfunctionContact</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J220-FonctionContact-ROR</td>
+      <td>Required</td>
+      <td>Contact</td>
+      <td>fonctionContact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>contact.purpose</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J221-NatureContact-ROR</td>
+      <td>Required</td>
+      <td>Contact</td>
+      <td>natureContact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactDescription</td>
+      <td>string</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>description</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactConfidentialityLevel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J222-NiveauConfidentialite-ROR</td>
+      <td>Required</td>
+      <td>Contact</td>
+      <td>niveauConfidentialite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>contact.telecom</td>
+      <td>ContactPoint</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORTelecomCommunicationChannel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J225-CanalCommunication-ROR</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>telecom.value</td>
+      <td>String</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORContactTelecomUsage</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RORTelecomConfidentialityLevel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J222-NiveauConfidentialite-ROR</td>
+      <td>Required</td>
+      <td>Contact</td>
+      <td>telecommunication</td>
+    </tr>
+    <tr>
+      <td>adress</td>
+      <td> </td>
+      <td>Adress</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>Adresse</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>postalCode</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>pointRemise</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>city</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>completementPointGeographique</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:careof</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>numeroVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:additionallocator</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>extension</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:houseNumber</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>typeVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:buildingNumberSuffix</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>libelleVoie</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameType</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>lieuDit</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameBase</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>mentionDistribution</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:streetNameBase</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>codePostal</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>extension:postBox</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EJ</td>
+      <td>localite</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ROROrganizationAddressLineISO21090AdxpLocality</td>
+      <td>Coding</td>
+      <td>0..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Extensions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ROROrganizationprice</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Tarif</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>priceType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J36-TypeTarif-ROR</td>
+      <td>Required</td>
+      <td>Tarif</td>
+      <td>typeTarif</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>amount</td>
+      <td>Money</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Tarif</td>
+      <td>montantTarif</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>priceUnit</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J205-UnitePrix-ROR</td>
+      <td>Required</td>
+      <td>Tarif</td>
+      <td>unitePrix</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>startDate</td>
+      <td>DateTime</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>Tarif</td>
+      <td>dateDebutValiditeTarif</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>deliveryIncluded</td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J206-PrestationNonObligatoireIncluse-ROR</td>
+      <td>Required</td>
+      <td>ForfaitSocleHebergement</td>
+      <td>prestationsNonObligatoiresIncluses</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>othersDeliveryIncluded</td>
+      <td>String</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>ForfaitSocleHebergement</td>
+      <td>autresPrestationsNonObligatoiresIncluses</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>under60</td>
+      <td>Boolean</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>ForfaitSocleHebergement</td>
+      <td>tarifMoins60Ans</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>residentialType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J32-TypeHabitation-ROR</td>
+      <td>Required</td>
+      <td>ForfaitSocleHebergement</td>
+      <td>typeHabitation</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>welcomeType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J30-TemporaliteAccueil-ROR</td>
+      <td> </td>
+      <td>ForfaitSocleHebergement + TarifDependance</td>
+      <td>temporaliteAccueil</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>specialPrice</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J39-ConditionTarifaire-ROR</td>
+      <td>Required</td>
+      <td>TarifAccueilDeJour+TarifAidesHumaines</td>
+      <td>conditionTarifaire</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>dependencyLevel</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J27-GroupeTarifaireDependance-ROR</td>
+      <td>Required</td>
+      <td>TarifDependance</td>
+      <td>groupeTarifaireDependance</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>humanHelpPriceName</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>TarifAidesHumaines</td>
+      <td>nomTarifAidesHumaines</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>mealDeliveryName</td>
+      <td>String</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>TarifPortageRepas</td>
+      <td>nomTarifPortageRepas</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>managementType</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J26-ModeGestion-ROR</td>
+      <td>Required</td>
+      <td>TarifAidesHumaines</td>
+      <td>modeGestion</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>otherAdditionnalServiceName</td>
+      <td>String</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>TarifPrestationSupplementaire</td>
+      <td>nomAutrePrestationSupp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>additionnalServiceName</td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>JDV_J206-PrestationNonObligatoireIncluse-ROR</td>
+      <td>Required</td>
+      <td>TarifPrestationSupplementaire</td>
+      <td>nomPrestationSupp</td>
+    </tr>
+    <tr>
+      <td>RORTerritorialDivision</td>
+      <td> </td>
+      <td>ComplexeType</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>territoireSante</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>type</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J223-TypeDivisionTerritoriale-ROR</td>
+      <td>Required</td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>code</td>
+      <td>CodeableConcept</td>
+      <td>1..1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td>OffreOpérationnelle</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationFinancialHelpType</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..*</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J31-AideFinanciere-ROR</td>
+      <td> </td>
+      <td>EG</td>
+      <td>aideFinanciere</td>
+    </tr>
+    <tr>
+      <td>ROROrgnizationAccomodationFamily</td>
+      <td> </td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>hebergementFamille</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationNbTemporarySocialHelpPlace</td>
+      <td> </td>
+      <td>integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>nbPlaceAideSocialTemporaire</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationNbPermanentSocialHelpPlace</td>
+      <td> </td>
+      <td>integer</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>nbPlaceAideSocialPermanent</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationaccessibilityLocation</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J50-AccessibiliteLieu-ROR/FHIR</td>
+      <td> </td>
+      <td>EG</td>
+      <td>accessibiliteLieu</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationlevelRecourseORSAN</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J204-NiveauRecoursORSAN-ROR</td>
+      <td>Required</td>
+      <td>EG</td>
+      <td>niveauRecoursORSAN</td>
+    </tr>
+    <tr>
+      <td>period</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td>1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RORCommunceCOG</td>
+      <td> </td>
+      <td>CodeableConcept</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>JDV_J201-TypeFermeture-ROR</td>
+      <td>Required</td>
+      <td>EJ</td>
+      <td>typeFermeture</td>
+    </tr>
+    <tr>
+      <td>ROROrganizationDropZone</td>
+      <td> </td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td>EG</td>
+      <td>zonePoser</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="annexes.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="downloads.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 13, 2023 10:21+0000">2023-03-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/fhir/ig/ror/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

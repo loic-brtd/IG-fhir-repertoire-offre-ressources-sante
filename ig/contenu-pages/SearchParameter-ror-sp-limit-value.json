@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "ror-sp-limit-value",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPLimitValue</h2><p>Parameter <code>limit-value</code>:<code>quantity</code></p><div><p>Paramètre de recherche pour récupérer la valeur limite</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-limit-value",
+  "version" : "3.0",
+  "name" : "RORSPLimitValue",
+  "status" : "active",
+  "date" : "2023-03-13T10:21:29+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche pour récupérer la valeur limite",
+  "code" : "limit-value",
+  "base" : ["Location"],
+  "type" : "quantity",
+  "expression" : "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity"
+}
