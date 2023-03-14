@@ -281,31 +281,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="construction-de-la-requête-de-base">Construction de la requête de base</h3>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Interaction FHIR</strong></td>
-      <td>Search</td>
-    </tr>
-    <tr>
-      <td><strong>Méthode http associée</strong></td>
-      <td>GET</td>
-    </tr>
-    <tr>
-      <td><strong>Ressource recherchée</strong></td>
-      <td>Location</td>
-    </tr>
-    <tr>
-      <td><strong>Construction requête de base</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">GET[base]/Location{?[parameters]{&amp;_format=[mime-type]}}</code></td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="215">
+<p><strong>Interaction FHIR</strong></p>
+</td>
+<td width="465">
+<p>Search<a name="_ftnref1" href="#_ftn1">[1]</a></p>
+</td>
+</tr>
+<tr>
+<td width="215">
+<p><strong>Méthode http associée</strong></p>
+</td>
+<td width="465">
+<p>GET</p>
+</td>
+</tr>
+<tr>
+<td width="215">
+<p><strong>Ressource recherchée</strong></p>
+</td>
+<td width="465">
+<p>Location</p>
+</td>
+</tr>
+<tr>
+<td width="215">
+<p><strong>Construction requête de base</strong></p>
+</td>
+<td width="465">
+<p><code>GET[base]/Location{?[parameters]{&amp;_format=[mime-type]}}</code></p>
+</td>
+</tr>
+</tbody>
 </table>
+<p>&nbsp;</p>
+<p><a name="_ftn1" href="#_ftnref1">[1]</a> <a href="https://www.hl7.org/fhir/http.html#search">https://www.hl7.org/fhir/http.html#search</a> et <a href="https://www.hl7.org/fhir/http.html#general">https://www.hl7.org/fhir/http.html#general</a></p>
 
 <h3 id="construction-de-la-réponse-de-base">Construction de la réponse de base</h3>
 
@@ -368,46 +380,77 @@ sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-      <td>capacity-closing-type</td>
-      <td>identifier</td>
-    </tr>
-    <tr>
-      <td>address-postalcode</td>
-      <td>crisis-type</td>
-      <td>limit-value</td>
-    </tr>
-    <tr>
-      <td>address-city</td>
-      <td>capacity-update ?</td>
-      <td>residential-type</td>
-    </tr>
-    <tr>
-      <td>additional-bed-type</td>
-      <td>equipment-type</td>
-      <td>residential-number</td>
-    </tr>
-    <tr>
-      <td>capacity-status</td>
-      <td>equipment-feature</td>
-      <td>temporary-assignement</td>
-    </tr>
-    <tr>
-      <td>capacity-type</td>
-      <td>gender-capacity-available</td>
-      <td>temporality-capacity</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+<td width="230">
+<p>capacity-closing-type</p>
+</td>
+<td width="230">
+<p>identifier</p>
+</td>
+</tr>
+<tr>
+<td width="230">
+<p>address-postalcode</p>
+</td>
+<td width="230">
+<p>crisis-type</p>
+</td>
+<td width="230">
+<p>limit-value</p>
+</td>
+</tr>
+<tr>
+<td width="230">
+<p>address-city</p>
+</td>
+<td width="230">
+<p>capacity-update?</p>
+</td>
+<td width="230">
+<p>residential-type</p>
+</td>
+</tr>
+<tr>
+<td width="230">
+<p>additional-bed-type</p>
+</td>
+<td width="230">
+<p>equipment-type</p>
+</td>
+<td width="230">
+<p>residential-number</p>
+</td>
+</tr>
+<tr>
+<td width="230">
+<p>capacity-status</p>
+</td>
+<td width="230">
+<p>equipment-feature</p>
+</td>
+<td width="230">
+<p>temporary-assignement</p>
+</td>
+</tr>
+<tr>
+<td width="230">
+<p>capacity-type</p>
+</td>
+<td width="230">
+<p>gender-capacity-available</p>
+</td>
+<td width="230">
+<p>temporality-capacity</p>
+</td>
+</tr>
+</tbody>
 </table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 <ul>
   <li>Les critères de recherche, définis au paragraphe 4.2, de
@@ -416,18 +459,19 @@ d’usage sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identifier</td>
-      <td>location</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>Identifier</p>
+</td>
+<td width="230">
+<p>location</p>
+</td>
+<td width="230">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <p>Ces critères de recherche sont applicables à la ressource Location,
@@ -436,7 +480,7 @@ grâce au chainage[^4]. Pour cela utiliser la syntaxe suivante&nbsp;:
 
 <p>Paramètres et modificateurs de requêtes FHIR</p>
 
-<p><a name="l786">​</a>Les paramètres et modificateurs de requêtes décrits au <a href="specifications_techniques.html#param%C3%A8tres-et-modificateurs-de-requ%C3%AAtes-fhir-1">paragraphe dédié</a>
+<p><a name="l858">​</a>Les paramètres et modificateurs de requêtes décrits au <a href="specifications_techniques.html#param%C3%A8tres-et-modificateurs-de-requ%C3%AAtes-fhir-1">paragraphe dédié</a>
 applicables à ce cas d’usage sont&nbsp;:</p>
 
 <ul>
@@ -639,7 +683,7 @@ service 2.4 = UE1 ou UE2 ou UE3</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 13, 2023 18:07+0000">2023-03-13</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 14, 2023 19:08+0000">2023-03-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

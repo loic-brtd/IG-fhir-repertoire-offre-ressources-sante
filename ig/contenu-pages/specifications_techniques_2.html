@@ -283,31 +283,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="construction-de-la-requête-de-base">Construction de la requête de base</h3>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Interaction FHIR</strong></td>
-      <td><a href="https://www.hl7.org/fhir/http.html#search">Search</a> (<a href="https://www.hl7.org/fhir/http.html#general">voir les psécifications FHIR</a>)</td>
-    </tr>
-    <tr>
-      <td><strong>Méthode http associée</strong></td>
-      <td>GET</td>
-    </tr>
-    <tr>
-      <td><strong>Ressource recherchée</strong></td>
-      <td>HealthcareService</td>
-    </tr>
-    <tr>
-      <td><strong>Construction requête de base</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">GET[base]/HealthcareService{?[parameters]{&amp;_format=[mime-type]}}</code></td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="149">
+<p><strong>Interaction FHIR</strong></p>
+</td>
+<td width="531">
+<p>Search<a name="_ftnref1" href="#_ftn1">[1]</a></p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p><strong>Méthode http associée</strong></p>
+</td>
+<td width="531">
+<p>GET</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p><strong>Ressource recherchée</strong></p>
+</td>
+<td width="531">
+<p>HealthcareService</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p><strong>Construction requête de base</strong></p>
+</td>
+<td width="531">
+<p><code>GET[base]/HealthcareService{?[parameters]{&amp;_format=[mime-type]}}</code></p>
+</td>
+</tr>
+</tbody>
 </table>
+<p>&nbsp;</p>
+<p><a name="_ftn1" href="#_ftnref1">[1]</a> <a href="https://www.hl7.org/fhir/http.html#search">https://www.hl7.org/fhir/http.html#search</a> et <a href="https://www.hl7.org/fhir/http.html#general">https://www.hl7.org/fhir/http.html#general</a></p>
 
 <h3 id="construction-de-la-réponse-de-base">Construction de la réponse de base</h3>
 
@@ -364,45 +376,47 @@ Plus de précision sur la spécification FHIR :
 <h3 id="critères-de-recherches">Critères de recherches</h3>
 
 <ul>
-  <li><a name="l656">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
+  <li><a name="l678">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
 <strong>StructureDefinition-ror-healthcareservice</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-      <td>identifier</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+<td width="230">
+<p>identifier</p>
+</td>
+<td width="230">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <ul>
-  <li><a name="l695">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-organization">paragraphe dédié</a>, de
+  <li><a name="l717">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-organization">paragraphe dédié</a>, de
 <strong>StructureDefinition-ror-organization</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-      <td>identifier</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+<td width="230">
+<p>identifier</p>
+</td>
+<td width="230">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <p>Ces critères de recherche sont applicables à la ressource
@@ -410,22 +424,19 @@ HealthcareService, grâce au <a href="https://www.hl7.org/fhir/search.html#chain
 suivante&nbsp;: <code class="language-plaintext highlighter-rouge">location:[NOM CRITERE]</code></p>
 
 <ul>
-  <li><a name="l742">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-location">paragraphe dédié</a>, de
+  <li><a name="l764">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-location">paragraphe dédié</a>, de
 <strong>StructureDefinition-ror-location</strong> applicables à ce cas d’usage
 sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <p>Ces critères de recherche sont applicables à la ressource
@@ -433,22 +444,19 @@ HealthcareService, grâce au chainage. Pour cela utiliser la syntaxe
 suivante&nbsp;: <code class="language-plaintext highlighter-rouge">location:[NOM CRITERE]</code></p>
 
 <ul>
-  <li><a name="l780">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-practioner">paragraphe dédié</a>, de
+  <li><a name="l796">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-practioner">paragraphe dédié</a>, de
 <strong>StructureDefinition-ror-practitioner</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <p>Ces critères de recherche sont applicables à la ressource Location,
@@ -456,22 +464,19 @@ grâce au <a href="https://www.hl7.org/fhir/search.html#has">chainage</a>. Pour 
 <code class="language-plaintext highlighter-rouge">_has:PractitionerRole:service:_has:PractitionerRole:practitioner:[NOM CRITERE]</code></p>
 
 <ul>
-  <li><a name="l821">​</a>Les critères de recherche, définis au <a href="./specifications_techniques.html#structuredefinition-ror-practionerrole">paragraphe dédié</a>, de
+  <li><a name="l831">​</a>Les critères de recherche, définis au <a href="./specifications_techniques.html#structuredefinition-ror-practionerrole">paragraphe dédié</a>, de
 <strong>StructureDefinition-ror-practitionerrole</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
 
 <table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_lastUpdated</td>
-    </tr>
-  </tbody>
+<tbody>
+<tr>
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 <p>Ces critères de recherche sont applicables à la ressource Location,
@@ -677,7 +682,7 @@ ne recevoir que ces informations.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 13, 2023 18:07+0000">2023-03-13</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 14, 2023 19:08+0000">2023-03-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

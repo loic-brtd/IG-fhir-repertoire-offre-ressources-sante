@@ -286,11 +286,11 @@ offres opérationnelles liées.</p>
 
 <ul>
   <li>
-    <p>Scénario 1 : Données capacitaires de France</p>
+    <p>Scénario 1 : Données capacitaires sur le périmètre national</p>
 
     <ul>
       <li>un consommateur souhaite récupérer l'ensemble des données
-capacitaires de France afin de mettre à jour son système (Exemple de
+capacitaires sur le périmètre national afin de mettre à jour son système (Exemple de
 ROR urgence qui souhaite afficher l'ensemble des capacités sur une
 carte).</li>
     </ul>
@@ -323,7 +323,7 @@ données capacitaires.</li>
 
     <ul>
       <li>un consommateur souhaite mettre à jour dans son système les données
-capacitaires mises à jour dans le ROR national depuis une date.</li>
+capacitaires mises à jour dans le ROR national depuis une date qu’il précise.</li>
     </ul>
   </li>
   <li>
@@ -335,7 +335,7 @@ correspondant à ses critères (exemple : Urgences spécialisées
 cardiologiques via le service de recherche 2.4) souhaite connaitre
 la situation des capacités pour ces offres. Le service de recherche
 lui ayant renvoyé les identifiants de ces offres, il les passe en
-paramètre de la recherche 3.0.</li>
+paramètre de la recherche.</li>
     </ul>
   </li>
 </ul>
@@ -369,14 +369,14 @@ depuis une date</p>
 
 <ul>
   <li>
-    <p>Synchronisation totale : Le consommateur renseigne si besoin son
+    <p>Extraxction totale : Le consommateur renseigne si besoin son
 (ses) critère(s) de recherche parmi les critères disponibles. Le ROR
 National répond au consommateur les offres opérationnelles
 correspondant aux critères de recherche et toutes les classes liées
 à l’offre opérationnelle.</p>
   </li>
   <li>
-    <p>Synchronisation partielle : Le consommateur renseigne si besoin son
+    <p>Extraction partielle : Le consommateur renseigne si besoin son
 (ses) critère(s) de recherche parmi les critères disponibles et
 sélectionne les attributs de l’offre opérationnelle qu’il souhaite
 recevoir. Le ROR National répond au consommateur les attributs
@@ -405,12 +405,11 @@ partielle offre)" />
     <p>Scénario 1 : Synchronisation complète</p>
 
     <ul>
-      <li>Un consommateur souhaite mettre à jour toute l'offre de santé
-nationale</li>
+      <li>Un consommateur souhaite mettre à jour toutes les offres de santé sur le périmètre nationale</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 2 : Synchronisation complète des offres de santé d’un
+    <p>Scénario 2 : Synchronisation de l’ensemble des offres de santé d’un
 établissement</p>
 
     <ul>
@@ -419,7 +418,7 @@ un établissement</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 3 : Synchronisation complète d’une offre de santé
+    <p>Scénario 3 : Synchronisation d’une offre de santé
 identifiée</p>
 
     <ul>
@@ -428,16 +427,16 @@ son identifiant</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 4 : Synchronisation complète à partir d’une date de mise à
+    <p>Scénario 4 : Synchronisation à partir d’une date de mise à
 jour de l’offre opérationnelle</p>
 
     <ul>
       <li>Un consommateur souhaite mettre à jour toute l'offre mise à jour
-depuis une certaine date</li>
+depuis une certaine date précisée par le consommateur.</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 5 : Synchronisation complète à partir d’une date de mise à
+    <p>Scénario 5 : Synchronisation à partir d’une date de mise à
 jour de l’Entité Géographique (EG)</p>
 
     <ul>
@@ -446,7 +445,7 @@ l’organisation est mise à jour depuis une certaine date</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 6 : Synchronisation complète à partir d’une date de mise à
+    <p>Scénario 6 : Synchronisation à partir d’une date de mise à
 jour d’un des éléments de l’offre</p>
 
     <ul>
@@ -456,7 +455,7 @@ depuis une certaine date</li>
     </ul>
   </li>
   <li>
-    <p>Scénario 7 : Synchronisation partielle de l’offre</p>
+    <p>Scénario 7 : Synchronisation de l’offre sur un périmètre limité</p>
 
     <ul>
       <li>Un consommateur souhaite mettre à jour toute l'offre de santé
@@ -511,7 +510,7 @@ qui correspond à l’une des valeurs recherchées par le consommateur</li>
 
     <ul>
       <li>Un consommateur cherche les offres ayant un type d’offre
-<strong>ET</strong> une modalité d’accueil</li>
+<strong>ET</strong> une modalité d’accueil qu’il indique</li>
     </ul>
   </li>
   <li>
@@ -519,7 +518,7 @@ qui correspond à l’une des valeurs recherchées par le consommateur</li>
 
     <ul>
       <li>Un consommateur cherche les offres ayant à un type d’offre
-<strong>OU</strong> une activité opérationnelle</li>
+<strong>OU</strong> une activité opérationnelle qu’il indique</li>
     </ul>
   </li>
   <li>
@@ -528,7 +527,7 @@ qui correspond à l’une des valeurs recherchées par le consommateur</li>
     <ul>
       <li>Un consommateur recherche les offres ayant (une catégorie
 d’établissement <strong>OU</strong> un type d’offre)
-<strong>ET</strong> un acte spécifique</li>
+<strong>ET</strong> un acte spécifique qu’il indique</li>
     </ul>
   </li>
   <li>
@@ -678,7 +677,7 @@ proposant un appareil de radiologie adapté à l'obésité du patient</li>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 13, 2023 18:07+0000">2023-03-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 14, 2023 19:08+0000">2023-03-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
