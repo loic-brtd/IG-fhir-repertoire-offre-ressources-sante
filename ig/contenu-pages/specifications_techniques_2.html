@@ -512,7 +512,8 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -530,7 +531,8 @@ par un établissement dont l’identifiant est = XX</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?organization:identifier=XX_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?organization:identifier=XX_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -550,7 +552,8 @@ rechercher une offre de santé<br/>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?identifier=XXX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?identifier=XXX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner 
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -568,7 +571,8 @@ mise à jour depuis une certaine date &gt;= (06/11/2022)</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_lastUpdated=ge2022-11-06T15:00&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_lastUpdated=ge2022-11-06T15:00&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête&nbsp;expliquée :</strong></p>
 
@@ -588,7 +592,8 @@ certaine date &gt;= (06/11/2022)</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?providedBy._lastUpdated=ge2022-11-06T15:00&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?providedBy._lastUpdated=ge2022-11-06T15:00&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -607,7 +612,8 @@ date &gt;= (06/11/2022)</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_filter=(_lastUpdated ge 2022-11-06T15:00 or providedBy:_lastUpdated ge 2022-11-06T15:00) &amp;_revinclude=Organization:healthcareservice&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_filter=(_lastUpdated ge 2022-11-06T15:00 or providedBy:_lastUpdated ge 2022-11-06T15:00) &amp;_revinclude=Organization:healthcareservice&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -626,7 +632,8 @@ ne recevoir que ces informations.</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_tag= https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM|XX&amp;_elements=identifier &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_tag= https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM|XX&amp;_elements=identifier &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -682,7 +689,7 @@ ne recevoir que ces informations.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 14, 2023 19:08+0000">2023-03-14</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 14, 2023 19:49+0000">2023-03-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
