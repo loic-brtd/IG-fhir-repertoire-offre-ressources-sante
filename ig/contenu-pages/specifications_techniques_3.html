@@ -518,7 +518,8 @@ une activité opérationnelle = XXX</p>
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -535,7 +536,8 @@ offres ayant à une activité opérationnelle = XXX ou YYY (TRE_R211-ActiviteOpe
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX,YYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX,YYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête&nbsp;expliquée&nbsp;:</strong></p>
 
@@ -553,7 +555,8 @@ offres ayant un type d’offre = XXX (TRE_R244-CategorieOrganisation) <strong>ET
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?service-category= https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|XXX&amp; characteristic= https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil|YYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?service-category= https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|XXX&amp; characteristic= https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil|YYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?service-category<span class="o">=</span> https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|XXX#critère de recherche sur le <span class="nb">type </span>d’offre
@@ -571,7 +574,8 @@ offres ayant à un type d’offre = XXX (TRE_R244-CategorieOrganisation) <strong
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_filter=((service-category eq https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|XXX) or (speciality eq https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|YYY))&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_filter=((service-category eq https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|XXX) or (speciality eq https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|YYY))&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -587,7 +591,8 @@ offres ayant à un type d’offre = XXX (TRE_R244-CategorieOrganisation) <strong
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?_filter=((providedBy:type eq https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement|XXX) or (service-category eq https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|YYY))&amp;characteristic=https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique|ZZZ&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?_filter=((providedBy:type eq https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement|XXX) or (service-category eq https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation|YYY))&amp;characteristic=https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique|ZZZ&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revinclude=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -605,7 +610,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX&amp;location:near=latitude|longitude |YY|unite &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?speciality=https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle|XXX&amp;location:near=latitude|longitude |YY|unite &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -622,7 +628,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?location:intervention-zone=XXX &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?location:intervention-zone=XXX &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -638,7 +645,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?location:address-postalcode=XX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?location:address-postalcode=XX&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -655,7 +663,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?location:address=postalcode=XXXX,YYYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?location:address=postalcode=XXXX,YYYY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête&nbsp;expliquée :</strong></p>
 
@@ -671,7 +680,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?location:commune-cog=https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM|XX &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?location:commune-cog=https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM|XX &amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée :</strong></p>
 
@@ -687,7 +697,8 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
 <p><strong>Requête :</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">get[BASE]/HealthcareService?characteristic=https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil|XX&amp;characteristic= https://mos.esante.gouv.fr/NOS/TRE_R253-TypeMaternite/FHIR/TRE-R253-TypeMaternite|YY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/HealthcareService?characteristic=https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil|XX&amp;characteristic= https://mos.esante.gouv.fr/NOS/TRE_R253-TypeMaternite/FHIR/TRE-R253-TypeMaternite|YY&amp;_include:iterate=HealthcareService:organization&amp;_include=HealthcareService:location&amp;_revincluded=PractitionerRole:service&amp;_include=PractitionerRole:practitioner
+</code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
@@ -745,7 +756,7 @@ offres ayant une activité opérationnelle = XXX (TRE_R211-ActiviteOperationnell
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 15, 2023 16:56+0000">2023-03-15</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 15, 2023 17:17+0000">2023-03-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
