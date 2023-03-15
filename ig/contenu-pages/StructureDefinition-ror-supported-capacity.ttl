@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "RORSupportedCapacity"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-15T15:43:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-15T16:12:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
