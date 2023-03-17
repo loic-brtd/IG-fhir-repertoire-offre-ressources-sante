@@ -4,13 +4,13 @@
   <id value="ror-sp-limit-value"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPLimitValue</h2><p>Parameter <code>limit-value</code>:<code>quantity</code></p><div><p>Paramètre de recherche pour récupérer la valeur limite</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-limit-value"/>
+  <url value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-limit-value"/>
   <version value="3.0"/>
   <name value="RORSPLimitValue"/>
   <status value="active"/>
-  <date value="2022-10-06"/>
+  <date value="2023-03-17T09:52:06+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -23,5 +23,5 @@
   <code value="limit-value"/>
   <base value="Location"/>
   <type value="quantity"/>
-  <expression value="Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity"/>
+  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-equipement-limit').extension(url='limitValue').valueQuantity"/>
 </SearchParameter>

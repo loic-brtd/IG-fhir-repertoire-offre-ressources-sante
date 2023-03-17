@@ -5,7 +5,7 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>
 </div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des lieux de réalisation de l'offre</p>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-location">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-healthcareservice">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-organization">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitioner">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitionerrole">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Task</td><td><a href="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-task">https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-task</a></td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>
   </text>
   <url value="http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur"/>
   <version value="3.0"/>
@@ -13,7 +13,7 @@
   <title value="ROR-RORServeur"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-01-18T16:05:38+01:00"/>
+  <date value="2023-01-12T14:27:51+01:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -37,7 +37,7 @@
     </security>
     <resource>
       <type value="Location"/>
-      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-location"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -45,33 +45,39 @@
         <code value="read"/>
       </interaction>
       <searchParam>
-        <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Location-identifier"/>
+        <name value="temporary-assignement"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-temporary-assignement"/>
         <type value="token"/>
-        <documentation value="Identifiant logique du lieu de réalisation de l'offre"/>
+        <documentation value="Affectations temporaires"/>
+      </searchParam>
+      <searchParam>
+        <name value="adress-postalcode"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-adress-postalcode"/>
+        <type value="string"/>
+        <documentation value="Code Postal ou code postal spécifique CEDEX"/>
+      </searchParam>
+      <searchParam>
+        <name value="adress-city"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-adress-city"/>
+        <type value="string"/>
+        <documentation value="Localité ou Libellé du bureau distributeur CEDEX"/>
       </searchParam>
       <searchParam>
         <name value="capacity-status"/>
-        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-capacity-status"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-capacity-status"/>
         <type value="token"/>
         <documentation value="Statut de la capacité"/>
       </searchParam>
       <searchParam>
         <name value="nb-capacity"/>
-        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-nb-capacity"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-nb-capacity"/>
         <type value="number"/>
         <documentation value="Nombre de capacité"/>
-      </searchParam>
-      <searchParam>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
-        <type value="date"/>
-        <documentation value="Date de la dernière mise a jour"/>
       </searchParam>
     </resource>
     <resource>
       <type value="HealthcareService"/>
-      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-healthcareservice"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -85,6 +91,18 @@
         <documentation value="Identifiant logique de la ressource"/>
       </searchParam>
       <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
+      </searchParam>
+      <searchParam>
         <name value="location"/>
         <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-location"/>
         <type value="reference"/>
@@ -95,6 +113,202 @@
         <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-identifier"/>
         <type value="token"/>
         <documentation value="Identifiant métier de l’offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-name"/>
+        <type value="string"/>
+        <documentation value="Dénomination sous laquelle l'offre est identifiée"/>
+      </searchParam>
+      <searchParam>
+        <name value="service-category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-category"/>
+        <type value="token"/>
+        <documentation value="Type d'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="service-type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-type"/>
+        <type value="token"/>
+        <documentation value="Domaine dans lequel s'inscrit l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="characteristic"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic"/>
+        <type value="token"/>
+        <documentation value="Caractéristiques de l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="speciality"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-speciality"/>
+        <type value="token"/>
+        <documentation value="Ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne"/>
+      </searchParam>
+      <searchParam>
+        <name value="age-range-high"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-age-range-high"/>
+        <type value="quantity"/>
+        <documentation value="Age maximum de la patientèle"/>
+      </searchParam>
+      <searchParam>
+        <name value="age-range-low"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-age-range-low"/>
+        <type value="quantity"/>
+        <documentation value="Age minimum de la patientèle"/>
+      </searchParam>
+      <searchParam>
+        <name value="intervention-zone"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-intervention-zone"/>
+        <type value="token"/>
+        <documentation value="Zone d'intervention"/>
+      </searchParam>
+      <searchParam>
+        <name value="supported-patient-type"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-patient-type"/>
+        <type value="token"/>
+        <documentation value="Public pris en charge"/>
+      </searchParam>
+      <searchParam>
+        <name value="psychiatric-sector"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
+        <type value="string"/>
+        <documentation value="Secteur psychiatrique de l'offre opérationnelle"/>
+      </searchParam>
+      <searchParam>
+        <name value="specific-competence"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-specific-competence"/>
+        <type value="token"/>
+        <documentation value="Compétence spécifique"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-organization"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"/>
+        <type value="token"/>
+        <documentation value="Identification nationale de l'Entité Géographique définie dans le CI-SIS"/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-name"/>
+        <type value="string"/>
+        <documentation value="Nom de l'organisation interne"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organiztion-type"/>
+        <type value="token"/>
+        <documentation value="Cadre réglementaire dans lequel s'exerce l'activité de l'entité géographique"/>
+      </searchParam>
+      <searchParam>
+        <name value="closing-type"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-organization-closing-type"/>
+        <type value="token"/>
+        <documentation value="Type de fermeture de l'entité géographique, au sens des règles de gestion du SI FINESS"/>
+      </searchParam>
+      <searchParam>
+        <name value="drop-zone"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-organization-drop-zone"/>
+        <type value="token"/>
+        <documentation value="Indique s'il y a une zone poser sur le site concerné"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-end"/>
+        <definition value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-organization-period-end"/>
+        <type value="date"/>
+        <documentation value="Date de fermeture de l'entité géographique"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitioner"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-practitionerrole"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Task"/>
+      <profile value="https://interop.esante.gouv.fr/fhir/ig/ror/StructureDefinition/ror-task"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
       </searchParam>
     </resource>
   </rest>

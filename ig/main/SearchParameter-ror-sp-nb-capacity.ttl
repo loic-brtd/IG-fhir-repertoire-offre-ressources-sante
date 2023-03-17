@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-nb-capacity> a fhir:SearchParameter ;
+<https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-nb-capacity> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ror-sp-nb-capacity"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPNbCapacity</h2><p>Parameter <code>nb-capacity</code>:<code>number</code></p><div><p>Paramètre de recherche pour récupérer le nombre de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORSPNbCapacity</h2><p>Parameter <code>nb-capacity</code>:<code>number</code></p><div><p>Paramètre de recherche pour récupérer le nombre de la capacité.</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-nb-capacity"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-nb-capacity"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "RORSPNbCapacity"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-17T09:52:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -29,7 +29,7 @@
   fhir:code [ fhir:v "nb-capacity"] ; # 
   fhir:base ( [ fhir:v "Location"] ) ; # 
   fhir:type [ fhir:v "number"] ; # 
-  fhir:expression [ fhir:v "Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger"] . # 
+  fhir:expression [ fhir:v "Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='NbCapacity').valueInteger"] . # 
 
 # -------------------------------------------------------------------------------------
 

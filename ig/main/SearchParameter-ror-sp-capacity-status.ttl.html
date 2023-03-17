@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.6"}
-    h3,h4,h5,h6{--heading-prefix:"6.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.5"}
+    h3,h4,h5,h6{--heading-prefix:"14.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -89,15 +89,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications techniques
@@ -105,21 +98,52 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="specifications_techniques.html">Spécifications techniques</a>
+        <a href="specifications_techniques_1.html">Consultation des données capacitaires</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_2.html">Consultation de l&apos;offre (synchronisation)</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_3.html">Recherche d&apos;offre sur critères principaux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_4.html">Recherche d&apos;offre avec données capacitaires</a>
+      </li>
+      <li>
+        <a href="search_param.html">Critères de recherche</a>
+      </li>
+      <li>
+        <a href="modifiers.html">Paramètres et modificateurs de requêtes FHIR</a>
+      </li>
+      <li>
+        <a href="annexes.html">Annexes</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformance</a>
+    <a href="mapping.html">Mapping FHIR du modèle de données</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Téléchargements et usage
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
       <li>
         <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
@@ -151,7 +175,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="SearchParameter-ror-sp-capacity-update-date.html">next&gt;</a>
+          | <a href="SearchParameter-ror-sp-capacity-type.html">next&gt;</a>
 
           </span>
 
@@ -219,7 +243,7 @@
         
           Active
           
-            as of 2022-10-06
+            as of 2023-03-17
           
         
       </td>
@@ -248,13 +272,13 @@
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ror-sp-capacity-status&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;RORSPCapacityStatus&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;capacity-status&lt;/code&gt;:&lt;code&gt;token&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche pour récupérer le statut de la capacité.&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/location.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;RORSPCapacityStatus&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;capacity-status&lt;/code&gt;:&lt;code&gt;token&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Paramètre de recherche pour récupérer le statut de la capacité.&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/location.html\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter cannot repeat or have multiple values&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-capacity-status&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-capacity-status&quot;^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RORSPCapacityStatus&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2022-10-06T00:00:00+02:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-03-17T09:52:06+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ANS&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ANS&quot; ] ;
@@ -266,7 +290,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;capacity-status&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">fhir:base</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Location&quot;] ) ; # 
   <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;token&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode&quot;] . # 
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode&quot;] . # 
 
 </code></pre>
 
@@ -311,7 +335,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="SearchParameter-ror-sp-capacity-update-date.html">next&gt;</a>
+                <a href="SearchParameter-ror-sp-capacity-type.html">next&gt;</a>
 
               </td>
             </tr>
@@ -321,12 +345,12 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 7, 2023 10:20+0000">2023-03-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 17, 2023 09:52+0000">2023-03-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="http://esante.gouv.fr/ci-sis/fhir/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
+                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/fhir/ig/ror/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
                 
 
           </span>
