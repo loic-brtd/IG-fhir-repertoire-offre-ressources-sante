@@ -82,7 +82,7 @@
   <version value="3.0"/>
   <name value="ROROrganization"/>
   <status value="active"/>
-  <date value="2023-03-06T15:16:36+00:00"/>
+  <date value="2023-03-17T16:29:09+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -692,8 +692,8 @@
     <element id="Organization.extension:ror-healthcareservice-territorial">
       <path value="Organization.extension"/>
       <sliceName value="ror-healthcareservice-territorial"/>
-      <short value="Optional Extensions Element"/>
-      <definition value="Optional Extension Element - found in all resources."/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -723,14 +723,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Organization.extension:ror-organization-financial-help-type">
       <path value="Organization.extension"/>
