@@ -3,7 +3,7 @@
 
 err = 18, warn = 276, info = 35
 IG Publisher Version: 1.2.52
-Generated Sun Mar 19 15:26:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3.0 (canonical = https://interop.esante.gouv.fr/fhir/ig/ror)
+Generated Sun Mar 19 15:26:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3.0 (canonical = https://interop.esante.gouv.fr/fhir/ig/ror)
  Build Errors : 1025 / 4 / 0
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 8 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 8 / 0 / 1
