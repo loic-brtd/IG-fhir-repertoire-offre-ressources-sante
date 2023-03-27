@@ -3,7 +3,7 @@
 
 err = 1, warn = 267, info = 24
 IG Publisher Version: 1.3.2
-Generated Mon Mar 27 14:32:02 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror30#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror30)
+Generated Mon Mar 27 14:51:31 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror30#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror30)
  Build Errors : 1304 / 6 / 0
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 0 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 0 / 0 / 1
@@ -1754,10 +1754,10 @@ WARNING: StructureDefinition/ror-territorial-division: StructureDefinition.snaps
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-code-region-territorial-division.json ==
 WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[0].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR could not be found so cannot be checked
-WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[1].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_JXXX-DepartementOM-ROR/FHIR/JDV-JXXX-DepartementOM-ROR could not be found so cannot be checked
+WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[1].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J248-DepartementOM-ROR/FHIR/JDV-J248-DepartementOM-ROR could not be found so cannot be checked
 WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[2].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR could not be found so cannot be checked
-WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[3].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_JXXX-TerritoireSante-ROR/FHIR/JDV-JXXX-TerritoireSante-ROR could not be found so cannot be checked
-WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[4].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_JXXX-Pays-ROR/FHIR/JDV-JXXX-Pays-ROR could not be found so cannot be checked
+WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[3].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J249-TerritoireSante-ROR/FHIR/JDV-J249-TerritoireSante-ROR could not be found so cannot be checked
+WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[4].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J247-Pays-ROR/FHIR/JDV-J247-Pays-ROR could not be found so cannot be checked
 WARNING: ValueSet/code-region-territorial-division: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet/code-region-territorial-division: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 ERROR: ValueSet.where(id = 'code-region-territorial-division'): Error from server: Unable to find value set "https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR"
