@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "RORME30"] ; # 
   fhir:title [ fhir:v "ROR ME 3.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-21T15:32:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-27T14:30:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -833,6 +833,30 @@
        ] ;
        fhir:name [ fhir:v "RORLocationSupportedCapacity" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l'entité pour un statut et une temporalité donnés." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-meta-comment" ]
+       ] ;
+       fhir:name [ fhir:v "RORMetaComment" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui correspond au commentaire présent dans les métadonnées." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-meta-creation-date" ]
+       ] ;
+       fhir:name [ fhir:v "RORMetaCreationDate" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régionnal) présente dans les métadonnées." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -671,6 +671,20 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment",
+      "title": "RORMetaComment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date",
+      "title": "RORMetaCreationDate",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location",
       "title": "ROROrganizationAccessibilityLocation",
       "types": [
@@ -1560,6 +1574,15 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity": [
       "Location"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date": [
+      "HealthcareService",
+      "Location",
+      "Practitioner",
+      "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location": [
       "Organization"

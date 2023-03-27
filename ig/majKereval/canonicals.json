@@ -385,6 +385,20 @@
     "name" : "RORLocationSupportedCapacity"
   },
   {
+    "id" : "ror-meta-comment",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment",
+    "version" : "3.0",
+    "name" : "RORMetaComment"
+  },
+  {
+    "id" : "ror-meta-creation-date",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date",
+    "version" : "3.0",
+    "name" : "RORMetaCreationDate"
+  },
+  {
     "id" : "ror-organization",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization",
