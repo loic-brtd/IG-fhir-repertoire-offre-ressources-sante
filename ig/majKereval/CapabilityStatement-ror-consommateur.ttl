@@ -54,13 +54,61 @@
          fhir:code [ fhir:v "read" ]
        ] ) ;
        fhir:searchParam ( [
-         fhir:name [ fhir:v "temporary-assignement" ] ;
+         fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement>
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
          ] ;
          fhir:type [ fhir:v "token" ] ;
-         fhir:documentation [ fhir:v "Affectations temporaires" ]
+         fhir:documentation [ fhir:v "Identifiant logique de la ressource" ]
+       ] [
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+         ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Date de la dernière mise a jour" ]
+       ] [
+         fhir:name [ fhir:v "_tag" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-tag"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-tag>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Code de la région de la source de la donnée" ]
+       ] [
+         fhir:name [ fhir:v "type" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Destination d'usage du lieu" ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Identifiant logique du lieu de réalisation de l'offre" ]
+       ] [
+         fhir:name [ fhir:v "near" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-near"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-near>
+         ] ;
+         fhir:type [ fhir:v "special" ] ;
+         fhir:documentation [ fhir:v "Lieux proches du lieu de réalisation de l'offre" ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-status>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Statut de la ressource" ]
        ] [
          fhir:name [ fhir:v "address-postalcode" ] ;
          fhir:definition [
@@ -101,6 +149,118 @@
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Types des lits disponnibles" ]
+       ] [
+         fhir:name [ fhir:v "capacity-closing-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-closing-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-closing-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Type de la fermeture de la capacité" ]
+       ] [
+         fhir:name [ fhir:v "capacity-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Nature de la capacité" ]
+       ] [
+         fhir:name [ fhir:v "capacity-update-date" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-update-date"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-update-date>
+         ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Date à jour de la capacité" ]
+       ] [
+         fhir:name [ fhir:v "crisis-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-crisis-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-crisis-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Type de la crise" ]
+       ] [
+         fhir:name [ fhir:v "equipment-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Type d'un equipement" ]
+       ] [
+         fhir:name [ fhir:v "equipment-feature" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Caractéristique d'un equipement" ]
+       ] [
+         fhir:name [ fhir:v "gender-capacity-available" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-gender-capacity-available"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-gender-capacity-available>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Genre disponnible de la capacité" ]
+       ] [
+         fhir:name [ fhir:v "limit-value" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value>
+         ] ;
+         fhir:type [ fhir:v "quantity" ] ;
+         fhir:documentation [ fhir:v "Valeur limite" ]
+       ] [
+         fhir:name [ fhir:v "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Indique s'il y a une zone poser sur le site concerné" ]
+       ] [
+         fhir:name [ fhir:v "near-insee-code" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code>
+         ] ;
+         fhir:type [ fhir:v "special" ] ;
+         fhir:documentation [ fhir:v "Lieux proches du lieu de réalisation de l'offre via le code COG INSEE" ]
+       ] [
+         fhir:name [ fhir:v "residential-number" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number>
+         ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Nombre d'habitation" ]
+       ] [
+         fhir:name [ fhir:v "residential-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Type d'habitation" ]
+       ] [
+         fhir:name [ fhir:v "temporality-capacity" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Affectations temporaires" ]
+       ] [
+         fhir:name [ fhir:v "temporary-assignement" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Affectations temporaires" ]
        ] )
      ] [
        fhir:type [ fhir:v "HealthcareService" ] ;
@@ -254,6 +414,14 @@
          fhir:code [ fhir:v "read" ]
        ] ) ;
        fhir:searchParam ( [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Identifiant logique de la ressource" ]
+       ] [
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
@@ -330,6 +498,14 @@
          fhir:code [ fhir:v "read" ]
        ] ) ;
        fhir:searchParam ( [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Identifiant logique de la ressource" ]
+       ] [
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;
@@ -358,6 +534,14 @@
          fhir:code [ fhir:v "read" ]
        ] ) ;
        fhir:searchParam ( [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Identifiant logique de la ressource" ]
+       ] [
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"^^xsd:anyURI ;

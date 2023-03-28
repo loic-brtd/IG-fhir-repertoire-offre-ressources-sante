@@ -45,10 +45,46 @@
         <code value="read"/>
       </interaction>
       <searchParam>
-        <name value="temporary-assignement"/>
-        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement"/>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
-        <documentation value="Affectations temporaires"/>
+        <documentation value="Identifiant logique de la ressource"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Date de la dernière mise a jour"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
+        <documentation value="Code de la région de la source de la donnée"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-type"/>
+        <type value="token"/>
+        <documentation value="Destination d'usage du lieu"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-identifier"/>
+        <type value="token"/>
+        <documentation value="Identifiant logique du lieu de réalisation de l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="near"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-near"/>
+        <type value="special"/>
+        <documentation value="Lieux proches du lieu de réalisation de l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-status"/>
+        <type value="token"/>
+        <documentation value="Statut de la ressource"/>
       </searchParam>
       <searchParam>
         <name value="address-postalcode"/>
@@ -79,6 +115,90 @@
         <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type"/>
         <type value="token"/>
         <documentation value="Types des lits disponnibles"/>
+      </searchParam>
+      <searchParam>
+        <name value="capacity-closing-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-closing-type"/>
+        <type value="token"/>
+        <documentation value="Type de la fermeture de la capacité"/>
+      </searchParam>
+      <searchParam>
+        <name value="capacity-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-type"/>
+        <type value="token"/>
+        <documentation value="Nature de la capacité"/>
+      </searchParam>
+      <searchParam>
+        <name value="capacity-update-date"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-update-date"/>
+        <type value="date"/>
+        <documentation value="Date à jour de la capacité"/>
+      </searchParam>
+      <searchParam>
+        <name value="crisis-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-crisis-type"/>
+        <type value="token"/>
+        <documentation value="Type de la crise"/>
+      </searchParam>
+      <searchParam>
+        <name value="equipment-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-type"/>
+        <type value="token"/>
+        <documentation value="Type d'un equipement"/>
+      </searchParam>
+      <searchParam>
+        <name value="equipment-feature"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature"/>
+        <type value="token"/>
+        <documentation value="Caractéristique d'un equipement"/>
+      </searchParam>
+      <searchParam>
+        <name value="gender-capacity-available"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-gender-capacity-available"/>
+        <type value="token"/>
+        <documentation value="Genre disponnible de la capacité"/>
+      </searchParam>
+      <searchParam>
+        <name value="limit-value"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value"/>
+        <type value="quantity"/>
+        <documentation value="Valeur limite"/>
+      </searchParam>
+      <searchParam>
+        <name value="Code officiel géographique (cog) de la commune dans laquelle le lieu est situé"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog"/>
+        <type value="token"/>
+        <documentation value="Indique s'il y a une zone poser sur le site concerné"/>
+      </searchParam>
+      <searchParam>
+        <name value="near-insee-code"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code"/>
+        <type value="special"/>
+        <documentation value="Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"/>
+      </searchParam>
+      <searchParam>
+        <name value="residential-number"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number"/>
+        <type value="number"/>
+        <documentation value="Nombre d'habitation"/>
+      </searchParam>
+      <searchParam>
+        <name value="residential-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-type"/>
+        <type value="token"/>
+        <documentation value="Type d'habitation"/>
+      </searchParam>
+      <searchParam>
+        <name value="temporality-capacity"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity"/>
+        <type value="token"/>
+        <documentation value="Affectations temporaires"/>
+      </searchParam>
+      <searchParam>
+        <name value="temporary-assignement"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement"/>
+        <type value="token"/>
+        <documentation value="Affectations temporaires"/>
       </searchParam>
     </resource>
     <resource>
@@ -197,6 +317,12 @@
         <code value="read"/>
       </interaction>
       <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant logique de la ressource"/>
+      </searchParam>
+      <searchParam>
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
@@ -255,6 +381,12 @@
         <code value="read"/>
       </interaction>
       <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant logique de la ressource"/>
+      </searchParam>
+      <searchParam>
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
@@ -276,6 +408,12 @@
       <interaction>
         <code value="read"/>
       </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant logique de la ressource"/>
+      </searchParam>
       <searchParam>
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>

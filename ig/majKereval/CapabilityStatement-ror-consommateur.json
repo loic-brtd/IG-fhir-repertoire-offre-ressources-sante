@@ -43,10 +43,46 @@
         "code" : "read"
       }],
       "searchParam" : [{
-        "name" : "temporary-assignement",
-        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement",
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
         "type" : "token",
-        "documentation" : "Affectations temporaires"
+        "documentation" : "Identifiant logique de la ressource"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+        "type" : "date",
+        "documentation" : "Date de la dernière mise a jour"
+      },
+      {
+        "name" : "_tag",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-tag",
+        "type" : "token",
+        "documentation" : "Code de la région de la source de la donnée"
+      },
+      {
+        "name" : "type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-type",
+        "type" : "token",
+        "documentation" : "Destination d'usage du lieu"
+      },
+      {
+        "name" : "identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-identifier",
+        "type" : "token",
+        "documentation" : "Identifiant logique du lieu de réalisation de l'offre"
+      },
+      {
+        "name" : "near",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-near",
+        "type" : "special",
+        "documentation" : "Lieux proches du lieu de réalisation de l'offre"
+      },
+      {
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-status",
+        "type" : "token",
+        "documentation" : "Statut de la ressource"
       },
       {
         "name" : "address-postalcode",
@@ -77,6 +113,90 @@
         "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type",
         "type" : "token",
         "documentation" : "Types des lits disponnibles"
+      },
+      {
+        "name" : "capacity-closing-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-closing-type",
+        "type" : "token",
+        "documentation" : "Type de la fermeture de la capacité"
+      },
+      {
+        "name" : "capacity-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-type",
+        "type" : "token",
+        "documentation" : "Nature de la capacité"
+      },
+      {
+        "name" : "capacity-update-date",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-capacity-update-date",
+        "type" : "date",
+        "documentation" : "Date à jour de la capacité"
+      },
+      {
+        "name" : "crisis-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-crisis-type",
+        "type" : "token",
+        "documentation" : "Type de la crise"
+      },
+      {
+        "name" : "equipment-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-type",
+        "type" : "token",
+        "documentation" : "Type d'un equipement"
+      },
+      {
+        "name" : "equipment-feature",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-equipment-feature",
+        "type" : "token",
+        "documentation" : "Caractéristique d'un equipement"
+      },
+      {
+        "name" : "gender-capacity-available",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-gender-capacity-available",
+        "type" : "token",
+        "documentation" : "Genre disponnible de la capacité"
+      },
+      {
+        "name" : "limit-value",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value",
+        "type" : "quantity",
+        "documentation" : "Valeur limite"
+      },
+      {
+        "name" : "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog",
+        "type" : "token",
+        "documentation" : "Indique s'il y a une zone poser sur le site concerné"
+      },
+      {
+        "name" : "near-insee-code",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-near-insee-code",
+        "type" : "special",
+        "documentation" : "Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"
+      },
+      {
+        "name" : "residential-number",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-number",
+        "type" : "number",
+        "documentation" : "Nombre d'habitation"
+      },
+      {
+        "name" : "residential-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-residential-type",
+        "type" : "token",
+        "documentation" : "Type d'habitation"
+      },
+      {
+        "name" : "temporality-capacity",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporality-capacity",
+        "type" : "token",
+        "documentation" : "Affectations temporaires"
+      },
+      {
+        "name" : "temporary-assignement",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-temporary-assignement",
+        "type" : "token",
+        "documentation" : "Affectations temporaires"
       }]
     },
     {
@@ -195,6 +315,12 @@
         "code" : "read"
       }],
       "searchParam" : [{
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token",
+        "documentation" : "Identifiant logique de la ressource"
+      },
+      {
         "name" : "_lastUpdated",
         "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date",
@@ -253,6 +379,12 @@
         "code" : "read"
       }],
       "searchParam" : [{
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token",
+        "documentation" : "Identifiant logique de la ressource"
+      },
+      {
         "name" : "_lastUpdated",
         "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date",
@@ -275,6 +407,12 @@
         "code" : "read"
       }],
       "searchParam" : [{
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token",
+        "documentation" : "Identifiant logique de la ressource"
+      },
+      {
         "name" : "_lastUpdated",
         "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date",
