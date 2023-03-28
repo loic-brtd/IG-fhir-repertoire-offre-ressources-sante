@@ -165,10 +165,10 @@
         <documentation value="Valeur limite"/>
       </searchParam>
       <searchParam>
-        <name value="Code officiel géographique (cog) de la commune dans laquelle le lieu est situé"/>
+        <name value="commune-cog"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog"/>
         <type value="token"/>
-        <documentation value="Indique s'il y a une zone poser sur le site concerné"/>
+        <documentation value="Code officiel géographique (cog) de la commune dans laquelle le lieu est situé"/>
       </searchParam>
       <searchParam>
         <name value="near-insee-code"/>

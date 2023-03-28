@@ -163,10 +163,10 @@
         "documentation" : "Valeur limite"
       },
       {
-        "name" : "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé",
+        "name" : "commune-cog",
         "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog",
         "type" : "token",
-        "documentation" : "Indique s'il y a une zone poser sur le site concerné"
+        "documentation" : "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé"
       },
       {
         "name" : "near-insee-code",

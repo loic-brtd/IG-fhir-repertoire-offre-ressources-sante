@@ -214,13 +214,13 @@
          fhir:type [ fhir:v "quantity" ] ;
          fhir:documentation [ fhir:v "Valeur limite" ]
        ] [
-         fhir:name [ fhir:v "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé" ] ;
+         fhir:name [ fhir:v "commune-cog" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-location-commune-cog>
          ] ;
          fhir:type [ fhir:v "token" ] ;
-         fhir:documentation [ fhir:v "Indique s'il y a une zone poser sur le site concerné" ]
+         fhir:documentation [ fhir:v "Code officiel géographique (cog) de la commune dans laquelle le lieu est situé" ]
        ] [
          fhir:name [ fhir:v "near-insee-code" ] ;
          fhir:definition [
