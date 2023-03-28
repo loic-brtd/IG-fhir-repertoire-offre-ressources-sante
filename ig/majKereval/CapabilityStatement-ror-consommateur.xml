@@ -74,6 +74,12 @@
         <type value="number"/>
         <documentation value="Nombre de capacité"/>
       </searchParam>
+      <searchParam>
+        <name value="additional-bed-type"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type"/>
+        <type value="token"/>
+        <documentation value="Types des lits disponnibles"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="HealthcareService"/>

@@ -93,6 +93,14 @@
          ] ;
          fhir:type [ fhir:v "number" ] ;
          fhir:documentation [ fhir:v "Nombre de capacité" ]
+       ] [
+         fhir:name [ fhir:v "additional-bed-type" ] ;
+         fhir:definition [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type>
+         ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Types des lits disponnibles" ]
        ] )
      ] [
        fhir:type [ fhir:v "HealthcareService" ] ;

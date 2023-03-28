@@ -71,6 +71,12 @@
         "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-nb-capacity",
         "type" : "number",
         "documentation" : "Nombre de capacité"
+      },
+      {
+        "name" : "additional-bed-type",
+        "definition" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-additional-bed-type",
+        "type" : "token",
+        "documentation" : "Types des lits disponnibles"
       }]
     },
     {
