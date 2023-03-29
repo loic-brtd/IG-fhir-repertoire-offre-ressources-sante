@@ -378,7 +378,7 @@
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Zone d'intervention" ]
        ] [
-         fhir:name [ fhir:v "supported-patient-type" ] ;
+         fhir:name [ fhir:v "patient-type" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type>
@@ -393,14 +393,6 @@
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [ fhir:v "Secteur psychiatrique de l'offre opérationnelle" ]
-       ] [
-         fhir:name [ fhir:v "specific-competence" ] ;
-         fhir:definition [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence"^^xsd:anyURI ;
-           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence>
-         ] ;
-         fhir:type [ fhir:v "token" ] ;
-         fhir:documentation [ fhir:v "Compétence spécifique" ]
        ] )
      ] [
        fhir:type [ fhir:v "Organization" ] ;
@@ -446,10 +438,10 @@
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Identification nationale de l'Entité Géographique définie dans le CI-SIS" ]
        ] [
-         fhir:name [ fhir:v "name" ] ;
+         fhir:name [ fhir:v "oi-name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/Organization-name"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/Organization-name>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-oi-name"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-oi-name>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [ fhir:v "Nom de l'organisation interne" ]

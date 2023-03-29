@@ -119,13 +119,6 @@
     "name" : "RORHealthcareServicePsychiatricSector"
   },
   {
-    "id" : "ror-sp-healthcareservice-specific-competence",
-    "type" : "SearchParameter",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence",
-    "version" : "3.0",
-    "name" : "RORHealthcareServiceSpecificCompetence"
-  },
-  {
     "id" : "ror-sp-limit-value",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-limit-value",
@@ -166,6 +159,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-drop-zone",
     "version" : "3.0",
     "name" : "RORSPOrganizationDropZone"
+  },
+  {
+    "id" : "ror-sp-organization-oi-name",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-oi-name",
+    "version" : "3.0",
+    "name" : "RORSPOrganizationOIName"
   },
   {
     "id" : "ror-sp-organization-period-end",
@@ -509,13 +509,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode",
     "version" : "3.0",
     "name" : "RORPractitionerRoleUnitExerciseMode"
-  },
-  {
-    "id" : "ror-specific-competence",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-specific-competence",
-    "version" : "3.0",
-    "name" : "RORSpecificCompetence"
   },
   {
     "id" : "ror-telecom-communication-channel",

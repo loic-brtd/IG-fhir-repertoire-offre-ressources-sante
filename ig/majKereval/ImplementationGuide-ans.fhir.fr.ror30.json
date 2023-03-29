@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-03-28T13:00:55+00:00",
+  "date" : "2023-03-29T15:26:54+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1129,18 +1129,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-specific-competence"
-      },
-      "name" : "RORSpecificCompetence",
-      "description" : "Extension créée dans le cadre du ROR qui correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ror-telecom-communication-channel"
       },
       "name" : "RORTelecomCommunicationChannel",
@@ -1392,18 +1380,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/ror-sp-healthcareservice-specific-competence"
-      },
-      "name" : "ror-sp-healthcareservice-specific-competence",
-      "description" : "Paramètre de recherche permettant de pointer sur la compétence spécifique",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/ror-sp-limit-value"
       },
       "name" : "ror-sp-limit-value",
@@ -1468,6 +1444,18 @@
       },
       "name" : "ror-sp-organization-drop-zone",
       "description" : "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-organization-oi-name"
+      },
+      "name" : "ror-sp-organization-oi-name",
+      "description" : "Paramètre de recherche sur le nom de l'organisation interne",
       "exampleBoolean" : false
     },
     {

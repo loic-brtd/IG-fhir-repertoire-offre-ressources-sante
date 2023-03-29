@@ -1278,14 +1278,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-specific-competence",
-      "title": "RORSpecificCompetence",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel",
       "title": "RORTelecomCommunicationChannel",
       "types": [
@@ -1576,11 +1568,13 @@
       "Location"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment": [
-      "Organization"
+      "Organization",
+      "PractitionerRole"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date": [
       "HealthcareService",
       "Location",
+      "Organization",
       "Practitioner",
       "PractitionerRole"
     ],

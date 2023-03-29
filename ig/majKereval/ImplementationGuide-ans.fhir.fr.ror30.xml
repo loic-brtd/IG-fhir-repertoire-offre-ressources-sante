@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-03-28T13:00:55+00:00"/>
+  <date value="2023-03-29T15:26:54+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -931,17 +931,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-specific-competence"/>
-      </reference>
-      <name value="RORSpecificCompetence"/>
-      <description value="Extension créée dans le cadre du ROR qui correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-telecom-communication-channel"/>
       </reference>
       <name value="RORTelecomCommunicationChannel"/>
@@ -1172,17 +1161,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/ror-sp-healthcareservice-specific-competence"/>
-      </reference>
-      <name value="ror-sp-healthcareservice-specific-competence"/>
-      <description value="Paramètre de recherche permettant de pointer sur la compétence spécifique"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/ror-sp-limit-value"/>
       </reference>
       <name value="ror-sp-limit-value"/>
@@ -1242,6 +1220,17 @@
       </reference>
       <name value="ror-sp-organization-drop-zone"/>
       <description value="Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-organization-oi-name"/>
+      </reference>
+      <name value="ror-sp-organization-oi-name"/>
+      <description value="Paramètre de recherche sur le nom de l'organisation interne"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

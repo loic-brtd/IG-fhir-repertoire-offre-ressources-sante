@@ -554,7 +554,7 @@
             }
           },
           {
-            "name": "supported-patient-type",
+            "name": "patient-type",
             "in": "query",
             "description": "Paramètre de recherche décrivant le public pris en charge",
             "schema": {
@@ -565,14 +565,6 @@
             "name": "psychiatric-sector",
             "in": "query",
             "description": "Paramètre de recherche décrivrant le secteur psychiatrique de l\u0027offre opérationnelle",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "specific-competence",
-            "in": "query",
-            "description": "Paramètre de recherche permettant de pointer sur la compétence spécifique",
             "schema": {
               "type": "string"
             }
@@ -730,9 +722,9 @@
             }
           },
           {
-            "name": "name",
+            "name": "oi-name",
             "in": "query",
-            "description": "A portion of the organization\u0027s name or alias",
+            "description": "Paramètre de recherche sur le nom de l\u0027organisation interne",
             "schema": {
               "type": "string"
             }

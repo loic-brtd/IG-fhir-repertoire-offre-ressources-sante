@@ -289,7 +289,7 @@
         <documentation value="Zone d'intervention"/>
       </searchParam>
       <searchParam>
-        <name value="supported-patient-type"/>
+        <name value="patient-type"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-patient-type"/>
         <type value="token"/>
         <documentation value="Public pris en charge"/>
@@ -299,12 +299,6 @@
         <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
         <type value="string"/>
         <documentation value="Secteur psychiatrique de l'offre opérationnelle"/>
-      </searchParam>
-      <searchParam>
-        <name value="specific-competence"/>
-        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-healthcareservice-specific-competence"/>
-        <type value="token"/>
-        <documentation value="Compétence spécifique"/>
       </searchParam>
     </resource>
     <resource>
@@ -341,8 +335,8 @@
         <documentation value="Identification nationale de l'Entité Géographique définie dans le CI-SIS"/>
       </searchParam>
       <searchParam>
-        <name value="name"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Organization-name"/>
+        <name value="oi-name"/>
+        <definition value="https://interop.esante.gouv.fr/ig/fhir/ror30/SearchParameter/ror-sp-organization-oi-name"/>
         <type value="string"/>
         <documentation value="Nom de l'organisation interne"/>
       </searchParam>
