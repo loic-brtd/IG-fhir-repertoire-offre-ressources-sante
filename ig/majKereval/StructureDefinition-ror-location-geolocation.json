@@ -9,7 +9,7 @@
   "version" : "3.0",
   "name" : "RORGeolocationLocation",
   "status" : "active",
-  "date" : "2023-03-30T07:20:01+00:00",
+  "date" : "2023-03-30T08:12:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -28,7 +28,7 @@
   "abstract" : false,
   "context" : [{
     "type" : "extension",
-    "expression" : "https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-location"
+    "expression" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"
   },
   {
     "type" : "element",

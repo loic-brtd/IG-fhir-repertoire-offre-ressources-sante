@@ -19,7 +19,7 @@
   <version value="3.0"/>
   <name value="RORGeolocationLocation"/>
   <status value="active"/>
-  <date value="2023-03-30T07:20:01+00:00"/>
+  <date value="2023-03-30T08:12:51+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -38,7 +38,7 @@
   <abstract value="false"/>
   <context>
     <type value="extension"/>
-    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-location"/>
+    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"/>
   </context>
   <context>
     <type value="element"/>
