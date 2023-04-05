@@ -82,48 +82,48 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/Str
 ","Optional Extensions Element","The date range that this organization should be considered available.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price]]} {[]}
+"Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-price]]} {[]}
 ","Tarif","Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-territorial-division","Organization.extension","ror-territorial-division","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division]]} {[]}
+"Organization.extension:ror-territorial-division","Organization.extension","ror-territorial-division","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-territorial-division]]} {[]}
 ","territoireSante (EG) : Territoire(s) de santé où est située l'entité géographique","Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. 
 Cela inclut notamment les divisions territoriales dans lesquelles les professionnels se déplacent.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-financial-help-type","Organization.extension","ror-organization-financial-help-type","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type]]} {[]}
+"Organization.extension:ror-organization-financial-help-type","Organization.extension","ror-organization-financial-help-type","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type]]} {[]}
 ","aideFinanciere (EG) : Aide financière pour laquelle l'EG dispose d'une habilitation ou conventionnement","Extension créée dans le cadre du ROR pour préciser l'aide financière pour laquelle l'EG dispose d'une habilitation ou conventionnement qui permet aux personnes accueillies d'en bénéficier si elles remplissent les conditions.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-accomodation-family","Organization.extension","ror-organization-accomodation-family","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family]]} {[]}
+"Organization.extension:ror-organization-accomodation-family","Organization.extension","ror-organization-accomodation-family","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-accomodation-family]]} {[]}
 ","hebergementFamille (EG) : Indique si l'établissement peut héberger les familles des personnes prises en charge","Extension créée dans le cadre du ROR pour préciser si l'établissement peut héberger les familles des personnes prises en charge.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-nb-permanent-social-help-place","Organization.extension","ror-organization-nb-permanent-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place]]} {[]}
+"Organization.extension:ror-organization-nb-permanent-social-help-place","Organization.extension","ror-organization-nb-permanent-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-nb-permanent-social-help-place]]} {[]}
 ","nbPlaceAideSocialTemporaire (EG) : nombre de places temporaires dédiées à l'aide sociale dans l'établissement","Extension créée dans le cadre du ROR pour indiquer le nombre de places permanentes dédiées à l'aide sociale dans l'établissement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-nb-temporary-social-help-place","Organization.extension","ror-organization-nb-temporary-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place]]} {[]}
+"Organization.extension:ror-organization-nb-temporary-social-help-place","Organization.extension","ror-organization-nb-temporary-social-help-place","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-nb-temporary-social-help-place]]} {[]}
 ","nbPlaceAideSocialPermanent (EG) : nombre de places permanentes dédiées à l'aide sociale dans l'établissement","Extension créée dans le cadre du ROR pour indiquer le nombre de places temporaires dédiées à l'aide sociale dans l'établissement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-accessibility-location","Organization.extension","ror-organization-accessibility-location","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location]]} {[]}
+"Organization.extension:ror-organization-accessibility-location","Organization.extension","ror-organization-accessibility-location","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-accessibility-location]]} {[]}
 ","accessibiliteLieu (EG) : Précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public","Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. ","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-level-recourse-orsan","Organization.extension","ror-organization-level-recourse-orsan","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan]]} {[]}
+"Organization.extension:ror-organization-level-recourse-orsan","Organization.extension","ror-organization-level-recourse-orsan","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-level-recours-orsan]]} {[]}
 ","niveauRecoursORSAN (EG) : Hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU","Extension créée dans le cadre du ROR pour décrire une hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-commune-cog","Organization.extension","ror-commune-cog","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog]]} {[]}
+"Organization.extension:ror-commune-cog","Organization.extension","ror-commune-cog","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-commune-cog]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-drop-zone","Organization.extension","ror-organization-drop-zone","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone]]} {[]}
+"Organization.extension:ror-organization-drop-zone","Organization.extension","ror-organization-drop-zone","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone]]} {[]}
 ","zonePoser (EG) : Précise l’existence d’une zone de poser pour hélicoptère sur le site concerné","Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-period","Organization.extension","ror-organization-period","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period]]} {[]}
+"Organization.extension:ror-organization-period","Organization.extension","ror-organization-period","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-period]]} {[]}
 ","typeFermeture (EG + OI) + datePrevisionnelleReouverture (OI)","Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -131,24 +131,24 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","dateOuverture (EJ + OI) + dateFermeture (EJ + EG + OI)","The date range that this organization should be considered available.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-eg-location","Organization.extension","ror-organization-eg-location","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-location]]} {[]}
+"Organization.extension:ror-organization-eg-location","Organization.extension","ror-organization-eg-location","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-eg-name","Organization.extension","ror-organization-eg-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-name]]} {[]}
+"Organization.extension:ror-organization-eg-name","Organization.extension","ror-organization-eg-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name]]} {[]}
 ","denominationEG + complementDenominationEG + nomOperationnel + commentaire (EG)","Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-oi-name","Organization.extension","ror-organization-oi-name","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-oi-name]]} {[]}
+"Organization.extension:ror-organization-oi-name","Organization.extension","ror-organization-oi-name","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-oi-name]]} {[]}
 ","nomOI (OI) : Nom de l'organisation interne","Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-meta-comment","Organization.extension","ror-meta-comment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment]]} {[]}
+"Organization.extension:ror-meta-comment","Organization.extension","ror-meta-comment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-comment]]} {[]}
 ","commentaire (Metadonnee)","Extension créée dans le cadre du ROR qui correspond au commentaire présent dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-meta-creation-date","Organization.extension","ror-meta-creation-date","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date]]} {[]}
-","dateCreation (Metadonnee)","Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régionnal) présente dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Organization.extension:ror-meta-creation-date","Organization.extension","ror-meta-creation-date","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-creation-date]]} {[]}
+","dateCreation (Metadonnee)","Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régional) présente dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.modifierExtension","Organization.modifierExtension","","extensions
@@ -1017,15 +1017,15 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://interopsante.org
 ","Type of email | type de messagerie électronique","Optional Extension Element - found in all resources.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.telecom.extension:ror-telecom-communication-channel","Organization.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"Organization.telecom.extension:ror-telecom-communication-channel","Organization.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.telecom.extension:ror-telecom-usage","Organization.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"Organization.telecom.extension:ror-telecom-usage","Organization.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-usage]]} {[]}
 ","utilisation (Telecommunication) : Utilisation du canal de communication ","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.telecom.extension:ror-telecom-confidentiality-level","Organization.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"Organization.telecom.extension:ror-telecom-confidentiality-level","Organization.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","niveauConfidentialite (Telecommunication) : Niveau de restriction de l'accès aux attributs de la classe Télécommunication","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1085,7 +1085,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Organization.address.extension:ror-calculated-distance","Organization.address.extension","ror-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance]]} {[]}
+"Organization.address.extension:ror-calculated-distance","Organization.address.extension","ror-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-calculated-distance]]} {[]}
 ","Eloignement calculé","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1199,7 +1199,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.hasValue().not() or end.hasValue().not() or (start <= end)}"
-"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrOrganization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization]]}
+"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrOrganization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization]]}
 ","The organization of which this organization forms a part","The organization of which this organization forms a part.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
@@ -1247,15 +1247,15 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-function-contact","Organization.contact.extension","ror-contact-function-contact","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact]]} {[]}
+"Organization.contact.extension:ror-contact-function-contact","Organization.contact.extension","ror-contact-function-contact","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-function-contact]]} {[]}
 ","fonctionContact (Contact) : Un titre, une position ou une fonction de la personne assurant le contact au sein de l'organisation","Extension créée dans le cadre du ROR qui indique un titre, une position ou une fonction de la personne assurant le contact au sein de l'organisation (directeur, secrétaire, etc.).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-description","Organization.contact.extension","ror-contact-description","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description]]} {[]}
+"Organization.contact.extension:ror-contact-description","Organization.contact.extension","ror-contact-description","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-description]]} {[]}
 ","description (Contact) : Une description du contact","Extension créée dans le cadre du ROR qui indique la description du Contact.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.extension:ror-contact-confidentiality-level","Organization.contact.extension","ror-contact-confidentiality-level","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level]]} {[]}
+"Organization.contact.extension:ror-contact-confidentiality-level","Organization.contact.extension","ror-contact-confidentiality-level","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-confidentiality-level]]} {[]}
 ","niveauConfidentialite (Contact) : Niveau de restriction de l'accès aux attributs de la classe Contact","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Contact","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1290,15 +1290,15 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://interopsante.org
 ","Type of email | type de messagerie électronique","Optional Extension Element - found in all resources.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-confidentiality-level","Organization.contact.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-confidentiality-level","Organization.contact.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","niveauConfidentialite (Telecommunication) : Niveau de restriction de l'accès aux attributs de la classe Télécommunication","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-usage","Organization.contact.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-usage","Organization.contact.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-usage]]} {[]}
 ","utilisation (Telecommunication) : Utilisation du canal de communication","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension:ror-telecom-communication-channel","Organization.contact.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"Organization.contact.telecom.extension:ror-telecom-communication-channel","Organization.contact.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","Canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

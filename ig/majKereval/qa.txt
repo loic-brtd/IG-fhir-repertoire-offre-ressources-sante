@@ -3,11 +3,11 @@
 
 err = 3, warn = 268, info = 24
 IG Publisher Version: 1.3.4
-Generated Fri Mar 31 06:59:05 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror30#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror30)
+Generated Wed Apr 05 09:22:54 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
  Build Errors : 1297 / 6 / 0
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-consommateur : 1 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/CapabilityStatement-ror-serveur : 1 / 0 / 1
- /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror30 : 0 / 4 / 1
+ /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror : 0 / 4 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-additional-bed-type : 0 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-capacity-closing-type : 0 / 0 / 1
  /home/runner/work/FIG_ans.fhir.fr.ror30/FIG_ans.fhir.fr.ror30/fsh-generated/resources/SearchParameter-ror-sp-capacity-status : 0 / 0 / 1
@@ -1392,11 +1392,11 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 ERROR: CapabilityStatement/ror-consommateur: CapabilityStatement.rest[0].resource[0].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Resource-type' does not resolve
 == fsh-generated/resources/CapabilityStatement-ror-serveur.json ==
 ERROR: CapabilityStatement/ror-serveur: CapabilityStatement.rest[0].resource[0].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Resource-type' does not resolve
-== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror30.json ==
-WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne '
-WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[29].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '
-WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[44].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication '
-WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.resource[46].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication '
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json ==
+WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne '
+WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[29].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '
+WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[44].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication '
+WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[46].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication '
 == fsh-generated/resources/SearchParameter-ror-sp-additional-bed-type.json ==
 == fsh-generated/resources/SearchParameter-ror-sp-capacity-closing-type.json ==
 == fsh-generated/resources/SearchParameter-ror-sp-capacity-status.json ==
@@ -1426,45 +1426,45 @@ WARNING: ImplementationGuide/ans.fhir.fr.ror30: ImplementationGuide.definition.r
 == fsh-generated/resources/StructureDefinition-RORPractitionerRoleName.json ==
 WARNING: StructureDefinition/RORPractitionerRoleName: StructureDefinition.differential.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J208-CiviliteExcercice-ROR/FHIR/JDV-J208-CiviliteExcercice-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/RORPractitionerRoleName: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J208-CiviliteExcercice-ROR/FHIR/JDV-J208-CiviliteExcercice-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/RORPractitionerRoleName'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-RORPractitionerTitle.json ==
 WARNING: StructureDefinition/RORPractitionerTitle: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J208-CiviliteExcercice-ROR/FHIR/JDV-J208-CiviliteExcercice-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/RORPractitionerTitle: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J208-CiviliteExcercice-ROR/FHIR/JDV-J208-CiviliteExcercice-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerTitle'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/RORPractitionerTitle'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-available-time-effective-opening-closing-date.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-effective-opening-closing-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-available-time-number-days-of-week.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-number-days-of-week'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-available-time-type-of-time.json ==
 WARNING: StructureDefinition/ror-available-time-type-of-time: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J41-TypeHoraire-ROR/FHIR/JDV-J41-TypeHoraire-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-available-time-type-of-time: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J41-TypeHoraire-ROR/FHIR/JDV-J41-TypeHoraire-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-type-of-time'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-calculated-distance.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-calculated-distance'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-calculated-distance'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-commune-cog.json ==
 WARNING: StructureDefinition/ror-commune-cog: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-commune-cog: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-commune-cog'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-commune-cog'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-confidentiality-level.json ==
 WARNING: StructureDefinition/ror-confidentiality-level: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-confidentiality-level: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-confidentiality-level'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-confidentiality-level'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-contact-confidentiality-level.json ==
 WARNING: StructureDefinition/ror-contact-confidentiality-level: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-contact-confidentiality-level: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-confidentiality-level'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-confidentiality-level'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-contact-description.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-description'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-description'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-contact-function-contact.json ==
 WARNING: StructureDefinition/ror-contact-function-contact: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J220-FonctionContact-ROR/FHIR/JDV-J220-FonctionContact-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-contact-function-contact: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J220-FonctionContact-ROR/FHIR/JDV-J220-FonctionContact-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-function-contact'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-function-contact'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-contact-telecom-confidentiality-level.json ==
 WARNING: StructureDefinition/ror-contact-telecom-confidentiality-level: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-contact-telecom-confidentiality-level: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-confidentiality-level'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-telecom-confidentiality-level'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-contact-telecom-usage.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-contact-telecom-usage'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-telecom-usage'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice.json ==
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[43].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[49].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -1508,21 +1508,21 @@ WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[69].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J33-CompetenceSpecifique-ROR/FHIR/JDV-J33-CompetenceSpecifique-ROR on element HealthcareService.characteristic could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[70].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J227-NiveauExpertise-ROR/FHIR/JDV-J227-NiveauExpertise-ROR on element HealthcareService.characteristic could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[71].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J185-TypeFermeture-ROR/FHIR/JDV-J185-TypeFermeture-ROR on element HealthcareService.characteristic could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice-contact.json ==
 WARNING: StructureDefinition/ror-healthcareservice-contact: StructureDefinition.differential.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice-contact: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-contact'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-contact'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice-no-consent-habilitation.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-no-consent-habilitation'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-no-consent-habilitation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice-patient-type.json ==
 WARNING: StructureDefinition/ror-healthcareservice-patient-type: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J29-PublicPrisEnCharge-ROR/FHIR/JDV-J29-PublicPrisEnCharge-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice-patient-type: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J29-PublicPrisEnCharge-ROR/FHIR/JDV-J29-PublicPrisEnCharge-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-patient-type'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-patient-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice-psychiatric-sector.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-psychiatric-sector'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-psychiatric-sector'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice-sensitive-unit.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-healthcareservice-sensitive-unit'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-sensitive-unit'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location.json ==
 WARNING: RORLocation.address.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf]]].valueString.Location.address.line.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
 INFORMATION: StructureDefinition/ror-location: StructureDefinition.snapshot.element[44].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -1540,25 +1540,25 @@ WARNING: StructureDefinition/ror-location: StructureDefinition.differential.elem
 WARNING: StructureDefinition/ror-location: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Location.meta.tag could not be resolved
 WARNING: StructureDefinition/ror-location: StructureDefinition.snapshot.element[73].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR on element Location.type could not be resolved
 WARNING: StructureDefinition/ror-location: StructureDefinition.snapshot.element[103].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J219-TypeVoie-ROR/FHIR/JDV-J219-TypeVoie-ROR on element Location.address.line.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ror-location-equipment.json ==
 WARNING: StructureDefinition/ror-location-equipment: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J18-EquipementSpecifique-ROR/JDV-J18-EquipementSpecifique-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-location-equipment: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J18-EquipementSpecifique-ROR/JDV-J18-EquipementSpecifique-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-equipment'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location-equipment-limit.json ==
 WARNING: StructureDefinition/ror-location-equipment-limit: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J228-TypeCaracteristiqueEquipement-ROR/FHIR/JDV-J228-TypeCaracteristiqueEquipement-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-location-equipment-limit: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J228-TypeCaracteristiqueEquipement-ROR/FHIR/JDV-J228-TypeCaracteristiqueEquipement-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-equipment-limit'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-equipment-limit'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location-geolocation.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-geolocation'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-geolocation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location-residential-capacity.json ==
 WARNING: StructureDefinition/ror-location-residential-capacity: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J32-TypeHabitation-ROR/FHIR/JDV-J32-TypeHabitation-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-location-residential-capacity: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J32-TypeHabitation-ROR/FHIR/JDV-J32-TypeHabitation-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-residential-capacity'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-residential-capacity'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location-status.json ==
 WARNING: StructureDefinition/ror-location-status: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-location-status: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-status'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-location-supported-capacity.json ==
 WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J187-NatureCapacite-ROR/FHIR/JDV-J187-NatureCapacite-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinition.differential.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J188-TypeStatutCapacite-ROR/FHIR/JDV-J188-TypeStatutCapacite-ROR on element Extension.extension.valueCodeableConcept could not be resolved
@@ -1578,11 +1578,11 @@ WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinitio
 WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J192-TypeLitSupplementaire-ROR/FHIR/JDV-J192-TypeLitSupplementaire-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinition.snapshot.element[60].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J194-TypeCrise-ROR/FHIR/JDV-J194-TypeCrise-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-location-supported-capacity: StructureDefinition.snapshot.element[66].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J195-AffectationTemporaire-ROR/FHIR/JDV-J195-AffectationTemporaire-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-location-supported-capacity'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-supported-capacity'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-meta-comment.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-comment'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-meta-creation-date.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-creation-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization.json ==
 WARNING: ROROrganization.address.extension.extension.valueCoding.Organization.address.extension.valueCoding: Binding https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR could not be located
 WARNING: ROROrganization.address.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf]]].valueString.Organization.address.line.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
@@ -1627,15 +1627,15 @@ WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.elem
 WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[253].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR on element Organization.address.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[270].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J219-TypeVoie-ROR/FHIR/JDV-J219-TypeVoie-ROR on element Organization.address.line.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[295].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR on element Organization.contact.purpose could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ror-organization-accessibility-location.json ==
 WARNING: StructureDefinition/ror-organization-accessibility-location: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J50-AccessibiliteLieu-ROR/FHIR/JDV-J50-AccessibiliteLieu-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-accessibility-location: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J50-AccessibiliteLieu-ROR/FHIR/JDV-J50-AccessibiliteLieu-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accessibility-location'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-accessibility-location'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-accomodation-family.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-accomodation-family'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-accomodation-family'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-drop-zone.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-drop-zone'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-eg-location.json ==
 WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.differential.element[18].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.differential.element[23].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR on element Extension.extension.valueCodeableConcept could not be resolved
@@ -1643,27 +1643,27 @@ WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.d
 WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.snapshot.element[29].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization-eg-location: StructureDefinition.snapshot.element[60].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J219-TypeVoie-ROR/FHIR/JDV-J219-TypeVoie-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-location'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-eg-name.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-eg-name'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-financial-help-type.json ==
 WARNING: StructureDefinition/ror-organization-financial-help-type: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J31-AideFinanciere-ROR/FHIR/JDV-J31-AideFinanciere-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-financial-help-type: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J31-AideFinanciere-ROR/FHIR/JDV-J31-AideFinanciere-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-financial-help-type'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-level-recours-orsan.json ==
 WARNING: StructureDefinition/ror-organization-level-recours-orsan: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J204-NiveauRecoursORSAN-ROR/FHIR/JDV-J204-NiveauRecoursORSAN-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-level-recours-orsan: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J204-NiveauRecoursORSAN-ROR/FHIR/JDV-J204-NiveauRecoursORSAN-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-level-recours-orsan'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-level-recours-orsan'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-nb-permanent-social-help-place.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-permanent-social-help-place'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-nb-permanent-social-help-place'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-nb-temporary-social-help-place.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-nb-temporary-social-help-place'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-nb-temporary-social-help-place'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-oi-name.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-oi-name'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-oi-name'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-period.json ==
 WARNING: StructureDefinition/ror-organization-period: StructureDefinition.differential.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J201-TypeFermeture-ROR/FHIR/JDV-J201-TypeFermeture-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-period: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J201-TypeFermeture-ROR/FHIR/JDV-J201-TypeFermeture-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-period'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-period'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-organization-price.json ==
 WARNING: StructureDefinition/ror-organization-price: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J36-TypeTarif-ROR/FHIR/JDV-J36-TypeTarif-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-organization-price: StructureDefinition.differential.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J205-UnitePrix-ROR/FHIR/JDV-J205-UnitePrix-ROR on element Extension.extension.valueCodeableConcept could not be resolved
@@ -1683,7 +1683,7 @@ WARNING: StructureDefinition/ror-organization-price: StructureDefinition.snapsho
 WARNING: StructureDefinition/ror-organization-price: StructureDefinition.snapshot.element[69].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J27-GroupeTarifaireDependance-ROR/FHIR/JDV-J27-GroupeTarifaireDependance-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization-price: StructureDefinition.snapshot.element[80].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J26-ModeGestion-ROR/FHIR/JDV-J26-ModeGestion-ROR on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition/ror-organization-price: StructureDefinition.snapshot.element[91].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J206-PrestationNonObligatoireIncluse-ROR/FHIR/JDV-J206-PrestationNonObligatoireIncluse-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-organization-price'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-price'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-practitioner.json ==
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[27].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[33].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -1691,7 +1691,7 @@ INFORMATION: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[11].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Practitioner.meta.tag could not be resolved
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Practitioner.meta.tag could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitioner'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitioner'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ror-practitionerrole.json ==
 WARNING: RORPractitionerRole.extension.value[x].PractitionerRole.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J130-CNAMAmeliSecteurConventionnement-RASS/FHIR/JDV-J130-CNAMAmeliSecteurConventionnement-RASS could not be located
 WARNING: RORPractitionerRole.extension.valueCodeableConcept.PractitionerRole.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J130-CNAMAmeliSecteurConventionnement-RASS/FHIR/JDV-J130-CNAMAmeliSecteurConventionnement-RASS could not be located
@@ -1727,25 +1727,25 @@ WARNING: StructureDefinition/ror-practitionerrole: StructureDefinition.snapshot.
 WARNING: StructureDefinition/ror-practitionerrole: StructureDefinition.snapshot.element[44].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J215-DESCnonQualifiant-ROR/FHIR/JDV-J215-DESCnonQualifiant-ROR on element PractitionerRole.specialty could not be resolved
 WARNING: StructureDefinition/ror-practitionerrole: StructureDefinition.snapshot.element[45].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J216-DroitExerciceCompl-ROR/FHIR/JDV-J216-DroitExerciceCompl-ROR on element PractitionerRole.specialty could not be resolved
 WARNING: StructureDefinition/ror-practitionerrole: StructureDefinition.snapshot.element[46].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J33-CompetenceSpecifique-ROR/FHIR/JDV-J33-CompetenceSpecifique-ROR on element PractitionerRole.specialty could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ror-practitionerrole-unit-exercise-mode.json ==
 WARNING: StructureDefinition/ror-practitionerrole-unit-exercise-mode: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J217-ModeExercice-ROR/FHIR/JDV-J217-ModeExercice-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-practitionerrole-unit-exercise-mode: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J217-ModeExercice-ROR/FHIR/JDV-J217-ModeExercice-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole-unit-exercise-mode'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-telecom-communication-channel.json ==
 WARNING: StructureDefinition/ror-telecom-communication-channel: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-telecom-communication-channel: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-communication-channel'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-telecom-confidentiality-level.json ==
 WARNING: StructureDefinition/ror-telecom-confidentiality-level: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-telecom-confidentiality-level: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-confidentiality-level'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-telecom-usage.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-usage'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-territorial-division.json ==
 WARNING: StructureDefinition/ror-territorial-division: StructureDefinition.differential.element[6].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J223-TypeDivisionTerritoriale-ROR/FHIR/JDV-J223-TypeDivisionTerritoriale-ROR on element Extension.extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/ror-territorial-division: StructureDefinition.snapshot.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J223-TypeDivisionTerritoriale-ROR/FHIR/JDV-J223-TypeDivisionTerritoriale-ROR on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-territorial-division'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-territorial-division'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-code-region-territorial-division.json ==
 WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[0].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR could not be found so cannot be checked
 WARNING: ValueSet/code-region-territorial-division: ValueSet.compose[0].include[1].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J248-DepartementOM-ROR/FHIR/JDV-J248-DepartementOM-ROR could not be found so cannot be checked

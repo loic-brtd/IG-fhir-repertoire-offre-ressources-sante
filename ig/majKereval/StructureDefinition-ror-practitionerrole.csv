@@ -67,11 +67,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.extension:ror-practitionerrole-unit-exercise-mode","PractitionerRole.extension","ror-practitionerrole-unit-exercise-mode","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-practitionerrole-unit-exercise-mode]]} {[]}
+"PractitionerRole.extension:ror-practitionerrole-unit-exercise-mode","PractitionerRole.extension","ror-practitionerrole-unit-exercise-mode","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole-unit-exercise-mode]]} {[]}
 ","modeExerciceOffre (SituationOperationnelle) : statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite","Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.extension:ror-practitionerrole-name","PractitionerRole.extension","ror-practitionerrole-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/RORPractitionerRoleName]]} {[]}
+"PractitionerRole.extension:ror-practitionerrole-name","PractitionerRole.extension","ror-practitionerrole-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/RORPractitionerRoleName]]} {[]}
 ","civiliteExercie + nomExercice + prenomExercice (ExerciceProfessionnel)","Extension créée dans le cadre du ROR pour définir l'identité d’exercice d’un professionnel","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -105,11 +105,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","carteVitaleAcceptee (SituationOperationnelle) : Précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"PractitionerRole.extension:ror-meta-creation-date","PractitionerRole.extension","ror-meta-creation-date","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-creation-date]]} {[]}
-","dateCreation (Metadonnee)","Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régionnal) présente dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"PractitionerRole.extension:ror-meta-creation-date","PractitionerRole.extension","ror-meta-creation-date","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-creation-date]]} {[]}
+","dateCreation (Metadonnee)","Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régional) présente dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.extension:ror-meta-comment","PractitionerRole.extension","ror-meta-comment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-meta-comment]]} {[]}
+"PractitionerRole.extension:ror-meta-comment","PractitionerRole.extension","ror-meta-comment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-comment]]} {[]}
 ","commentaire (Metadonnee)","Extension créée dans le cadre du ROR qui correspond au commentaire présent dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -211,15 +211,15 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.telecom.extension:ror-telecom-communication-channel","PractitionerRole.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-communication-channel]]} {[]}
+"PractitionerRole.telecom.extension:ror-telecom-communication-channel","PractitionerRole.telecom.extension","ror-telecom-communication-channel","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-communication-channel]]} {[]}
 ","canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication","Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.telecom.extension:ror-telecom-usage","PractitionerRole.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-usage]]} {[]}
+"PractitionerRole.telecom.extension:ror-telecom-usage","PractitionerRole.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-usage]]} {[]}
 ","utilisation (Telecommunication) : Utilisation du canal de communication","Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication ","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.telecom.extension:ror-telecom-confidentiality-level","PractitionerRole.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"PractitionerRole.telecom.extension:ror-telecom-confidentiality-level","PractitionerRole.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","niveauConfidentialite (Telecommunication) : niveau de restriction de l'accès aux attributs de la classe Télécommunication","Extension créée dans le cadre du ROR qui permet de définir le niveau de restriction de l'accès aux attributs de la classe Télécommunication.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -257,15 +257,15 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"PractitionerRole.availableTime.extension:ror-available-time-type-of-time","PractitionerRole.availableTime.extension","ror-available-time-type-of-time","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-type-of-time]]} {[]}
+"PractitionerRole.availableTime.extension:ror-available-time-type-of-time","PractitionerRole.availableTime.extension","ror-available-time-type-of-time","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-type-of-time]]} {[]}
 ","typePlageHoraire (Horaire) : Apporte un contexte à la plage horaire définie par la suite","Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.availableTime.extension:ror-available-time-effective-opening-closing-date","PractitionerRole.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
+"PractitionerRole.availableTime.extension:ror-available-time-effective-opening-closing-date","PractitionerRole.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
 ","debutDateEffective + finDateEffective (Horaire)","Extension créée dans le cadre du ROR pour décrire le planning d'activité d'un professionnel ou d'une offre.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week","PractitionerRole.availableTime.extension","ror-available-time-number-days-of-week","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror30/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
+"PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week","PractitionerRole.availableTime.extension","ror-available-time-number-days-of-week","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
 ","jourSemaine (Horaire) : Numéro du jour dans la semaine","Extension créée dans le cadre du ROR pour indiquer le numéro du jour dans la semaine.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
