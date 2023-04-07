@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "RORME30"] ; # 
   fhir:title [ fhir:v "ROR ME 3.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-04-05T09:21:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-07T12:46:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -617,7 +617,7 @@
          fhir:reference [ fhir:v "StructureDefinition/ror-calculated-distance" ]
        ] ;
        fhir:name [ fhir:v "RORCalculatedDistance" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour transporter la distance calculée" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -888,11 +888,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-drop-zone" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-additional-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-additional-name" ]
        ] ;
-       fhir:name [ fhir:v "ROROrganizationDropZone" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné." ] ;
+       fhir:name [ fhir:v "ROROrganizationAdditionalName" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour décrire le complément de la raison sociale" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -900,11 +900,47 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-eg-location" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-closing-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-closing-type" ]
        ] ;
-       fhir:name [ fhir:v "ROROrganizationEGLocation" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG)." ] ;
+       fhir:name [ fhir:v "ROROrganizationClosingType" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir le type de fermeture de l'organisation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-comment> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-comment" ]
+       ] ;
+       fhir:name [ fhir:v "ROROrganizationComment" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour décrire le commentaire qui permet à la structure de donner des informations complémentaires" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-creation-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-creation-date" ]
+       ] ;
+       fhir:name [ fhir:v "ROROrganizationCreationDate" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir la date de création de l'entité juridique." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-drop-zone" ]
+       ] ;
+       fhir:name [ fhir:v "ROROrganizationDropZone" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -972,35 +1008,23 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-oi-name> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-oi-name" ]
-       ] ;
-       fhir:name [ fhir:v "ROROrganizationOIName" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI)." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-period> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-period" ]
-       ] ;
-       fhir:name [ fhir:v "ROROrganizationPeriod" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-price> ;
          fhir:reference [ fhir:v "StructureDefinition/ror-organization-price" ]
        ] ;
        fhir:name [ fhir:v "ROROrganizationPrice" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-reopening-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organization-reopening-date" ]
+       ] ;
+       fhir:name [ fhir:v "ROROrganizationReopeningDate" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir la date prévisionnelle de réouverture de l'organisation interne." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1025,18 +1049,6 @@
        ] ;
        fhir:name [ fhir:v "RORPractitionerRoleUnitExerciseMode" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/RORPractitionerTitle> ;
-         fhir:reference [ fhir:v "StructureDefinition/RORPractitionerTitle" ]
-       ] ;
-       fhir:name [ fhir:v "RORPractitionerTitle" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour définir la civilité de la personne physique" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

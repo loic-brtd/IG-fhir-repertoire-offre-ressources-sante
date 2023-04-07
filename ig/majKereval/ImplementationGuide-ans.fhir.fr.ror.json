@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-04-05T09:21:20+00:00",
+  "date" : "2023-04-07T12:46:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -701,7 +701,7 @@
         "reference" : "StructureDefinition/ror-calculated-distance"
       },
       "name" : "RORCalculatedDistance",
-      "description" : "Extension créée dans le cadre du ROR",
+      "description" : "Extension créée dans le cadre du ROR pour transporter la distance calculée",
       "exampleBoolean" : false
     },
     {
@@ -973,10 +973,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-organization-drop-zone"
+        "reference" : "StructureDefinition/ror-organization-additional-name"
       },
-      "name" : "ROROrganizationDropZone",
-      "description" : "Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.",
+      "name" : "ROROrganizationAdditionalName",
+      "description" : "Extension créée dans le cadre du ROR pour décrire le complément de la raison sociale",
       "exampleBoolean" : false
     },
     {
@@ -985,10 +985,46 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-organization-eg-location"
+        "reference" : "StructureDefinition/ror-organization-closing-type"
       },
-      "name" : "ROROrganizationEGLocation",
-      "description" : "Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG).",
+      "name" : "ROROrganizationClosingType",
+      "description" : "Extension créée dans le cadre du ROR pour définir le type de fermeture de l'organisation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-organization-comment"
+      },
+      "name" : "ROROrganizationComment",
+      "description" : "Extension créée dans le cadre du ROR pour décrire le commentaire qui permet à la structure de donner des informations complémentaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-organization-creation-date"
+      },
+      "name" : "ROROrganizationCreationDate",
+      "description" : "Extension créée dans le cadre du ROR pour définir la date de création de l'entité juridique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-organization-drop-zone"
+      },
+      "name" : "ROROrganizationDropZone",
+      "description" : "Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.",
       "exampleBoolean" : false
     },
     {
@@ -1057,34 +1093,22 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ror-organization-oi-name"
-      },
-      "name" : "ROROrganizationOIName",
-      "description" : "Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ror-organization-period"
-      },
-      "name" : "ROROrganizationPeriod",
-      "description" : "Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ror-organization-price"
       },
       "name" : "ROROrganizationPrice",
       "description" : "Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-organization-reopening-date"
+      },
+      "name" : "ROROrganizationReopeningDate",
+      "description" : "Extension créée dans le cadre du ROR pour définir la date prévisionnelle de réouverture de l'organisation interne.",
       "exampleBoolean" : false
     },
     {
@@ -1109,18 +1133,6 @@
       },
       "name" : "RORPractitionerRoleUnitExerciseMode",
       "description" : "Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/RORPractitionerTitle"
-      },
-      "name" : "RORPractitionerTitle",
-      "description" : "Extension créée dans le cadre du ROR pour définir la civilité de la personne physique",
       "exampleBoolean" : false
     },
     {

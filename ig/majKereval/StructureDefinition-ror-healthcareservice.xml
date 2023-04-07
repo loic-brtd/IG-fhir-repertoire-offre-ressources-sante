@@ -57,7 +57,7 @@
   <version value="3.0"/>
   <name value="RORHealthcareService"/>
   <status value="active"/>
-  <date value="2023-04-05T09:21:20+00:00"/>
+  <date value="2023-04-07T12:46:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -934,7 +934,7 @@
       <path value="HealthcareService.extension"/>
       <sliceName value="RORCalculatedDistance"/>
       <short value="Extension"/>
-      <definition value="Extension créée dans le cadre du ROR"/>
+      <definition value="Extension créée dans le cadre du ROR pour transporter la distance calculée"/>
       <min value="0"/>
       <max value="1"/>
       <base>

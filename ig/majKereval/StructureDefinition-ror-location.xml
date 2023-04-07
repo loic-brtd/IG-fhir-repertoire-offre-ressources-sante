@@ -59,7 +59,7 @@
   <version value="3.0"/>
   <name value="RORLocation"/>
   <status value="active"/>
-  <date value="2023-04-05T09:21:20+00:00"/>
+  <date value="2023-04-07T12:46:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -5504,8 +5504,7 @@
       <path value="Location.position.extension"/>
       <sliceName value="ror-location-geolocation"/>
       <short value="systemeGeodesique : Une identification du système de référence fixant les règles de mesure des positions géographiques (CoordonneeGeographique)"/>
-      <definition value="The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML)."/>
-      <comment value="The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc."/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -5534,14 +5533,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Location.position.modifierExtension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

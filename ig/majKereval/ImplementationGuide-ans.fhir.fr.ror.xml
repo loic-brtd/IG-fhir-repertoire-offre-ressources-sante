@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-04-05T09:21:20+00:00"/>
+  <date value="2023-04-07T12:46:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -539,7 +539,7 @@
         <reference value="StructureDefinition/ror-calculated-distance"/>
       </reference>
       <name value="RORCalculatedDistance"/>
-      <description value="Extension créée dans le cadre du ROR"/>
+      <description value="Extension créée dans le cadre du ROR pour transporter la distance calculée"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -788,10 +788,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-organization-drop-zone"/>
+        <reference value="StructureDefinition/ror-organization-additional-name"/>
       </reference>
-      <name value="ROROrganizationDropZone"/>
-      <description value="Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné."/>
+      <name value="ROROrganizationAdditionalName"/>
+      <description value="Extension créée dans le cadre du ROR pour décrire le complément de la raison sociale"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -799,10 +799,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-organization-eg-location"/>
+        <reference value="StructureDefinition/ror-organization-closing-type"/>
       </reference>
-      <name value="ROROrganizationEGLocation"/>
-      <description value="Extension créée dans le cadre du ROR décrire le lieu de l'entité géographique (EG)."/>
+      <name value="ROROrganizationClosingType"/>
+      <description value="Extension créée dans le cadre du ROR pour définir le type de fermeture de l'organisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-comment"/>
+      </reference>
+      <name value="ROROrganizationComment"/>
+      <description value="Extension créée dans le cadre du ROR pour décrire le commentaire qui permet à la structure de donner des informations complémentaires"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-creation-date"/>
+      </reference>
+      <name value="ROROrganizationCreationDate"/>
+      <description value="Extension créée dans le cadre du ROR pour définir la date de création de l'entité juridique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-drop-zone"/>
+      </reference>
+      <name value="ROROrganizationDropZone"/>
+      <description value="Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -865,32 +898,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-organization-oi-name"/>
-      </reference>
-      <name value="ROROrganizationOIName"/>
-      <description value="Extension créée dans le cadre du ROR pour décrire le nom de l'organisation interne (OI)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-organization-period"/>
-      </reference>
-      <name value="ROROrganizationPeriod"/>
-      <description value="Extension créée dans le cadre du ROR pour définir la date de création et les périodes d'ouverture et de fermeture de l'organisation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-organization-price"/>
       </reference>
       <name value="ROROrganizationPrice"/>
       <description value="Extension créée dans le cadre du ROR pour permettre de définir les tarifs des prestations et services d'une entité géographique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-reopening-date"/>
+      </reference>
+      <name value="ROROrganizationReopeningDate"/>
+      <description value="Extension créée dans le cadre du ROR pour définir la date prévisionnelle de réouverture de l'organisation interne."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -913,17 +935,6 @@
       </reference>
       <name value="RORPractitionerRoleUnitExerciseMode"/>
       <description value="Extension créée dans le cadre du ROR qui correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RORPractitionerTitle"/>
-      </reference>
-      <name value="RORPractitionerTitle"/>
-      <description value="Extension créée dans le cadre du ROR pour définir la civilité de la personne physique"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -210,13 +210,6 @@
     "name" : "RORPractitionerRoleName"
   },
   {
-    "id" : "RORPractitionerTitle",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/RORPractitionerTitle",
-    "version" : "3.0",
-    "name" : "RORPractitionerTitle"
-  },
-  {
     "id" : "ror-available-time-effective-opening-closing-date",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-effective-opening-closing-date",
@@ -420,18 +413,39 @@
     "name" : "ROROrganizationAccomodationFamily"
   },
   {
+    "id" : "ror-organization-additional-name",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-additional-name",
+    "version" : "3.0",
+    "name" : "ROROrganizationAdditionalName"
+  },
+  {
+    "id" : "ror-organization-closing-type",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-closing-type",
+    "version" : "3.0",
+    "name" : "ROROrganizationClosingType"
+  },
+  {
+    "id" : "ror-organization-comment",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-comment",
+    "version" : "3.0",
+    "name" : "ROROrganizationComment"
+  },
+  {
+    "id" : "ror-organization-creation-date",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-creation-date",
+    "version" : "3.0",
+    "name" : "ROROrganizationCreationDate"
+  },
+  {
     "id" : "ror-organization-drop-zone",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone",
     "version" : "3.0",
     "name" : "ROROrganizationDropZone"
-  },
-  {
-    "id" : "ror-organization-eg-location",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location",
-    "version" : "3.0",
-    "name" : "ROROrganizationEGLocation"
   },
   {
     "id" : "ror-organization-eg-name",
@@ -469,25 +483,18 @@
     "name" : "ROROrganizationNbTemporarySocialHelpPlace"
   },
   {
-    "id" : "ror-organization-oi-name",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-oi-name",
-    "version" : "3.0",
-    "name" : "ROROrganizationOIName"
-  },
-  {
-    "id" : "ror-organization-period",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-period",
-    "version" : "3.0",
-    "name" : "ROROrganizationPeriod"
-  },
-  {
     "id" : "ror-organization-price",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-price",
     "version" : "3.0",
     "name" : "ROROrganizationPrice"
+  },
+  {
+    "id" : "ror-organization-reopening-date",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-reopening-date",
+    "version" : "3.0",
+    "name" : "ROROrganizationReopeningDate"
   },
   {
     "id" : "ror-practitioner",

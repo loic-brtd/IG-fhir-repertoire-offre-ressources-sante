@@ -13,7 +13,7 @@
   <version value="3.0"/>
   <name value="RORTelecomUsage"/>
   <status value="active"/>
-  <date value="2023-04-05T09:21:20+00:00"/>
+  <date value="2023-04-07T12:46:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -33,7 +33,7 @@
   <abstract value="false"/>
   <context>
     <type value="extension"/>
-    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"/>
+    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-contact"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
