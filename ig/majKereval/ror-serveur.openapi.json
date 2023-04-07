@@ -151,7 +151,7 @@
           {
             "name": "type",
             "in": "query",
-            "description": "Destination d\u0027usage du lieu",
+            "description": "A code for the type of location",
             "schema": {
               "type": "string"
             }

@@ -64,7 +64,7 @@
       </searchParam>
       <searchParam>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-type"/>
         <type value="token"/>
         <documentation value="Destination d'usage du lieu"/>
       </searchParam>

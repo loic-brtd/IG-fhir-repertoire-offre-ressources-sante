@@ -62,7 +62,7 @@
       },
       {
         "name" : "type",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Location-type",
         "type" : "token",
         "documentation" : "Destination d'usage du lieu"
       },
