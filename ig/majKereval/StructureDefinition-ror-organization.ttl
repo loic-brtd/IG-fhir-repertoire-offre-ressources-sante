@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0"] ; # 
   fhir:name [ fhir:v "ROROrganization"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-04-07T12:46:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-07T13:22:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -119,7 +119,7 @@
          fhir:key [ fhir:v "organization-eg" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis" ] ;
-         fhir:expression [ fhir:v "identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()" ] ;
+         fhir:expression [ fhir:v "identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>
@@ -128,7 +128,7 @@
          fhir:key [ fhir:v "organization-ej" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis " ] ;
-         fhir:expression [ fhir:v "identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()" ] ;
+         fhir:expression [ fhir:v "identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>
@@ -137,7 +137,7 @@
          fhir:key [ fhir:v "organization-oi" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis" ] ;
-         fhir:expression [ fhir:v "alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()" ] ;
+         fhir:expression [ fhir:v "alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>
@@ -15980,7 +15980,7 @@
          fhir:key [ fhir:v "organization-eg" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis" ] ;
-         fhir:expression [ fhir:v "identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()" ] ;
+         fhir:expression [ fhir:v "identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>
@@ -15989,7 +15989,7 @@
          fhir:key [ fhir:v "organization-ej" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis " ] ;
-         fhir:expression [ fhir:v "identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()" ] ;
+         fhir:expression [ fhir:v "identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>
@@ -15998,7 +15998,7 @@
          fhir:key [ fhir:v "organization-oi" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis" ] ;
-         fhir:expression [ fhir:v "alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()" ] ;
+         fhir:expression [ fhir:v "alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization>

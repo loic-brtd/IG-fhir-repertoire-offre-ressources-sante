@@ -80,8 +80,8 @@
        ] [
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/SearchParameter/Resource-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-type>
+           fhir:v "http://hl7.org/fhir/SearchParameter/Location-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/SearchParameter/Location-type>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "Destination d'usage du lieu" ]

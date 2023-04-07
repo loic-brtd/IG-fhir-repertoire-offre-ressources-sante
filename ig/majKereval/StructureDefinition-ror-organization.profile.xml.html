@@ -372,7 +372,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ROROrganization&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-04-07T12:46:16+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-04-07T13:22:07+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
@@ -482,7 +482,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -492,7 +492,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis &quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -502,7 +502,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -17462,7 +17462,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -17472,7 +17472,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis &quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -17482,7 +17482,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization&quot;/&gt;
       &lt;/constraint&gt;
@@ -18342,7 +18342,7 @@ Period is not used for a duration (a measure of elapsed time). See [Duration](ht
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 7, 2023 12:46+0000">2023-04-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 7, 2023 13:22+0000">2023-04-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

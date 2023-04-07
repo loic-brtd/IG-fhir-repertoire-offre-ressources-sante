@@ -107,7 +107,7 @@
   <version value="3.0"/>
   <name value="ROROrganization"/>
   <status value="active"/>
-  <date value="2023-04-07T12:46:16+00:00"/>
+  <date value="2023-04-07T13:22:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -193,21 +193,21 @@
         <key value="organization-eg"/>
         <severity value="error"/>
         <human value="Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis"/>
-        <expression value="identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()"/>
+        <expression value="identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
       <constraint>
         <key value="organization-ej"/>
         <severity value="error"/>
         <human value="Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis "/>
-        <expression value="identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()"/>
+        <expression value="identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
       <constraint>
         <key value="organization-oi"/>
         <severity value="error"/>
         <human value="Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis"/>
-        <expression value="alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()"/>
+        <expression value="alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
       <mapping>
@@ -15260,21 +15260,21 @@
         <key value="organization-eg"/>
         <severity value="error"/>
         <human value="Si l'élément identifierEG est rempli alors il faut que la dénominationEG, la catégorieEG soient remplis"/>
-        <expression value="identifier.idNatStruct.exists() or  alias.nomEG.exists() or type.categorieEtablissement.exists() or identifier.numSIRET.exists().not()"/>
+        <expression value="identifier.idNatStruct.exists() and  alias.nomEG.exists() and type.categorieEtablissement.exists() and identifier.numSIRET.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
       <constraint>
         <key value="organization-ej"/>
         <severity value="error"/>
         <human value="Si l'élément identifierEJ est rempli alors il faut que la raison sociale, le statut juridique soient remplis "/>
-        <expression value="identifier.idNatStruct.exists() or name.exists() or type.statutJuridiqueINSEE.exists() identifier.numSIREN.exists().not()"/>
+        <expression value="identifier.idNatStruct.exists() and name.exists() and type.statutJuridiqueINSEE.exists() and identifier.numSIREN.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
       <constraint>
         <key value="organization-oi"/>
         <severity value="error"/>
         <human value="Si l'élément identifierOI est rempli alors il faut que le nomOI, le typeOI soient remplis"/>
-        <expression value="alias.nomOI.exists() or type.OIType.exists() or identifier.identifierOI.exists().not()"/>
+        <expression value="alias.nomOI.exists() and type.OIType.exists() and identifier.identifierOI.exists().not()"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization"/>
       </constraint>
     </element>
