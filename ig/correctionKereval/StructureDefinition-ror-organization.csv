@@ -135,10 +135,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","dateOuverture (EJ + OI) + dateFermeture (EJ + EG + OI)","The date range that this organization should be considered available.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension:ror-organization-eg-name","Organization.extension","ror-organization-eg-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name]]} {[]}
-","denominationEG + complementDenominationEG + nomOperationnel + commentaire (EG)","Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension:ror-meta-comment","Organization.extension","ror-meta-comment","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-meta-comment]]} {[]}
 ","commentaire (Metadonnee)","Extension créée dans le cadre du ROR qui correspond au commentaire présent dans les métadonnées.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

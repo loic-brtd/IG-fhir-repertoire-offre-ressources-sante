@@ -678,65 +678,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name",
-      "title": "ROROrganizationEGName",
-      "types": [
-        "string",
-        "string",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type",
       "title": "ROROrganizationFinancialHelpType",
       "types": [
@@ -1187,9 +1128,6 @@
       "Organization"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-drop-zone": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name": [
       "Organization"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type": [

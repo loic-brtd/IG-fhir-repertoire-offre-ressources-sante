@@ -476,13 +476,6 @@
     "name" : "ROROrganizationDropZone"
   },
   {
-    "id" : "ror-organization-eg-name",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name",
-    "version" : "0.1.0",
-    "name" : "ROROrganizationEGName"
-  },
-  {
     "id" : "ror-organization-financial-help-type",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type",

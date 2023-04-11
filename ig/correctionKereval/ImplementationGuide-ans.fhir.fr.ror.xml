@@ -11,7 +11,7 @@
   <name value="ROR"/>
   <title value="Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"/>
   <status value="active"/>
-  <date value="2023-04-11T10:31:47+00:00"/>
+  <date value="2023-04-11T10:34:27+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -847,17 +847,6 @@
       </reference>
       <name value="ROROrganizationDropZone"/>
       <description value="Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-organization-eg-name"/>
-      </reference>
-      <name value="ROROrganizationEGName"/>
-      <description value="Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
