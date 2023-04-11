@@ -1,15 +1,15 @@
 ﻿RORME30 : Validation Results
 =========================================
 
-err = 3, warn = 272, info = 29
+err = 3, warn = 251, info = 29
 IG Publisher Version: 1.3.4
-Generated Tue Apr 11 08:39:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
+Generated Tue Apr 11 08:58:16 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
  Build Errors : 1280 / 6 / 0
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CapabilityStatement-ror-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CapabilityStatement-ror-serveur : 0 / 0 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CodeSystem-input-task-ror-codesystem : 1 / 3 / 2
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CodeSystem-output-task-ror-codesystem : 1 / 3 / 2
- /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror : 0 / 4 / 1
+ /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/SearchParameter-ror-sp-additional-bed-type : 0 / 0 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/SearchParameter-ror-sp-capacity-closing-type : 0 / 0 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/SearchParameter-ror-sp-capacity-status : 0 / 0 / 1
@@ -50,13 +50,13 @@ Generated Tue Apr 11 08:39:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-contact-function-contact : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-contact-telecom-confidentiality-level : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-contact-telecom-usage : 0 / 1 / 1
- /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice : 0 / 39 / 5
+ /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice : 0 / 35 / 5
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice-contact : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice-no-consent-habilitation : 0 / 1 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice-patient-type : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice-psychiatric-sector : 0 / 1 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-healthcareservice-sensitive-unit : 0 / 1 / 1
- /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location : 0 / 13 / 5
+ /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location : 0 / 9 / 5
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location-equipment : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location-equipment-limit : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location-geolocation : 0 / 1 / 1
@@ -65,7 +65,7 @@ Generated Tue Apr 11 08:39:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-location-supported-capacity : 0 / 19 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-meta-comment : 0 / 1 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-meta-creation-date : 0 / 1 / 1
- /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization : 0 / 33 / 12
+ /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization : 0 / 25 / 12
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-accessibility-location : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-accomodation-family : 0 / 1 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-additional-name : 0 / 1 / 1
@@ -80,7 +80,7 @@ Generated Tue Apr 11 08:39:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#3
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-nb-temporary-social-help-place : 0 / 1 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-price : 0 / 19 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-organization-reopening-date : 0 / 1 / 1
- /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-practitioner : 0 / 9 / 4
+ /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-practitioner : 0 / 5 / 4
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-practitionerrole : 0 / 33 / 4
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-practitionerrole-unit-exercise-mode : 0 / 3 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/StructureDefinition-ror-task : 0 / 1 / 3
@@ -1392,7 +1392,6 @@ WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSys
 WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json ==
-WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne '
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[30].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[46].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication '
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[48].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication '
@@ -1463,14 +1462,10 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-ror-contact-telecom-usage.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-contact-telecom-usage'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-healthcareservice.json ==
-WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[43].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[49].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[70].short: value should not start or finish with whitespace 'niveauExpertise (OffreOperationnelle) : Niveau de ressources humaines et matérielles engagées dans la réalisation de l'offre '
 INFORMATION: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[91].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[97].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-healthcareservice: StructureDefinition.snapshot.element[103].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[24].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
-WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[38].short: value should not start or finish with whitespace 'niveauExpertise (OffreOperationnelle) : Niveau de ressources humaines et matérielles engagées dans la réalisation de l'offre '
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element HealthcareService.meta.tag could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[14].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J238-TypeOffre-ROR/FHIR/JDV-J238-TypeOffre-ROR on element HealthcareService.category could not be resolved
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[15].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J20-ChampActivite-ROR/FHIR/JDV-J20-ChampActivite-ROR on element HealthcareService.type could not be resolved
@@ -1524,12 +1519,8 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 WARNING: RORLocation.address.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf]]].valueString.Location.address.line.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
 INFORMATION: StructureDefinition/ror-location: StructureDefinition.snapshot.element[44].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-location: StructureDefinition.snapshot.element[64].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-location: StructureDefinition.snapshot.element[77].short: value should not start or finish with whitespace 'canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication '
-WARNING: StructureDefinition/ror-location: StructureDefinition.snapshot.element[78].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-location: StructureDefinition.snapshot.element[84].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-location: StructureDefinition.snapshot.element[113].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-location: StructureDefinition.differential.element[26].short: value should not start or finish with whitespace 'canal (Telecommunication) : Code spécifiant le canal ou la manière dont s'établit la communication '
-WARNING: StructureDefinition/ror-location: StructureDefinition.differential.element[27].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 WARNING: StructureDefinition/ror-location: StructureDefinition: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
 WARNING: StructureDefinition/ror-location: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Location.meta.tag could not be resolved
 WARNING: StructureDefinition/ror-location: StructureDefinition.differential.element[23].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR on element Location.type could not be resolved
@@ -1583,25 +1574,17 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-ror-organization.json ==
 WARNING: ROROrganization.address.extension.extension.valueCoding.Organization.address.extension.valueCoding: Binding https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR could not be located
 WARNING: ROROrganization.address.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf]]].valueString.Organization.address.line.extension.value[x]: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
-WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[29].short: value should not start or finish with whitespace 'datePrevisionnelleReouverture (OI) : '
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[45].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[65].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[85].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[105].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[107].short: value should not start or finish with whitespace 'numEJ_RPPS_ADELI_Rang ou numEG_RPPS_ADELI_Rang '
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[125].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[145].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[165].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[167].short: value should not start or finish with whitespace 'numEJ_RPPS_ADELI_Rang ou numEG_RPPS_ADELI_Rang '
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[185].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[258].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[264].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[300].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-organization: StructureDefinition.snapshot.element[328].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-organization: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace 'datePrevisionnelleReouverture (OI) : '
-WARNING: StructureDefinition/ror-organization: StructureDefinition.differential.element[29].short: value should not start or finish with whitespace 'numEJ_RPPS_ADELI_Rang ou numEG_RPPS_ADELI_Rang '
-WARNING: StructureDefinition/ror-organization: StructureDefinition.differential.element[35].short: value should not start or finish with whitespace 'numEJ_RPPS_ADELI_Rang ou numEG_RPPS_ADELI_Rang '
-WARNING: StructureDefinition/ror-organization: StructureDefinition.differential.element[57].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 WARNING: StructureDefinition/ror-organization: StructureDefinition: Binding https://mos.esante.gouv.fr/NOS/JDV_J230-CommuneOM-ROR/FHIR/JDV-J230-CommuneOM-ROR could not be located
 WARNING: StructureDefinition/ror-organization: StructureDefinition: Binding https://mos.esante.gouv.fr/NOS/JDV_J103-TypeVoie-RASS/FHIR/JDV-J103-TypeVoie-RASS could not be located
 WARNING: StructureDefinition/ror-organization: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Organization.meta.tag could not be resolved
@@ -1680,13 +1663,9 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-ror-organization-reopening-date.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-reopening-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ror-practitioner.json ==
-WARNING: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[28].short: value should not start or finish with whitespace 'Civilite (PersonnePhysique) : Civilite de la personne physique '
 INFORMATION: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[30].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[35].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 INFORMATION: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[41].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[52].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace 'Civilite (PersonnePhysique) : Civilite de la personne physique '
-WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[11].short: value should not start or finish with whitespace 'utilisation (Telecommunication) : Utilisation du canal de communication '
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Practitioner.meta.tag could not be resolved
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.differential.element[7].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J207-Civilite-ROR/FHIR/JDV-J207-Civilite-ROR on element Practitioner.name.prefix could not be resolved
 WARNING: StructureDefinition/ror-practitioner: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR on element Practitioner.meta.tag could not be resolved

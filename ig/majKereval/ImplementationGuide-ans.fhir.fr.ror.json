@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-04-11T08:38:10+00:00",
+  "date" : "2023-04-11T08:56:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -605,7 +605,7 @@
         "reference" : "StructureDefinition/ror-healthcareservice"
       },
       "name" : "RORHealthcareService",
-      "description" : "Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne ",
+      "description" : "Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne",
       "exampleBoolean" : false
     },
     {

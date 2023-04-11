@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-04-11T08:38:10+00:00"/>
+  <date value="2023-04-11T08:56:12+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -451,7 +451,7 @@
         <reference value="StructureDefinition/ror-healthcareservice"/>
       </reference>
       <name value="RORHealthcareService"/>
-      <description value="Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne "/>
+      <description value="Profil créé dans le cadre du ROR pour décrire les prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
