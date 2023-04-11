@@ -3,14 +3,14 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="ror-sp-healthcareservice-patient-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORHealthcareServiceSupportedPatientType</h2><p>Parameter <code>supported-patient-type</code>:<code>token</code></p><div><p>Paramètre de recherche décrivant le public pris en charge</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-patient-type').extension(url='supportedPatientInfo').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORHealthcareServiceSupportedPatientType</h2><p>Parameter <code>patient-type</code>:<code>token</code></p><div><p>Paramètre de recherche décrivant le public pris en charge</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-patient-type').extension(url='supportedPatientInfo').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-healthcareservice-patient-type"/>
-  <version value="3.0"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-healthcareservice-patient-type"/>
+  <version value="0.1.0"/>
   <name value="RORHealthcareServiceSupportedPatientType"/>
   <status value="active"/>
-  <date value="2023-04-07T09:29:51+00:00"/>
+  <date value="2023-04-11T09:33:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -20,8 +20,8 @@
     </telecom>
   </contact>
   <description value="Paramètre de recherche décrivant le public pris en charge"/>
-  <code value="supported-patient-type"/>
+  <code value="patient-type"/>
   <base value="HealthcareService"/>
   <type value="token"/>
-  <expression value="HealthcareService.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-healthcareservice-patient-type').extension(url='supportedPatientInfo').valueCodeableConcept"/>
+  <expression value="HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-patient-type').extension(url='supportedPatientInfo').valueCodeableConcept"/>
 </SearchParameter>

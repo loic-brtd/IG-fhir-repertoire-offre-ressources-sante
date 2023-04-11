@@ -4,13 +4,13 @@
   <id value="ror-sp-capacity-status"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPCapacityStatus</h2><p>Parameter <code>capacity-status</code>:<code>token</code></p><div><p>Paramètre de recherche pour récupérer le statut de la capacité.</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-supported-capacity').extension(url='capacityStatus').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="https://interop.esante.gouv.fr/fhir/ig/ror/SearchParameter/ror-sp-capacity-status"/>
-  <version value="3.0"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-capacity-status"/>
+  <version value="0.1.0"/>
   <name value="RORSPCapacityStatus"/>
   <status value="active"/>
-  <date value="2023-04-07T09:29:51+00:00"/>
+  <date value="2023-04-11T09:33:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -23,5 +23,5 @@
   <code value="capacity-status"/>
   <base value="Location"/>
   <type value="token"/>
-  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror30/StructureDefinition/ror-supported-capacity').extension(url='CapacityStatus').valueCode"/>
+  <expression value="Location.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location-supported-capacity').extension(url='capacityStatus').valueCode"/>
 </SearchParameter>

@@ -258,7 +258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""ruleErrorId""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -292,7 +292,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""errorValue""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -326,7 +326,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""proposedValue""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -360,7 +360,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""pathElementError""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -394,7 +394,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""systemRequester""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -428,7 +428,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for the input","A code or description indicating how the input is intended to be used as part of the task execution.","If referencing a BPMN workflow or Protocol, the ""system"" is the URL for the workflow definition and the code is the ""name"" of the required input.","Inputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/input-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem""/>
     <code value=""identifierRequester""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
@@ -490,7 +490,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for output","The name of the Output parameter.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Outputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/output-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/output-task-ror-codesystem""/>
     <code value=""newValue""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Identified issues"", ""Preliminary results"", ""Filler order"", ""Final results"", etc.","","",,,,"Task.output.type",1,1,"ele-1
@@ -523,7 +523,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Label for output","The name of the Output parameter.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Outputs are named to enable task automation to bind data and pass it from one task to the next.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://interop.esante.gouv.fr/fhir/ig/ror/CodeSystem/output-task-ror-codesystem""/>
+    <system value=""https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/output-task-ror-codesystem""/>
     <code value=""identifierAnalyst""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Identified issues"", ""Preliminary results"", ""Filler order"", ""Final results"", etc.","","",,,,"Task.output.type",1,1,"ele-1

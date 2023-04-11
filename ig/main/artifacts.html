@@ -55,9 +55,9 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
+          <p><span style="font-size:12pt;font-weight:bold">Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social</span>
             <br/>
-            <span style="display:inline-block;">3.0 - ci-build
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -219,7 +219,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -335,7 +338,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="SearchParameter/ror-sp-equipment-type">ror-sp-equipment-type</a>
                </td>
                <td>
-<p>Paramètre de recherche pour récupérer le type d’un equipement.</p>
+<p>Paramètre de recherche pour récupérer le type d’un équipement.</p>
 </td>
             </tr>
             <tr>
@@ -344,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="SearchParameter/ror-sp-gender-capacity-available">ror-sp-gender-capacity-available</a>
                </td>
                <td>
-<p>Paramètre de recherche pour récupérer le genre disponnible de la capacité.</p>
+<p>Paramètre de recherche pour récupérer le genre disponible de la capacité.</p>
 </td>
             </tr>
             <tr>
@@ -416,7 +419,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="SearchParameter/ror-sp-limit-value">ror-sp-limit-value</a>
                </td>
                <td>
-<p>Paramètre de recherche pour récupérer la valeur limite</p>
+<p>Paramètre de recherche pour récupérer la valeur limite (poids, taille, etc..) de l’équipement</p>
 </td>
             </tr>
             <tr>
@@ -425,7 +428,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="SearchParameter/ror-sp-location-commune-cog">ror-sp-location-commune-cog</a>
                </td>
                <td>
-<p>Paramètre de recherche permettant d’indiquer s’il y a une zone poser sur le site concerné</p>
+<p>Paramètre de recherche sur le code officiel géographique (cog) de la commune dans laquelle le lieu est situé</p>
 </td>
             </tr>
             <tr>
@@ -462,6 +465,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Paramètre de recherche permettant d’indiquer s’il y a une zone poser sur le site concerné</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-ror-sp-organization-oi-name.html"
+                     title="SearchParameter/ror-sp-organization-oi-name">ror-sp-organization-oi-name</a>
+               </td>
+               <td>
+<p>Paramètre de recherche sur le nom de l’organisation interne</p>
 </td>
             </tr>
             <tr>
@@ -536,7 +548,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/ror-location">RORLocation</a>
                </td>
                <td>
-<p>Profil créé dans le cadre du ROR pour décrire les moyens qui peuvent être mis en œuvre pour réaliser la prestation</p>
+<p>Profil créé dans le cadre du ROR pour décrire l’espace disposant d’un ensemble de ressources pour réaliser une offre.</p>
 </td>
             </tr>
             <tr>
@@ -589,56 +601,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-accessibility-location.html"
-                     title="StructureDefinition/ror-accessibility-location">RORAccessibilityLocation</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-address-calculated-distance.html"
-                     title="StructureDefinition/ror-address-calculated-distance">RORAddressCalculatedDistance</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-address-description.html"
-                     title="StructureDefinition/ror-address-description">RORAddressDescription</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-address-name.html"
-                     title="StructureDefinition/ror-address-name">RORAddressName</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-address-status.html"
-                     title="StructureDefinition/ror-address-status">RORAddressStatus</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-ror-available-time-effective-opening-closing-date.html"
                      title="StructureDefinition/ror-available-time-effective-opening-closing-date">RORAvailableTimeEffectiveOpeningClosingDate</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR</p>
+<p>Extension créée dans le cadre du ROR pour décrire le planning d’activité d’un professionnel ou d’une offre.</p>
 </td>
             </tr>
             <tr>
@@ -652,11 +619,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-communication-channel.html"
-                     title="StructureDefinition/ror-communication-channel">RORCommunicationChannel</a>
+                  <a href="StructureDefinition-ror-available-time-type-of-time.html"
+                     title="StructureDefinition/ror-available-time-type-of-time">RORAvailableTimeTypeOfTime</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s’établit la communication</p>
+<p>Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-calculated-distance.html"
+                     title="StructureDefinition/ror-calculated-distance">RORCalculatedDistance</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour transporter la distance calculée</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-commune-cog.html"
+                     title="StructureDefinition/ror-commune-cog">RORCommuneCog</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour représenter le code officiel géographique (COG) de la commune dans laquelle le lieu est situé.</p>
 </td>
             </tr>
             <tr>
@@ -665,7 +650,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/ror-confidentiality-level">RORConfidentialityLevel</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR</p>
+<p>Extension créée dans le cadre du ROR pour définir le niveau de restriction de l’accès aux attributs de la classe Contact.</p>
 </td>
             </tr>
             <tr>
@@ -688,8 +673,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-contact-fonction-contact.html"
-                     title="StructureDefinition/ror-contact-fonction-contact">RORContactFonctionContact</a>
+                  <a href="StructureDefinition-ror-contact-function-contact.html"
+                     title="StructureDefinition/ror-contact-function-contact">RORContactFunctionContact</a>
                </td>
                <td>
 <p>Extension créée dans le cadre du ROR qui indique un titre, une position ou une fonction de la personne assurant le contact au sein de l’organisation (directeur, secrétaire, etc.).</p>
@@ -715,38 +700,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-drop-zone.html"
-                     title="StructureDefinition/ror-drop-zone">RORDropZone</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-equipement-limit.html"
-                     title="StructureDefinition/ror-equipement-limit">ROREquipementLimit</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR qui précise les limites que peut supporter l’équipement le plus tolérant parmis les équipements spécifiques de même type dans cette organisation.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-ror-location-geolocation.html"
-                     title="StructureDefinition/ror-location-geolocation">Geolocation</a>
+                     title="StructureDefinition/ror-location-geolocation">RORGeolocationLocation</a>
                </td>
                <td>
-<p>The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-healthcareservice-available-time-type-of-time.html"
-                     title="StructureDefinition/ror-healthcareservice-available-time-type-of-time">RORHealthcareServiceAvailableTimeTypeOfTime</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR pour apporter un contexte à la plage horaire définie par la suite. Un planning peut être constitué de plusieurs plages horaires du même type ou de type différent.</p>
+
 </td>
             </tr>
             <tr>
@@ -755,17 +713,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/ror-healthcareservice-contact">RORHealthcareServiceContact</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-healthcareservice-intervention-zone.html"
-                     title="StructureDefinition/ror-healthcareservice-intervention-zone">RORHealthcareServiceInterventionZone</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. 
-Cela inclus notamment les divisions territoriales dans lesquelles les professionnels se déplacent.</p>
+<p>Extension créée dans le cadre du ROR pour décrire la personne ou le service qui agit comme point de contact de l’offre.</p>
 </td>
             </tr>
             <tr>
@@ -806,20 +754,29 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-level-recours-orsan.html"
-                     title="StructureDefinition/ror-level-recours-orsan">RORLevelRecourseORSAN</a>
+                  <a href="StructureDefinition-ror-location-equipment.html"
+                     title="StructureDefinition/ror-location-equipment">RORLocationEquipment</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR pour décrire une hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU.</p>
+<p>Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d’une prestation.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-location-equipement.html"
-                     title="StructureDefinition/ror-location-equipement">RORLocationEquipement</a>
+                  <a href="StructureDefinition-ror-location-equipment-limit.html"
+                     title="StructureDefinition/ror-location-equipment-limit">RORLocationEquipmentLimit</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR pour décrire une ressource matérielle discriminante pour la réalisation d’une prestation.</p>
+<p>Extension créée dans le cadre du ROR qui précise les limites que peut supporter l’équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-location-residential-capacity.html"
+                     title="StructureDefinition/ror-location-residential-capacity">RORLocationResidentialCapacity</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui décrit un type d’habitation adapté à la réalisation d’une offre.</p>
 </td>
             </tr>
             <tr>
@@ -833,6 +790,42 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-location-supported-capacity.html"
+                     title="StructureDefinition/ror-location-supported-capacity">RORLocationSupportedCapacity</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l’entité pour un statut et une temporalité donnés.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-meta-comment.html"
+                     title="StructureDefinition/ror-meta-comment">RORMetaComment</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui correspond au commentaire présent dans les métadonnées.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-meta-creation-date.html"
+                     title="StructureDefinition/ror-meta-creation-date">RORMetaCreationDate</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui correspond à la date de création (dans le ROR régional) présente dans les métadonnées.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-accessibility-location.html"
+                     title="StructureDefinition/ror-organization-accessibility-location">ROROrganizationAccessibilityLocation</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-ror-organization-accomodation-family.html"
                      title="StructureDefinition/ror-organization-accomodation-family">ROROrganizationAccomodationFamily</a>
                </td>
@@ -842,11 +835,56 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-organization-address-line-iso-21090-adxp-locality.html"
-                     title="StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality">ROROrganizationAddressLineISO21090AdxpLocality</a>
+                  <a href="StructureDefinition-ror-organization-additional-name.html"
+                     title="StructureDefinition/ror-organization-additional-name">ROROrganizationAdditionalName</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR</p>
+<p>Extension créée dans le cadre du ROR pour décrire le complément de la raison sociale</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-closing-type.html"
+                     title="StructureDefinition/ror-organization-closing-type">ROROrganizationClosingType</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour définir le type de fermeture de l’organisation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-comment.html"
+                     title="StructureDefinition/ror-organization-comment">ROROrganizationComment</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour décrire le commentaire qui permet à la structure de donner des informations complémentaires</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-creation-date.html"
+                     title="StructureDefinition/ror-organization-creation-date">ROROrganizationCreationDate</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour définir la date de création de l’entité juridique.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-drop-zone.html"
+                     title="StructureDefinition/ror-organization-drop-zone">ROROrganizationDropZone</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour préciser l’existence d’une zone de poser pour hélicoptère sur le site concerné.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-eg-name.html"
+                     title="StructureDefinition/ror-organization-eg-name">ROROrganizationEGName</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour désigner l’entité géographique (EG).</p>
 </td>
             </tr>
             <tr>
@@ -856,6 +894,15 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
                </td>
                <td>
 <p>Extension créée dans le cadre du ROR pour préciser l’aide financière pour laquelle l’EG dispose d’une habilitation ou conventionnement qui permet aux personnes accueillies d’en bénéficier si elles remplissent les conditions.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-organization-level-recours-orsan.html"
+                     title="StructureDefinition/ror-organization-level-recours-orsan">ROROrganizationLevelRecourseORSAN</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR pour décrire une hiérarchisation fonctionnelle de la mobilisation des établissements pour accueillir les patients après régulation par le SAMU.</p>
 </td>
             </tr>
             <tr>
@@ -878,15 +925,6 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-organization-period.html"
-                     title="StructureDefinition/ror-organization-period">Period</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR pour définir les période d’ouverture et de fermeture de l’organisation interne</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-ror-organization-price.html"
                      title="StructureDefinition/ror-organization-price">ROROrganizationPrice</a>
                </td>
@@ -896,20 +934,20 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-organization-territorial.html"
-                     title="StructureDefinition/ror-organization-territorial">ROROrganizationTerritorial</a>
+                  <a href="StructureDefinition-ror-organization-reopening-date.html"
+                     title="StructureDefinition/ror-organization-reopening-date">ROROrganizationReopeningDate</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR pour décrire les territoire(s) de santé où est située l’entité géographique</p>
+<p>Extension créée dans le cadre du ROR pour définir la date prévisionnelle de réouverture de l’organisation interne.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-period-closing-type.html"
-                     title="StructureDefinition/ror-period-closing-type">RORPeriodClosingType</a>
+                  <a href="StructureDefinition-RORPractitionerRoleName.html"
+                     title="StructureDefinition/RORPractitionerRoleName">RORPractitionerRoleName</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR pour décrire le type de fermeture de l’entité géographique, au sens des règles de gestion du SI FINESS.</p>
+<p>Extension créée dans le cadre du ROR pour définir l’identité d’exercice d’un professionnel</p>
 </td>
             </tr>
             <tr>
@@ -923,29 +961,11 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-residential-capacity.html"
-                     title="StructureDefinition/ror-residential-capacity">RORResidentialCapacity</a>
+                  <a href="StructureDefinition-ror-telecom-communication-channel.html"
+                     title="StructureDefinition/ror-telecom-communication-channel">RORTelecomCommunicationChannel</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du ROR qui décrit un type d’habitation adapté à la réalisation d’une offre.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-specific-competence.html"
-                     title="StructureDefinition/ror-specific-competence">RORSpecificCompetence</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR qui correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ror-supported-capacity.html"
-                     title="StructureDefinition/ror-supported-capacity">RORSupportedCapacity</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du ROR qui indique une série d’enregistrements indiquant la quantité de lit (ou de place) de l’entité pour un statut et une temporalité donnés.</p>
+<p>Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s’établit la communication</p>
 </td>
             </tr>
             <tr>
@@ -966,10 +986,38 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
 <p>Extension créée dans le cadre du ROR qui précise l’utilisation du canal de communication</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ror-territorial-division.html"
+                     title="StructureDefinition/ror-territorial-division">RORTerritorialDivision</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du ROR qui correspond au périmètre géographique dans lequel habitent les personnes pouvant être prises en charge pour la prestation décrite. 
+Cela inclut notamment les divisions territoriales dans lesquelles les professionnels se déplacent.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
    <a name="5"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>Les ressources ValueSet définissent les ensembles de codes utilisés par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Jeu De Valeur (JDV).</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-code-region-territorial-division.html"
+                     title="ValueSet/code-region-territorial-division">Fusion du valueset J223-TypeDivisionTerritoriale-ROR et JDV_J237-RegionOM-ROR</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>Les ressources CodeSystem définissent les ensembles de codes définis par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Terminologie de REference (TRE).</p>
@@ -1045,12 +1093,12 @@ Cela inclus notamment les divisions territoriales dans lesquelles les profession
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 7, 2023 09:29+0000">2023-04-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:33+0000">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/fhir/ig/ror/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
+                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/ror/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
                 
 
           </span>
