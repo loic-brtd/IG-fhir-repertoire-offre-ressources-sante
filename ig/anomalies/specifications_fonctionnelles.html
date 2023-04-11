@@ -55,9 +55,9 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
+          <p><span style="font-size:12pt;font-weight:bold">Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social</span>
             <br/>
-            <span style="display:inline-block;">3.0 - ci-build
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -87,15 +87,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications techniques
@@ -103,21 +96,52 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="specifications_techniques.html">Spécifications techniques</a>
+        <a href="specifications_techniques_1.html">Consultation des données capacitaires</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_2.html">Consultation de l&apos;offre (synchronisation)</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_3.html">Recherche d&apos;offre sur critères principaux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_4.html">Recherche d&apos;offre avec données capacitaires</a>
+      </li>
+      <li>
+        <a href="search_param.html">Critères de recherche</a>
+      </li>
+      <li>
+        <a href="modifiers.html">Paramètres et modificateurs de requêtes FHIR</a>
+      </li>
+      <li>
+        <a href="annexes.html">Annexes</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformance</a>
+    <a href="mapping.html">Mapping FHIR du modèle de données</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Téléchargements et usage
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
       <li>
         <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
@@ -149,7 +173,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="specifications_techniques.html">next&gt;</a>
+          | <a href="specifications_techniques_1.html">next&gt;</a>
 
           </span>
 
@@ -189,116 +213,452 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#consultation-des-données-capacitaires" id="markdown-toc-consultation-des-données-capacitaires">Consultation des données capacitaires</a>    <ul>
-      <li><a href="#description-du-cas-dusage" id="markdown-toc-description-du-cas-dusage">Description du cas d’usage</a></li>
-      <li><a href="#scénarios" id="markdown-toc-scénarios">Scénarios</a></li>
-    </ul>
-  </li>
+  <li><a href="#consultation-des-données-capacitaires" id="markdown-toc-consultation-des-données-capacitaires">Consultation des données capacitaires</a></li>
+  <li><a href="#consultation-de-loffre-synchronisation" id="markdown-toc-consultation-de-loffre-synchronisation">Consultation de l’offre (synchronisation)</a></li>
+  <li><a href="#recherche-doffre-sur-critères-principaux" id="markdown-toc-recherche-doffre-sur-critères-principaux">Recherche d’offre sur critères principaux</a></li>
+  <li><a href="#recherche-doffre-avec-données-capacitaires" id="markdown-toc-recherche-doffre-avec-données-capacitaires">Recherche d’offre avec données capacitaires</a></li>
 </ul>
 
 </div>
-
-<p>#
-A ce jour, le webservice répond au cas d’usage suivants :</p>
+<p>A ce jour, le webservice répond au cas d’usage suivants :</p>
 
 <ul>
   <li>
     <p>Consultation des données capacitaires en lits et places</p>
+  </li>
+  <li>
+    <p>Consultation de l’offre (synchronisation)</p>
+  </li>
+  <li>
+    <p>Recherche d’offre sur critères principaux</p>
+  </li>
+  <li>
+    <p>Recherche d’offre avec données capacitaires</p>
 
     <p>Pour les cas d’usage couverts par ce webservice :</p>
   </li>
   <li>
     <p>Les préconditions sont :</p>
-  </li>
-  <li>
-    <p>Le système consommateur dispose des points d’accès et des moyens
-d’authentification (authentification mTLS avec des certificats
-IGC-Santé) pour accéder aux données du ROR National.</p>
-  </li>
-  <li>
-    <p>Le système consommateur peut uniquement effectuer les recherches
-autorisées par son profil d’accès aux données. [Ref_04]</p>
+
+    <ul>
+      <li>
+        <p>Le système consommateur dispose des points d’accès et des moyens d’authentification (authentification mTLS avec des certificats IGC-Santé) pour accéder aux             données du ROR National.</p>
+      </li>
+      <li>
+        <p>Le système consommateur peut uniquement effectuer les recherches autorisées par son profil d’accès aux données. Plus d’information <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ANS-ROR_Doctrine-Urbanisation_annexe_Politique%20d%27acc%C3%A8s%20V2.5%20cible.pdf">ici</a> .</p>
+      </li>
+    </ul>
   </li>
   <li>
     <p>Les postconditions sont :</p>
-  </li>
-  <li>
-    <p>L’exécution des transactions ne provoquera aucune modification sur
-les données sources extraites.</p>
+    <ul>
+      <li>L’exécution des transactions ne provoquera aucune modification sur les données sources extraites.</li>
+    </ul>
   </li>
 </ul>
 
-<h2 id="consultation-des-données-capacitaires">Consultation des données capacitaires</h2>
+<h3 id="consultation-des-données-capacitaires">Consultation des données capacitaires</h3>
 
-<h3 id="description-du-cas-dusage">Description du cas d’usage</h3>
+<h4 id="description-du-cas-dusage">Description du cas d’usage</h4>
 
-<p>Un consommateur cherche les capacités des lieux de réalisation de
-l’offre à partir de critères de recherche.</p>
+<p>Un consommateur cherche les capacités des lieux de réalisation de l’offre à partir de critères de recherche.</p>
 
-<p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les
-critères disponibles.</p>
+<p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les critères disponibles.</p>
 
-<p>Le ROR National répond au consommateur les lieux de réalisation de
-l’offre correspondants aux critères de recherche et les identifiants des
-offres opérationnelles liées.</p>
+<p>Le ROR National répond au consommateur les lieux de réalisation de l’offre correspondant aux critères de recherche et les identifiants des offres opérationnelles liées.</p>
 
-<p><img src="image6.png" alt="Une image contenant texte Description générée automatiquement" /></p>
+<table align="center">
+    <tr>
+        <td align="center">
+            <div class="figure">
+                <img src="image6.png" alt="Recherche capacité (modèle expo V3.0)" title="Recherche capacité (modèle expo V3.0)" />
+            </div>
+        </td>    
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 2 - Recherche capacité (modèle expo V3.0)</b>
+        </td>
+    </tr>
+</table>
 
-<p>[]{#_Toc122104304 .anchor}Figure 2 – Recherche capacité (modèle expo
-V3.0)</p>
-
-<h3 id="scénarios">Scénarios</h3>
+<h4 id="scénarios">Scénarios</h4>
 
 <ul>
   <li>
-    <p>Scénario 1 : Données capacitaires de France</p>
-  </li>
-  <li>
-    <p>un consommateur souhaite récupérer l'ensemble des données
-capacitaires de France afin de mettre à jour son système (Exemple de
+    <p>Scénario 1 : Données capacitaires sur le périmètre national</p>
+
+    <ul>
+      <li>un consommateur souhaite récupérer l'ensemble des données
+capacitaires sur le périmètre national afin de mettre à jour son système (Exemple de
 ROR urgence qui souhaite afficher l'ensemble des capacités sur une
-carte).</p>
+carte).</li>
+    </ul>
   </li>
   <li>
     <p>Scénario 2 : Données capacitaires sur un lieu de prise en charge
 identifié</p>
-  </li>
-  <li>
-    <p>un consommateur souhaite mettre à jour dans son système les données
-de capacité surun lieu de prise en charge -&gt; il connait un
-desidentifiants identifiant de point de saisie ou identifiant
-externe de synchronisation et demande à lire une donnée capacitaire
-en particulier.</p>
+
+    <ul>
+      <li>un consommateur souhaite mettre à jour dans son système les données
+de capacité sur un lieu de prise en charge -&gt; il connait un des
+identifiants identifiant de point de saisie ou identifiant externe
+de synchronisation et demande à lire une donnée capacitaire en
+particulier.</li>
+    </ul>
   </li>
   <li>
     <p>Scénario 3 : Données capacitaires sur plusieurs lieux de prise en
 charge identifiés</p>
-  </li>
-  <li>
-    <p>un consommateur souhaite mettre à jour dans son système les données
-de capacité en lits/placesde certains lieux de prise en charge ) -&gt;
-il connait les identifiants et demande à lire la liste de ces
-données capacitaires.</p>
+
+    <ul>
+      <li>un consommateur souhaite mettre à jour dans son système les données
+de capacité en lits/places de certains lieux de prise en charge )
+=&gt; il connait les identifiants et demande à lire la liste de ces
+données capacitaires.</li>
+    </ul>
   </li>
   <li>
     <p>Scénario 4 : Données capacitaires à partir d’une date de mise à jour</p>
-  </li>
-  <li>
-    <p>un consommateur souhaite mettre à jour dans son système les données
-capacitaires mises à jour dans le ROR national depuis une date.</p>
+
+    <ul>
+      <li>un consommateur souhaite mettre à jour dans son système les données
+capacitaires mises à jour dans le ROR national depuis une date qu’il précise.</li>
+    </ul>
   </li>
   <li>
     <p>Scénario 5 : Données capacitaires d’une offre opérationnelle</p>
-  </li>
-  <li>
-    <p>un consommateur ayant recherché au préalable une offre de santé
+
+    <ul>
+      <li>un consommateur ayant recherché au préalable une offre de santé
 correspondant à ses critères (exemple : Urgences spécialisées
 cardiologiques via le service de recherche 2.4) souhaite connaitre
 la situation des capacités pour ces offres. Le service de recherche
 lui ayant renvoyé les identifiants de ces offres, il les passe en
-paramètre de la recherche 3.0.</p>
+paramètre de la recherche.</li>
+    </ul>
   </li>
 </ul>
+
+<h3 id="consultation-de-loffre-synchronisation">Consultation de l’offre (synchronisation)</h3>
+
+<h4 id="description-du-cas-dusage-1">Description du cas d’usage</h4>
+
+<p>Un consommateur souhaite :</p>
+
+<ul>
+  <li>
+    <p>Faire une extraction complète sans critère</p>
+  </li>
+  <li>
+    <p>Faire une extraction complète sur une région</p>
+  </li>
+  <li>
+    <p>Consulter une offre à partir de son identifiant</p>
+  </li>
+  <li>
+    <p>Consulter une offre à partir de l'identifiant de son établissement</p>
+  </li>
+  <li>
+    <p>Faire une extraction complète des offres (modèle complet) modifiées
+depuis une date</p>
+  </li>
+</ul>
+
+<p>Il y a deux cas possibles :</p>
+
+<ul>
+  <li>
+    <p>Extraxction totale : Le consommateur renseigne si besoin son
+(ses) critère(s) de recherche parmi les critères disponibles. Le ROR
+National répond au consommateur les offres opérationnelles
+correspondant aux critères de recherche et toutes les classes liées
+à l’offre opérationnelle.</p>
+  </li>
+  <li>
+    <p>Extraction partielle : Le consommateur renseigne si besoin son
+(ses) critère(s) de recherche parmi les critères disponibles et
+sélectionne les attributs de l’offre opérationnelle qu’il souhaite
+recevoir. Le ROR National répond au consommateur les attributs
+demandés des offres opérationnelles correspondant aux critères de
+recherche et les organisations liées à ces offres opérationnelles.</p>
+  </li>
+</ul>
+
+<table align="center">
+    <tr>
+        <td align="center">
+            <div class="figure">
+                <img src="image7.png" alt="Synchronisation complète offre" title="Synchronisation complète offre)" />
+        </div>
+        </td>
+         <td align="center">
+            <div class="figure">
+                <img src="image8.png" alt="Synchronisation partielle offre" title="Synchronisation partielle offre)" />
+            </div>
+        </td>        
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 3 -- Synchronisation complète de l'offre</b>
+        </td>
+        <td align="center">
+            <b>Figure 4 - Synchronisation partielle de l'offre</b>
+        </td>
+    </tr>
+</table>
+
+<h4 id="scénarios-1">Scénarios</h4>
+
+<ul>
+  <li>
+    <p>Scénario 1 : Synchronisation complète</p>
+
+    <ul>
+      <li>Un consommateur souhaite mettre à jour toutes les offres de santé sur le périmètre nationale</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 2 : Synchronisation de l’ensemble des offres de santé d’un
+établissement</p>
+
+    <ul>
+      <li>Un consommateur souhaite rechercher l'offre de santé proposée par
+un établissement</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 3 : Synchronisation d’une offre de santé
+identifiée</p>
+
+    <ul>
+      <li>Un consommateur souhaite rechercher une offre de santé à partir de
+son identifiant</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 4 : Synchronisation à partir d’une date de mise à
+jour de l’offre opérationnelle</p>
+
+    <ul>
+      <li>Un consommateur souhaite mettre à jour toute l'offre mise à jour
+depuis une certaine date précisée par le consommateur.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 5 : Synchronisation à partir d’une date de mise à
+jour de l’Entité Géographique (EG)</p>
+
+    <ul>
+      <li>Un consommateur souhaite mettre à jour toute l'offre dont
+l’organisation est mise à jour depuis une certaine date</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 6 : Synchronisation à partir d’une date de mise à
+jour d’un des éléments de l’offre</p>
+
+    <ul>
+      <li>Un consommateur souhaite mettre à jour toute l'offre mise à jour
+depuis une certaine date ou dont l’organisation est mise à jour
+depuis une certaine date</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scénario 7 : Synchronisation de l’offre sur un périmètre limité</p>
+
+    <ul>
+      <li>Un consommateur souhaite mettre à jour toute l'offre de santé
+d'une région source. Comme il n'utilise qu’un sous-ensemble des
+informations de l'offre, il souhaite ne recevoir que ces
+informations.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="recherche-doffre-sur-critères-principaux">Recherche d’offre sur critères principaux</h3>
+
+<h4 id="description-du-cas-dusage-2">Description du cas d’usage</h4>
+
+<p>Un consommateur cherche des offres opérationnelles à partir de
+critère(s) de recherche.</p>
+
+<p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les
+critères disponibles.</p>
+
+<p>Le ROR National répond au consommateur les offres opérationnelles
+correspondant aux critères de recherche et toutes les classes liées à
+l’offre opérationnelle.</p>
+
+<table align="center">
+    <tr>
+        <td align="center">
+        <div class="figure">
+            <img src="image9.png" alt="Recherche offre" title="Recherche offre" />
+        </div>
+        </td>    
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 5 - Recherche offre</b>
+        </td>
+    </tr>
+</table>
+
+<h4 id="scénarios-2">Scénarios</h4>
+
+<ul>
+  <li>
+    <p>Scenario 1 : Recherche sur un critère en saisissant une valeur</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres ayant une activité opérationnelle
+qui correspond à l’unique valeur recherchée par le consommateur</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 2 : Recherche sur un critère en saisissant une liste de
+valeurs</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres ayant une activité opérationnelle
+qui correspond à l’une des valeurs recherchées par le consommateur</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 3 : Recherche multicritères #1 – ET</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres ayant un type d’offre
+<strong>ET</strong> une modalité d’accueil qu’il indique</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 4 : Recherche multicritères #2 – OU</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres ayant à un type d’offre
+<strong>OU</strong> une activité opérationnelle qu’il indique</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 5 : Recherche multicritères #3 – ET/OU</p>
+
+    <ul>
+      <li>Un consommateur recherche les offres ayant (une catégorie
+d’établissement <strong>OU</strong> un type d’offre)
+<strong>ET</strong> un acte spécifique qu’il indique</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 6 : Recherche à proximité géographique</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres ayant une activité
+opérationnelle, dans un périmètre géographique proche du lieu de
+résidence d'un patient</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 7 : Recherche sur une zone d’intervention</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres proposées dans une commune
+faisant partie d'une zone d'intervention</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 8 : Recherche sur un département</p>
+
+    <ul>
+      <li>Un consommateur recherche les offres sur un département, ou un
+ensemble de département (code postal)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 9 : Recherche sur une ville #1 – Code Postal</p>
+
+    <ul>
+      <li>Un consommateur recherche les offres sur une ville, ou un ensemble
+de villes (code postal)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 10 : Recherche sur une ville #2 – Code commune</p>
+
+    <ul>
+      <li>Un consommateur recherche les offres sur une ville, ou un ensemble
+de villes (code commune)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 11 : Recherche sur un critère modèle 3.0</p>
+
+    <ul>
+      <li>Un consommateur recherche les offres proposant une modalité
+d'accueil et un niveau d'expertise (critères modèle 3.0)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="recherche-doffre-avec-données-capacitaires">Recherche d’offre avec données capacitaires</h3>
+
+<h4 id="description-du-cas-dusage-3">Description du cas d’usage</h4>
+
+<p>Un consommateur cherche les capacités des lieux de réalisation de
+l’offre à partir de critère(s) de recherche.</p>
+
+<p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les
+critères disponibles.</p>
+
+<p>Le ROR National répond au consommateur les offres opérationnelles
+correspondant aux critères de recherche et les lieux de réalisation de
+l’offre liés.</p>
+
+<table align="center">
+    <tr>
+        <td align="center">
+            <div class="figure">
+                <img src="image10.png" alt="Recherche offre avec données capacitaires" title="Recherche offre avec données capacitaires" />
+            </div>
+        </td>    
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 6 - Recherche offre avec données capacitaires</b>
+        </td>
+    </tr>
+</table>
+
+<h4 id="scénarios-3">Scénarios</h4>
+
+<ul>
+  <li>
+    <p>Scenario 1 : Recherche sur un critère capacitaire #1</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres proposant une activité
+opérationnelle et disposant d'un lit disponible</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 2 : Recherche sur un critère capacitaire #2</p>
+
+    <ul>
+      <li>Un consommateur cherche les offres proposant une activité
+opérationnelle et disposant d'un lit fermé réouvrable</li>
+    </ul>
+  </li>
+  <li>
+    <p>Scenario 3 : Recherche sur un critère de l’équipement</p>
+
+    <ul>
+      <li>Un consommateur cherche une offre de chirurgie traumatologique
+proposant un appareil de radiologie adapté à l'obésité du patient</li>
+    </ul>
+  </li>
+</ul>
+
 
 
 
@@ -336,7 +696,7 @@ paramètre de la recherche 3.0.</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="specifications_techniques.html">next&gt;</a>
+                <a href="specifications_techniques_1.html">next&gt;</a>
 
               </td>
             </tr>
@@ -346,12 +706,12 @@ paramètre de la recherche 3.0.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 7, 2023 16:20+0000">2023-04-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:40+0000">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="http://esante.gouv.fr/ci-sis/fhir/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
+                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/ror/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance-3.0/issues/new">New Issue</a>
                 
 
           </span>
