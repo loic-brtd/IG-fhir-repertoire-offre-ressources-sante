@@ -10,7 +10,7 @@
   "name" : "ROR",
   "title" : "Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social",
   "status" : "active",
-  "date" : "2023-04-11T13:27:34+00:00",
+  "date" : "2023-04-11T20:07:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1619,7 +1619,7 @@
           "valueUrl" : "specifications_techniques_2.html"
         }],
         "nameUrl" : "specifications_techniques_2.html",
-        "title" : "Consultation de l'offre (synchronisation)",
+        "title" : "Consultation de l'offre (extraction)",
         "generation" : "markdown"
       },
       {

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ROR"] ; # 
   fhir:title [ fhir:v "Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-04-11T13:27:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-11T20:07:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1532,7 +1532,7 @@
            fhir:value [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Consultation de l'offre (synchronisation)" ] ;
+         fhir:title [ fhir:v "Consultation de l'offre (extraction)" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

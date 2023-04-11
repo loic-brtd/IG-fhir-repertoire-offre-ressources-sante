@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>ANS.FHIR.FR.ROR\Consultation de l'offre (synchronisation) - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ROR\Consultation de l'offre (extraction) - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -99,7 +99,7 @@
         <a href="specifications_techniques_1.html">Consultation des données capacitaires</a>
       </li>
       <li>
-        <a href="specifications_techniques_2.html">Consultation de l'offre (synchronisation)</a>
+        <a href="specifications_techniques_2.html">Consultation de l'offre (extraction)</a>
       </li>
       <li>
         <a href="specifications_techniques_3.html">Recherche d'offre sur critères principaux</a>
@@ -165,7 +165,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Consultation de l'offre (synchronisation)</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Consultation de l'offre (extraction)</b></li>
 
           <span style="float:right;">
 
@@ -196,7 +196,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p>  <!-- EndReleaseHeader -->
-  <h2>Consultation de l'offre (synchronisation)</h2>
+  <h2>Consultation de l'offre (extraction)</h2>
   
 
 
@@ -222,7 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-  <!-- ## Consultation de l'offre (synchronisation) -->
+  <!-- ## Consultation de l'offre (Extraction) -->
 
 <h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
 
@@ -415,7 +415,7 @@ d’usage sont&nbsp;:</li>
 
 <p>Ces critères de recherche sont applicables à la ressource
 HealthcareService, grâce au <a href="https://www.hl7.org/fhir/search.html#chaining">chainage</a>. Pour cela utiliser la syntaxe
-suivante&nbsp;: <code class="language-plaintext highlighter-rouge">location:[NOM CRITERE]</code></p>
+suivante&nbsp;: <code class="language-plaintext highlighter-rouge">organization.[NOM CRITERE]</code></p>
 
 <ul>
   <li><a name="l752">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-location">paragraphe dédié</a>, de
@@ -435,7 +435,7 @@ sont&nbsp;:</li>
 
 <p>Ces critères de recherche sont applicables à la ressource
 HealthcareService, grâce au chainage. Pour cela utiliser la syntaxe
-suivante&nbsp;: <code class="language-plaintext highlighter-rouge">location:[NOM CRITERE]</code></p>
+suivante&nbsp;: <code class="language-plaintext highlighter-rouge">location.[NOM CRITERE]</code></p>
 
 <ul>
   <li><a name="l784">​</a>Les critères de recherche, définis au <a href="specifications_techniques.html#structuredefinition-ror-practioner">paragraphe dédié</a>, de
@@ -453,7 +453,7 @@ d’usage sont&nbsp;:</li>
 </tbody>
 </table>
 
-<p>Ces critères de recherche sont applicables à la ressource Location,
+<p>Ces critères de recherche sont applicables à la ressource HealthcareService,
 grâce au <a href="https://www.hl7.org/fhir/search.html#has">chainage</a>. Pour cela utiliser la syntaxe suivante&nbsp;:
 <code class="language-plaintext highlighter-rouge">_has:PractitionerRole:service:_has:PractitionerRole:practitioner:[NOM CRITERE]</code></p>
 
@@ -473,13 +473,13 @@ d’usage sont&nbsp;:</li>
 </tbody>
 </table>
 
-<p>Ces critères de recherche sont applicables à la ressource Location,
+<p>Ces critères de recherche sont applicables à la ressource HealthcareService,
 grâce au <a href="https://www.hl7.org/fhir/search.html#has">chainage</a>. Pour cela utiliser la syntaxe suivante&nbsp;:
 <code class="language-plaintext highlighter-rouge">_has:PractitionerRole:service:[NOM CRITERE]</code></p>
 
 <h3 id="paramètres-et-modificateurs-de-requêtes-fhir">Paramètres et modificateurs de requêtes FHIR</h3>
 
-<p>Les paramètres et modificateurs de requêtes décrits au paragraphe 5
+<p>Les paramètres et modificateurs de requêtes décrits au <a href="modifiers.html">paragraphe dédié</a>
 applicables à ce cas d’usage sont&nbsp;:</p>
 
 <ul>
@@ -683,7 +683,7 @@ ne recevoir que ces informations.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 13:27+0000">2023-04-11</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 20:07+0000">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

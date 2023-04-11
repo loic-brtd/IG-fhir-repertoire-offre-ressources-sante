@@ -11,7 +11,7 @@
   <name value="ROR"/>
   <title value="Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"/>
   <status value="active"/>
-  <date value="2023-04-11T13:27:34+00:00"/>
+  <date value="2023-04-11T20:07:33+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1379,7 +1379,7 @@
           <valueUrl value="specifications_techniques_2.html"/>
         </extension>
         <nameUrl value="specifications_techniques_2.html"/>
-        <title value="Consultation de l'offre (synchronisation)"/>
+        <title value="Consultation de l'offre (extraction)"/>
         <generation value="markdown"/>
       </page>
       <page>
