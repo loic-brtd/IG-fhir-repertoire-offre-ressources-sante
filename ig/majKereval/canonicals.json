@@ -14,6 +14,20 @@
     "name" : "RORServeur"
   },
   {
+    "id" : "input-task-ror-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/input-task-ror-codesystem",
+    "version" : "3.0",
+    "name" : "InputTaskRORCodeSystem"
+  },
+  {
+    "id" : "output-task-ror-codesystem",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/CodeSystem/output-task-ror-codesystem",
+    "version" : "3.0",
+    "name" : "OutputTaskRORCodeSystem"
+  },
+  {
     "id" : "ans.fhir.fr.ror",
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror",
@@ -98,6 +112,13 @@
     "name" : "RORHealthcareServiceAgeRangeLow"
   },
   {
+    "id" : "ror-sp-healthcareservice-equipment-type",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceEquipmentType"
+  },
+  {
     "id" : "ror-sp-healthcareservice-intervention-zone",
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-healthcareservice-intervention-zone",
@@ -117,6 +138,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector",
     "version" : "3.0",
     "name" : "RORHealthcareServicePsychiatricSector"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-specific-competence",
+    "type" : "SearchParameter",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-healthcareservice-specific-competence",
+    "version" : "3.0",
+    "name" : "RORHealthcareServiceSpecificCompetence"
   },
   {
     "id" : "ror-sp-limit-value",
@@ -516,6 +544,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole-unit-exercise-mode",
     "version" : "3.0",
     "name" : "RORPractitionerRoleUnitExerciseMode"
+  },
+  {
+    "id" : "ror-task",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task",
+    "version" : "3.0",
+    "name" : "RORTask"
   },
   {
     "id" : "ror-telecom-communication-channel",

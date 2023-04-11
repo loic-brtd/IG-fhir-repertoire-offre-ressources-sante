@@ -10,7 +10,7 @@
   "name" : "RORME30",
   "title" : "ROR ME 3.0",
   "status" : "active",
-  "date" : "2023-04-07T15:03:36+00:00",
+  "date" : "2023-04-11T08:38:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -659,6 +659,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ror-task"
+      },
+      "name" : "RORTask",
+      "description" : "Anomalie concerant une donnée dans une ressource du ROR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1197,6 +1209,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-task-ror-codesystem"
+      },
+      "name" : "InputTaskRORCodeSystem",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource RORTask",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/output-task-ror-codesystem"
+      },
+      "name" : "OutputTaskRORCodeSystem",
+      "description" : "Code System pour la définition des éléments spécifiques de output dans ressource RORTask",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1356,6 +1392,18 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-equipment-type"
+      },
+      "name" : "ror-sp-healthcareservice-equipment-type",
+      "description" : "Paramètre de recherche décrivant le type d'équipement de l'offre opérationnelle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/ror-sp-healthcareservice-intervention-zone"
       },
       "name" : "ror-sp-healthcareservice-intervention-zone",
@@ -1384,6 +1432,18 @@
       },
       "name" : "ror-sp-healthcareservice-psychiatric-sector",
       "description" : "Paramètre de recherche décrivrant le secteur psychiatrique de l'offre opérationnelle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-specific-competence"
+      },
+      "name" : "ror-sp-healthcareservice-specific-competence",
+      "description" : "Paramètre de recherche permettant de pointer sur la compétence spécifique",
       "exampleBoolean" : false
     },
     {
@@ -1559,19 +1619,82 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "specifications_techniques.html"
+          "valueUrl" : "specifications_techniques_1.html"
         }],
-        "nameUrl" : "specifications_techniques.html",
-        "title" : "Specifications Techniques",
+        "nameUrl" : "specifications_techniques_1.html",
+        "title" : "Consultation des données capacitaires",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "autres_ressources.html"
+          "valueUrl" : "specifications_techniques_2.html"
         }],
-        "nameUrl" : "autres_ressources.html",
-        "title" : "Autres Ressources",
+        "nameUrl" : "specifications_techniques_2.html",
+        "title" : "Consultation de l'offre (synchronisation)",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_techniques_3.html"
+        }],
+        "nameUrl" : "specifications_techniques_3.html",
+        "title" : "Recherche d'offre sur critères principaux",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_techniques_4.html"
+        }],
+        "nameUrl" : "specifications_techniques_4.html",
+        "title" : "Recherche d'offre avec données capacitaires",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "search_param.html"
+        }],
+        "nameUrl" : "search_param.html",
+        "title" : "Critères de recherche",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "modifiers.html"
+        }],
+        "nameUrl" : "modifiers.html",
+        "title" : "Paramètres et modificateurs de requêtes FHIR",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "annexes.html"
+        }],
+        "nameUrl" : "annexes.html",
+        "title" : "Annexes",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping.html"
+        }],
+        "nameUrl" : "mapping.html",
+        "title" : "Mapping FHIR du modèle de données du ROR",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Téléchargements et usages",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
@@ -1581,16 +1704,16 @@
           "nameUrl" : "securite.html",
           "title" : "Sécurité",
           "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "downloads.html"
-          }],
-          "nameUrl" : "downloads.html",
-          "title" : "Téléchargements et usages",
-          "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "autres_ressources.html"
+        }],
+        "nameUrl" : "autres_ressources.html",
+        "title" : "Autres Ressources",
+        "generation" : "markdown"
       },
       {
         "extension" : [{

@@ -11,7 +11,7 @@
   <name value="RORME30"/>
   <title value="ROR ME 3.0"/>
   <status value="active"/>
-  <date value="2023-04-07T15:03:36+00:00"/>
+  <date value="2023-04-11T08:38:10+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -496,6 +496,17 @@
       </reference>
       <name value="RORPractitionerRole"/>
       <description value="Profil créé dans le cadre du ROR pour décrire les modalités d'exercice opérationnelles du profesionnel dans la réalisation de l'offre"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-task"/>
+      </reference>
+      <name value="RORTask"/>
+      <description value="Anomalie concerant une donnée dans une ressource du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -993,6 +1004,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/input-task-ror-codesystem"/>
+      </reference>
+      <name value="InputTaskRORCodeSystem"/>
+      <description value="Code System pour la définition des éléments spécifiques de input dans ressource RORTask"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/output-task-ror-codesystem"/>
+      </reference>
+      <name value="OutputTaskRORCodeSystem"/>
+      <description value="Code System pour la définition des éléments spécifiques de output dans ressource RORTask"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -1139,6 +1172,17 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-equipment-type"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-equipment-type"/>
+      <description value="Paramètre de recherche décrivant le type d'équipement de l'offre opérationnelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/ror-sp-healthcareservice-intervention-zone"/>
       </reference>
       <name value="ror-sp-healthcareservice-intervention-zone"/>
@@ -1165,6 +1209,17 @@
       </reference>
       <name value="ror-sp-healthcareservice-psychiatric-sector"/>
       <description value="Paramètre de recherche décrivrant le secteur psychiatrique de l'offre opérationnelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-specific-competence"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-specific-competence"/>
+      <description value="Paramètre de recherche permettant de pointer sur la compétence spécifique"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1324,18 +1379,74 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications_techniques.html"/>
+          <valueUrl value="specifications_techniques_1.html"/>
         </extension>
-        <nameUrl value="specifications_techniques.html"/>
-        <title value="Specifications Techniques"/>
+        <nameUrl value="specifications_techniques_1.html"/>
+        <title value="Consultation des données capacitaires"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="autres_ressources.html"/>
+          <valueUrl value="specifications_techniques_2.html"/>
         </extension>
-        <nameUrl value="autres_ressources.html"/>
-        <title value="Autres Ressources"/>
+        <nameUrl value="specifications_techniques_2.html"/>
+        <title value="Consultation de l'offre (synchronisation)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques_3.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques_3.html"/>
+        <title value="Recherche d'offre sur critères principaux"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques_4.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques_4.html"/>
+        <title value="Recherche d'offre avec données capacitaires"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="search_param.html"/>
+        </extension>
+        <nameUrl value="search_param.html"/>
+        <title value="Critères de recherche"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modifiers.html"/>
+        </extension>
+        <nameUrl value="modifiers.html"/>
+        <title value="Paramètres et modificateurs de requêtes FHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="annexes.html"/>
+        </extension>
+        <nameUrl value="annexes.html"/>
+        <title value="Annexes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mapping.html"/>
+        </extension>
+        <nameUrl value="mapping.html"/>
+        <title value="Mapping FHIR du modèle de données du ROR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Téléchargements et usages"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -1345,14 +1456,14 @@
           <title value="Sécurité"/>
           <generation value="markdown"/>
         </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="downloads.html"/>
-          </extension>
-          <nameUrl value="downloads.html"/>
-          <title value="Téléchargements et usages"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="autres_ressources.html"/>
+        </extension>
+        <nameUrl value="autres_ressources.html"/>
+        <title value="Autres Ressources"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -976,6 +976,12 @@
         "url": "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole",
         "title": "RORPractitionerRole"
       }
+    ],
+    "Task": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task",
+        "title": "RORTask"
+      }
     ]
   },
   "usage": {
@@ -1030,6 +1036,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
