@@ -11,7 +11,7 @@
   <name value="ROR"/>
   <title value="Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"/>
   <status value="active"/>
-  <date value="2023-04-11T20:07:33+00:00"/>
+  <date value="2023-04-12T10:17:45+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1396,6 +1396,30 @@
         </extension>
         <nameUrl value="specifications_techniques_4.html"/>
         <title value="Recherche d'offre avec données capacitaires"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques_5.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques_5.html"/>
+        <title value="Signalement d’anomalie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques_6.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques_6.html"/>
+        <title value="Mise à jour d’anomalie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques_7.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques_7.html"/>
+        <title value="Consultation d’anomalie"/>
         <generation value="markdown"/>
       </page>
       <page>
