@@ -5,7 +5,7 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORConsommateur</h2><div><p>Système qui est autorisé à consommer les données du ROR.</p>
 </div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des lieux de réalisation de l'offre</p>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitioner">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Task</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task</a></td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Location</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>Organization</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitioner">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitioner</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td><td></td></tr><tr><td>Task</td><td><a href="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task">https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-task</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/ror/CapabilityStatement/ror-consommateur"/>
   <version value="0.1.0"/>
@@ -27,7 +27,7 @@
   <fhirVersion value="4.0.1"/>
   <format value="application/fhir+xml"/>
   <format value="application/fhir+json"/>
-  <implementationGuide value="http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"/>
   <rest>
     <mode value="client"/>
     <documentation value="Recherche et consultation des lieux de réalisation de l'offre"/>
@@ -434,19 +434,13 @@
         <code value="create"/>
       </interaction>
       <interaction>
-        <code value="update"/>
+        <code value="patch"/>
       </interaction>
       <searchParam>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
-        <type value="date"/>
-        <documentation value="Date de la dernière mise a jour"/>
-      </searchParam>
-      <searchParam>
-        <name value="_tag"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
-        <documentation value="Code de la région de la source de la donnée"/>
+        <documentation value="Identifiant logique de la ressource"/>
       </searchParam>
     </resource>
   </rest>

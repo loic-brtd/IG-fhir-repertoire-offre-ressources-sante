@@ -1933,9 +1933,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ror-task","Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"",""
-"ror-task","Task.id","Task.id","","","",1,1,"","","Y","id {[]} {[]}
+"ror-task","Task.id","Task.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
-"ror-task","Task.meta","Task.meta","","","",1,1,"","","Y","Meta {[]} {[]}
+"ror-task","Task.meta","Task.meta","","","",0,1,"","","Y","Meta {[]} {[]}
 ","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1969,7 +1969,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.modifierExtension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-task","Task.identifier","Task.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+"ror-task","Task.identifier","Task.identifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","Identifiant de l'anomalie","The business identifier for this task.","","","","","","","","","",,,,,"",,,,"Task.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2016,7 +2016,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-task","Task.code","Task.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Thématique de l'anomalie exemples :Exactitude, Complétude, Exhaustivité","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"example","Codes to identify what the task involves.  These will typically be specific to a particular workflow.","http://hl7.org/fhir/ValueSet/task-code","",,,,"Task.code",0,1,"ele-1
+","Thématique de l'anomalie exemples :Exactitude, Complétude, Exhaustivité","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR","",,,,"Task.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-task","Task.description","Task.description","","","",0,1,"Y","","Y","string {[]} {[]}
@@ -2085,7 +2085,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "ror-task","Task.reasonCode","Task.reasonCode","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Type d'action proposée en réponse","A description or code indicating why this task needs to be performed.","This should only be included if there is no focus or if it differs from the reason indicated on the focus.","","","","","","","","",,"example","Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital.","","",,,,"Task.reasonCode",0,1,"ele-1
+","Type d'action proposée en réponse","A description or code indicating why this task needs to be performed.","This should only be included if there is no focus or if it differs from the reason indicated on the focus.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J242-ActionAnomalie-ROR/FHIR/JDV-J242-ActionAnomalie-ROR","",,,,"Task.reasonCode",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-task","Task.reasonReference","Task.reasonReference","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -2196,7 +2196,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ror-task","Task.input:ruleErrorId.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"ror-task","Task.input:ruleErrorId.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2400,7 +2400,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-task","Task.output:newValue","Task.output","newValue","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Nouvelle valeur renseignée","Outputs produced by the Task.","","Resources and data produced during the execution the task.  This data is generated by the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.output",0,*,"ele-1
+","Valeur corrigée","Outputs produced by the Task.","","Resources and data produced during the execution the task.  This data is generated by the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.output",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-task","Task.output:newValue.id","Task.output.id","","","",0,1,"","","","string {[]} {[]}
