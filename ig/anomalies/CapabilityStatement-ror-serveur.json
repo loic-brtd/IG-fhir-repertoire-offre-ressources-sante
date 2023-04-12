@@ -25,7 +25,7 @@
   "fhirVersion" : "4.0.1",
   "format" : ["application/fhir+xml",
   "application/fhir+json"],
-  "implementationGuide" : ["http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"],
+  "implementationGuide" : ["https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "Recherche et consultation des lieux de réalisation de l'offre",

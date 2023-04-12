@@ -32,8 +32,8 @@
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:format ( [ fhir:v "application/fhir+xml"] [ fhir:v "application/fhir+json"] ) ; # 
   fhir:implementationGuide ( [
-     fhir:v "http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"^^xsd:anyURI ;
-     fhir:link <http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig>
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"^^xsd:anyURI ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror>
   ] ) ; # 
   fhir:rest ( [
      fhir:mode [ fhir:v "server" ] ;

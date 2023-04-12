@@ -27,7 +27,7 @@
   <fhirVersion value="4.0.1"/>
   <format value="application/fhir+xml"/>
   <format value="application/fhir+json"/>
-  <implementationGuide value="http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"/>
   <rest>
     <mode value="server"/>
     <documentation value="Recherche et consultation des lieux de réalisation de l'offre"/>
