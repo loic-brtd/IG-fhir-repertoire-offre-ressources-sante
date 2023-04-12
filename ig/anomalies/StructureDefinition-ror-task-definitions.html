@@ -486,7 +486,8 @@ The current status of the task
   <tr><td>Definition</td><td><p>Contains business-specific nuances of the business state.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR">https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><p>The domain-specific business-contextual sub-state of the task.  For example: &quot;Blood drawn&quot;, &quot;IV inserted&quot;, &quot;Awaiting physician signature&quot;, etc.</p>
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>There's often a need to track substates of a task - this is often variable by specific workflow implementation.</p>
@@ -530,9 +531,7 @@ The task's priority
   <tr><td>Definition</td><td><p>A name or code (or both) briefly describing what the task involves.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-task-code.html">TaskCode</a>
-Codes to identify what the task involves.  These will typically be specific to a particular workflow
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR">https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The title (eg &quot;My Tasks&quot;, &quot;Outstanding Tasks for Patient X&quot;) should go into the code.</p>
@@ -1614,7 +1613,7 @@ The type(s) of task performers allowed
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 12, 2023 13:10+0000">2023-04-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 12, 2023 14:18+0000">2023-04-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

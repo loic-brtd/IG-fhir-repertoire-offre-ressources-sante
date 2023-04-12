@@ -1170,18 +1170,9 @@
             "$ref": "#/components/parameters/elements"
           },
           {
-            "name": "_lastUpdated",
+            "name": "_id",
             "in": "query",
-            "description": "When the resource version last changed",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "_tag",
-            "in": "query",
-            "description": "Tags applied to this resource",
+            "description": "Logical id of this artifact",
             "schema": {
               "type": "string"
             }
@@ -1327,21 +1318,31 @@
           }
         ]
       },
-      "put": {
-        "summary": "Update the current state of the resource",
-        "operationId": "updateTask",
+      "patch": {
+        "summary": "Change the current state of the resource by providing a patch - a series of change commands",
+        "operationId": "patchTask",
         "requestBody": {
           "description": "The new state of the resource",
           "required": true,
           "content": {
-            "application/fhir+json": {
+            "application/json-patch+json": {
               "schema": {
                 "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Task"
               }
             },
-            "application/fhir+xml": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+              }
+            },
+            "application/xml-patch+xml": {
               "schema": {
                 "$ref": "https://hl7.org/fhir/R4/Task.xsd"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
               }
             }
           }
@@ -1363,7 +1364,7 @@
             }
           },
           "200": {
-            "description": "the resource being returned after being updated",
+            "description": "the resource being returned after being patched",
             "headers": {
               "ETag": {
                 "description": "Version from Resource.meta.version as a weak ETag",
