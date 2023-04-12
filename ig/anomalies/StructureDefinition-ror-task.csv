@@ -70,7 +70,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code=""status change""].reasonCode","CE/CNE/CWE"
 "Task.businessStatus","Task.businessStatus","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","différent type d statut métier de l'anomalie","Contains business-specific nuances of the business state.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","There's often a need to track substates of a task - this is often variable by specific workflow implementation.","","","","","","","",,"example","The domain-specific business-contextual sub-state of the task.  For example: ""Blood drawn"", ""IV inserted"", ""Awaiting physician signature"", etc.","","",,,,"Task.businessStatus",0,1,"ele-1
+","différent type d statut métier de l'anomalie","Contains business-specific nuances of the business state.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","There's often a need to track substates of a task - this is often variable by specific workflow implementation.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J241-ThematiqueAnomalie-ROR/FHIR/JDV-J241-ThematiqueAnomalie-ROR","",,,,"Task.businessStatus",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""business status""]","CE/CNE/CWE"
 "Task.intent","Task.intent","","","",1,1,"","","Y","code {[]} {[]}
@@ -153,7 +153,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","Request.reasonCode, Event.reasonCode","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)",".participation[typeCode=LOC].role","FiveWs.where[x]"
 "Task.reasonCode","Task.reasonCode","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Type d'action proposée en réponse","A description or code indicating why this task needs to be performed.","This should only be included if there is no focus or if it differs from the reason indicated on the focus.","","","","","","","","",,"example","Indicates why the task is needed.  E.g. Suspended because patient admitted to hospital.","","",,,,"Task.reasonCode",0,1,"ele-1
+","Type d'action proposée en réponse","A description or code indicating why this task needs to be performed.","This should only be included if there is no focus or if it differs from the reason indicated on the focus.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J242-ActionAnomalie-ROR/FHIR/JDV-J242-ActionAnomalie-ROR","",,,,"Task.reasonCode",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.location","n/a","CD",".reasonCode","FiveWs.why[x]","CE/CNE/CWE","EVN.7"
 "Task.reasonReference","Task.reasonReference","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -264,7 +264,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 </valueCodeableConcept>","","","",,"example","Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. ""Comparison source"", ""Applicable consent"", ""Concomitent Medications"", etc.","","",,,,"Task.input.type",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","???","CE/CNE/CWE"
-"Task.input:ruleErrorId.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"Task.input:ruleErrorId.value[x]","Task.input.value[x]","","","",1,1,"","","","string {[]} {[]}
 ","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","???"

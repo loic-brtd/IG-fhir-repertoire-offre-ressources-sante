@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.ROR\ - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ROR\Signalement d’anomalie - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -103,13 +99,22 @@
         <a href="specifications_techniques_1.html">Consultation des données capacitaires</a>
       </li>
       <li>
-        <a href="specifications_techniques_2.html">Consultation de l&apos;offre (synchronisation)</a>
+        <a href="specifications_techniques_2.html">Consultation de l&apos;offre (extraction)</a>
       </li>
       <li>
         <a href="specifications_techniques_3.html">Recherche d&apos;offre sur critères principaux</a>
       </li>
       <li>
         <a href="specifications_techniques_4.html">Recherche d&apos;offre avec données capacitaires</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_5.html">Signalement d’anomalie</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_6.html">Mise à jour d’anomalie</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_7.html">Consultation d’anomalie</a>
       </li>
       <li>
         <a href="search_param.html">Critères de recherche</a>
@@ -169,11 +174,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Signalement d’anomalie</b></li>
 
           <span style="float:right;">
 
+            <a href="specifications_techniques_4.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="specifications_techniques_6.html">next&gt;</a>
 
           </span>
 
@@ -187,9 +196,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>Signalement d’anomalie</h2>
   
 
 
@@ -203,77 +219,208 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-ror-organization-eg-name.html">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-ror-organization-eg-name-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-ror-organization-eg-name-mappings.html">Mappings</a>
-    </li>
-  
-
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-ror-organization-eg-name.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-ror-organization-eg-name.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-ror-organization-eg-name.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#caractéristiques-de-lapi" id="markdown-toc-caractéristiques-de-lapi">Caractéristiques de l’API</a></li>
+  <li><a href="#construction-de-la-requête-de-base" id="markdown-toc-construction-de-la-requête-de-base">Construction de la requête de base</a></li>
+  <li><a href="#construction-de-la-réponse-de-base" id="markdown-toc-construction-de-la-réponse-de-base">Construction de la réponse de base</a></li>
+  <li><a href="#exemple-de-requêtes" id="markdown-toc-exemple-de-requêtes">Exemple de requêtes</a></li>
 </ul>
 
+</div>
+<!-- ## Signalement d’anomalie -->
 
-  <a name="root"> </a>
-  <h2 id="root">Extension: ROROrganizationEGName - Change History</h2>
-  <table class="colsi">
-    <tr>
+<p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
+Cette partie de la spécification est en cours de construction.
+</p>
 
-      <td colspan="2">
-        
-          Active
-          
-            as of 2023-04-11
-          
-        
-      </td>
+<h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
 
-    </tr>
-  </table>
+<table width="100%">
+<tbody>
+<tr>
+<td width="18%">
+<p><strong>Endpoint</strong></p>
+</td>
+<td width="81%">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="18%">
+<p><strong>Header</strong></p>
+</td>
+<td width="81%">
+<p>Content-type&nbsp;:=Json + FHIR</p>
+</td>
+</tr>
+<tr>
+<td width="18%">
+<p><strong>Encodage</strong></p>
+</td>
+<td width="81%">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="18%">
+<p><strong>Version FHIR</strong></p>
+</td>
+<td width="81%">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="18%">
+<p><strong>Version package</strong></p>
+</td>
+<td width="81%">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="18%">
+<p><strong>Publication</strong></p>
+</td>
+<td width="81%">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-  <p>Changes in the ror-organization-eg-name extension.</p>
+<h3 id="construction-de-la-requête-de-base">Construction de la requête de base</h3>
 
-  
+<table>
+<tbody>
+<tr>
+<td width="226">
+<p><strong>Interaction FHIR</strong></p>
+</td>
+<td width="453">
+<p>Create<a href="#_ftn1" name="_ftnref1"><sup>[1]</sup></a></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p><strong>M&eacute;thode http associ&eacute;e</strong></p>
+</td>
+<td width="453">
+<p>POST</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p><strong>Ressource recherch&eacute;e</strong></p>
+</td>
+<td width="453">
+<p>Task</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p><strong>Construction requ&ecirc;te de base</strong></p>
+</td>
+<td width="453">
+<p><code>POST[base]/Task{?_format=[mime-type]}</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><a href="#_ftnref1" name="_ftn1">[1]</a> https://www.hl7.org/fhir/http.html#create et <a href="https://www.hl7.org/fhir/http.html#general">https://www.hl7.org/fhir/http.html#general</a></p>
+
+<h3 id="construction-de-la-réponse-de-base">Construction de la réponse de base</h3>
+
+<h4 id="réponse-de-base--succès">Réponse de base – Succès</h4>
+
+<p>Lien vers la spécification FHIR : <a href="https://www.hl7.org/fhir/http.html ">https://www.hl7.org/fhir/http.html </a></p>
+
+<p>Si la création est un succès, le serveur répond :</p>
+<ul>
+  <li>Un header avec un code 201 Created HTTP.</li>
+  <li>Un header Location contenant le nouvel identifiant technique et l’identifiant de version de la ressource créée.</li>
+  <li>L’identifiant fonctionnel de la ressouce créée.</li>
+</ul>
+
+<h4 id="réponse-de-base--echec">Réponse de base – Echec</h4>
+
+<p>Lien vers la spécification FHIR :
+<a href="https://www.hl7.org/fhir/operationoutcome.html">https://www.hl7.org/fhir/operationoutcome.html</a></p>
+
+<p>Si la création échoue, le serveur doit répondre :</p>
+
+<p>Un header avec un un code erreur HTTP 4XX ou 5XX</p>
+
+<p>Un body contenant une ressource OperationOutcome qui donne les
+détails sur la raison de l’échec</p>
+
+<p>Remarque : l’échec d’une recherche est la non-possibilité d’exécuter la
+requête, ce qui est différent d’aucune correspondance à la recherche.
+Plus de précision sur la spécification FHIR :
+<a href="https://www.hl7.org/fhir/http.html">https://www.hl7.org/fhir/http.html</a></p>
+
+<h3 id="exemple-de-requêtes">Exemple de requêtes</h3>
+
+<h4 id="scénario-1-un-responsable-qualité-souhaite-signaler-une-anomalie-sur-un-élément">Scénario 1 : Un responsable qualité souhaite signaler une anomalie sur un élément.</h4>
+
+<p><strong>Description du scénario :</strong> Un consommateur cherche les offres proposant une activité opérationnelle = XXX et disposant d'un lit disponible = 02 (TRE-R330-StatutCapacite) et disposant d’un nombre de lits supérieur à 0.</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST[BASE]/Task
+{	
+	"resourceType": "Task",
+	"identifier": "identifiant1",
+	"businessStatus": [ { "system": "JDV XX", "value": "12345" } ],
+	"code": [ { "system": "JDV XXX", "value": "12345" } ],
+	"description": "description de notre ano",
+	"focus": "URL HealthcareService"
+}
+</code></pre></div></div>
+
+<h4 id="scénario-2-signalement-de-plusieurs-anomalies">Scénario 2 : Signalement de plusieurs anomalies</h4>
+
+<p><strong>Description du scénario :</strong> Le moteur de règle crée automatiquement une ou plusieurs anomalies sur un ou plusieurs éléments.</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST[BASE]/Bundle
+{
+  "resourceType": "Bundle",
+	"type":"collection",
+	"entry" : [
+		{	
+			"resource": {
+				"resourceType": "Task",
+"identifier": "identifiant1",
+				"businessStatus": [ { "system": "JDV XX", "value": "12345" } ],
+				"code": [ { "system": "JDV XXX", "value": "12345" } ],
+				"description": "description de notre ano",
+				"focus": "URL HealthcareService"
+			}
+		},
+			{
+			"resource": {
+				"resourceType": "Task",
+				"identifier": "identifiant2",
+				"businessStatus": [ { "system": "JDV XX", "value": "12345" } ],
+				"code": [ { "system": "JDV XXX", "value": "12345" } ],
+				"description": "description de notre ano",
+				"focus": "URL Location"
+			}
+	
+	
+		}
+				
+	]
+}
+</code></pre></div></div>
+
+
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -281,29 +428,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -322,7 +446,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="specifications_techniques_4.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -330,7 +454,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="specifications_techniques_6.html">next&gt;</a>
 
               </td>
             </tr>
@@ -340,7 +464,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:40+0000">2023-04-11</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 12, 2023 13:10+0000">2023-04-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

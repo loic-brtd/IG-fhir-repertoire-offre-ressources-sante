@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ROR"] ; # 
   fhir:title [ fhir:v "Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-04-11T09:40:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-12T13:10:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -960,18 +960,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-name> ;
-         fhir:reference [ fhir:v "StructureDefinition/ror-organization-eg-name" ]
-       ] ;
-       fhir:name [ fhir:v "ROROrganizationEGName" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre du ROR pour désigner l'entité géographique (EG)." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-financial-help-type> ;
          fhir:reference [ fhir:v "StructureDefinition/ror-organization-financial-help-type" ]
        ] ;
@@ -1544,7 +1532,7 @@
            fhir:value [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques_2.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Consultation de l'offre (synchronisation)" ] ;
+         fhir:title [ fhir:v "Consultation de l'offre (extraction)" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1561,6 +1549,30 @@
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques_4.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Recherche d'offre avec données capacitaires" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_5.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_5.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Signalement d’anomalie" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_6.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_6.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Mise à jour d’anomalie" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques_7.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques_7.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Consultation d’anomalie" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
