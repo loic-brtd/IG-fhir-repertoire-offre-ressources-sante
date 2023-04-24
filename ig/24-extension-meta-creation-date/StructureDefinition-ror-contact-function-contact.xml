@@ -14,7 +14,7 @@
   <version value="0.1.0"/>
   <name value="RORContactFunctionContact"/>
   <status value="active"/>
-  <date value="2023-04-24T14:19:05+00:00"/>
+  <date value="2023-04-24T14:40:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -32,6 +32,10 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Organization.contact"/>
+  </context>
   <context>
     <type value="extension"/>
     <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-healthcareservice-contact"/>
