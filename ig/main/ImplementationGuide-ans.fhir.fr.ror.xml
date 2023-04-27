@@ -6,12 +6,15 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ROR</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror</pre><div><p>Ressources de conformité basées sur le modèle d'exposition 3.0 du ROR</p>
 </div></div>
   </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+    <valueCode value="hl7.fhir.uv.tools#current"/>
+  </extension>
   <url value="https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"/>
   <version value="0.1.0"/>
   <name value="ROR"/>
   <title value="Répertoire national de l’Offre et des Ressources en santé et accompagnement médico-social"/>
   <status value="active"/>
-  <date value="2023-04-19T09:29:32+00:00"/>
+  <date value="2023-04-27T07:56:45+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
