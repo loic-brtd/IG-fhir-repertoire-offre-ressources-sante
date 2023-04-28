@@ -3,7 +3,7 @@
 
 err = 2, warn = 253, info = 27
 IG Publisher Version: 1.3.5
-Generated Thu Apr 27 07:58:22 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
+Generated Fri Apr 28 06:39:07 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
  Build Errors : 1242 / 6 / 0
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CapabilityStatement-ror-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/CapabilityStatement-ror-serveur : 0 / 0 / 1
@@ -1348,7 +1348,7 @@ WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSys
 WARNING: CodeSystem/output-task-ror-codesystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json ==
 WARNING: /home/runner/work/IG-fhir-repertoire-offre-ressources-sante/IG-fhir-repertoire-offre-ressources-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror: Unknown Parameters: [releaselabel, shownav, fmm-definition, excludelogbinaryformat]
-ERROR: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.extension[0].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve
+ERROR: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide: The extension http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency is not allowed to be used at this point (allowed = e:ImplementationGuide.definition; this element is [ImplementationGuide])
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[30].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[45].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR spécifiant le canal ou la manière dont s'établit la communication '
 WARNING: ImplementationGuide/ans.fhir.fr.ror: ImplementationGuide.definition.resource[47].description: value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication '

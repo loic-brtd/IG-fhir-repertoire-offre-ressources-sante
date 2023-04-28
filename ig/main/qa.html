@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ROR</h1>
- <p>Generated Thu Apr 27 07:58:21 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/ror">https://interop.esante.gouv.fr/ig/fhir/ror</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/ror/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Apr 28 06:39:06 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/ror">https://interop.esante.gouv.fr/ig/fhir/ror</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/ror/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.5</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.ror, Canonical = https://interop.esante.gouv.fr/ig/fhir/ror</td></tr>
@@ -4132,7 +4132,7 @@
      <td><b>fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror</b></td><td><b>warning</b></td><td title=""><b>Unknown Parameters: [releaselabel, shownav, fmm-definition, excludelogbinaryformat]</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide.extension[0].url (l1/c490)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve</b></td>
+     <td><b>ImplementationGuide (l1/c47330)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency is not allowed to be used at this point (allowed = e:ImplementationGuide.definition; this element is [ImplementationGuide])</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.definition.resource[30].description (l1/c23297)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise dans quelle mesure les locaux sont conformes aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public. '</b></td>
@@ -5782,6 +5782,14 @@
    </tr>
 </table>
 <hr/>
+<a name="Extension_EXTP_Context_Wrong"> </a>
+<h2>Extension_EXTP_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ans.fhir.fr.ror.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json</a></td><td><b>The extension http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency is not allowed to be used at this point (allowed = e:ImplementationGuide.definition; this element is [ImplementationGuide])</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="SECURITY_STRING_CONTENT_WARNING"> </a>
 <h2>SECURITY_STRING_CONTENT_WARNING</h2>
  <table class="grid">
@@ -5879,14 +5887,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ImplementationGuide-ans.fhir.fr.ror.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json</a></td><td><b>value should not start or finish with whitespace 'Extension créée dans le cadre du ROR qui précise l'utilisation du canal de communication '</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
-<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ImplementationGuide-ans.fhir.fr.ror.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.ror.json</a></td><td><b>URL value 'http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
