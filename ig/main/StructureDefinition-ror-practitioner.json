@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "RORPractitioner",
   "status" : "active",
-  "date" : "2023-04-28T06:38:38+00:00",
+  "date" : "2023-05-10T10:36:42+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1517,7 +1517,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Task"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1577,7 +1577,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DeviceDefinition"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2030,7 +2030,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Task"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2278,7 +2278,7 @@
         "human" : "If the Attachment has data, it SHALL have a contentType",
         "expression" : "data.empty() or contentType.exists()",
         "xpath" : "not(exists(f:data)) or exists(f:contentType)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/SubstanceProtein"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentReference"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -2653,7 +2653,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Task"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -2716,7 +2716,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Task"
       }],
       "mapping" : [{
         "identity" : "rim",
