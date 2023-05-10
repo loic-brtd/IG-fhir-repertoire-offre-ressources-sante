@@ -19,7 +19,7 @@
   <version value="0.1.0"/>
   <name value="RORGeolocationLocation"/>
   <status value="active"/>
-  <date value="2023-05-10T12:14:50+00:00"/>
+  <date value="2023-05-10T12:22:02+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -37,12 +37,16 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-    <type value="extension"/>
-    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"/>
+    <type value="element"/>
+    <expression value="Address"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="Location.position"/>
+  </context>
+  <context>
+    <type value="extension"/>
+    <expression value="https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/geolocation"/>

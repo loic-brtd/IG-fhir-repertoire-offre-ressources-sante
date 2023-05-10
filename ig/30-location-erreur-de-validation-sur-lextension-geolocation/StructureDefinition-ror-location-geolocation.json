@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "RORGeolocationLocation",
   "status" : "active",
-  "date" : "2023-05-10T12:14:50+00:00",
+  "date" : "2023-05-10T12:22:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -27,12 +27,16 @@
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{
-    "type" : "extension",
-    "expression" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"
+    "type" : "element",
+    "expression" : "Address"
   },
   {
     "type" : "element",
     "expression" : "Location.position"
+  },
+  {
+    "type" : "extension",
+    "expression" : "https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-organization-eg-location"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/geolocation",
